@@ -66,5 +66,7 @@ namespace Framework
             IsCounting = false;
             onTimerDone?.Invoke();
         }
+
+        public float GetMaxTime() => time;
     }
 }
