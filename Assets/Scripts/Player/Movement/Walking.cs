@@ -10,7 +10,11 @@ namespace Player.Movement
         private Vector2 _moveDirection;
         private Rigidbody _rigidbody;
 
-        private void Awake() => _rigidbody = GetComponent<Rigidbody>();
+        private void Awake()
+        {
+            _rigidbody = GetComponent<Rigidbody>();
+            _rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
+        }
 
         private void FixedUpdate() => Move();
 
