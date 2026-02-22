@@ -5,8 +5,6 @@ namespace Framework.CameraSystem
     [DefaultExecutionOrder(9999)] // camera follow should be later than movement to avoid jitter
     public sealed class CameraFollow : MonoBehaviour
     {
-        private const float DISTANCE_MARGIN = 0.01f; 
-        
         [SerializeField] private Transform followTarget;
         [SerializeField] private Vector3 offset;
         [SerializeField, Range(0, 15)] private float followThreshold = 2f;
@@ -41,7 +39,7 @@ namespace Framework.CameraSystem
             float targetLerpSpeed = _isFollowing ? followLerpSpeed : stopLerpSpeed;
             _currentLerpSpeed = Mathf.Lerp(_currentLerpSpeed, targetLerpSpeed, lerpSpeedSmoothing * Time.deltaTime);
 
-            if (distance > DISTANCE_MARGIN)
+            if (distance > stopThreshold)
             {
                 _mainCamera.transform.position = Vector3.Lerp(
                     _mainCamera.transform.position,
