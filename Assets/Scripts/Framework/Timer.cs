@@ -52,6 +52,10 @@ namespace Framework
         }
 
         public float GetCurrentTime() => _currentTimer;
+        
+        public float GetMaxTime() => time;
+
+        public float GetTimePercentage() => _currentTimer / time;
 
         private void UpdateTimer()
         {
@@ -67,6 +71,5 @@ namespace Framework
             onTimerDone?.Invoke();
         }
 
-        public float GetMaxTime() => time;
     }
 }
