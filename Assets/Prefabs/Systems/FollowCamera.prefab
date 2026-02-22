@@ -153,6 +153,7 @@ MonoBehaviour:
   followTarget: {fileID: 0}
   offset: {x: 6, y: 5, z: -6}
   followThreshold: 2
-  stopThreshold: 0.25
+  stopThreshold: 0.75
   followLerpSpeed: 2
   stopLerpSpeed: 0.5
+  lerpSpeedSmoothing: 1

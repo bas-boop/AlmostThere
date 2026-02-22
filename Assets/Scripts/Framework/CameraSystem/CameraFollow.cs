@@ -5,12 +5,15 @@ namespace Framework.CameraSystem
     [DefaultExecutionOrder(9999)] // camera follow should be later than movement to avoid jitter
     public sealed class CameraFollow : MonoBehaviour
     {
+        private const float DISTANCE_MARGIN = 0.01f; 
+        
         [SerializeField] private Transform followTarget;
         [SerializeField] private Vector3 offset;
-        [SerializeField] private float followThreshold = 2f;
-        [SerializeField] private float stopThreshold = 1f;
-        [SerializeField] private float followLerpSpeed = 2f;
-        [SerializeField] private float stopLerpSpeed = 1f;
+        [SerializeField, Range(0, 15)] private float followThreshold = 2f;
+        [SerializeField, Range(0, 15)] private float stopThreshold = 0.5f;
+        [SerializeField, Range(0, 15)] private float followLerpSpeed = 5f;
+        [SerializeField, Range(0, 15)] private float stopLerpSpeed = 2f;
+        [SerializeField, Range(0, 15)] private float lerpSpeedSmoothing = 3f;
 
         private Camera _mainCamera;
         private bool _isFollowing;
@@ -29,26 +32,23 @@ namespace Framework.CameraSystem
 
             if (!_isFollowing
                 && distance >= followThreshold)
-            {
                 _isFollowing = true;
-                _currentLerpSpeed = followLerpSpeed;
-            }
 
             if (_isFollowing
                 && distance <= stopThreshold)
-            {
                 _isFollowing = false;
-                _currentLerpSpeed = stopLerpSpeed;
+
+            float targetLerpSpeed = _isFollowing ? followLerpSpeed : stopLerpSpeed;
+            _currentLerpSpeed = Mathf.Lerp(_currentLerpSpeed, targetLerpSpeed, lerpSpeedSmoothing * Time.deltaTime);
+
+            if (distance > DISTANCE_MARGIN)
+            {
+                _mainCamera.transform.position = Vector3.Lerp(
+                    _mainCamera.transform.position,
+                    targetPosition,
+                    _currentLerpSpeed * Time.deltaTime
+                );
             }
-
-            if (!_isFollowing)
-                return;
-
-            _mainCamera.transform.position = Vector3.Lerp(
-                _mainCamera.transform.position,
-                targetPosition,
-                _currentLerpSpeed * Time.deltaTime
-            );
         }
     }
 }
