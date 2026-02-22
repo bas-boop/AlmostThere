@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Player.Movement;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Player
@@ -6,6 +7,8 @@ namespace Player
     [RequireComponent(typeof(PlayerInput))]
     public sealed class InputParser : MonoBehaviour
     {
+        [SerializeField] private Walking walking;
+        
         private PlayerInput _playerInput;
         private InputActionAsset _inputActionAsset;
         
@@ -18,10 +21,7 @@ namespace Player
         private void Update()
         {
             Vector2 moveInput = _inputActionAsset["Move"].ReadValue<Vector2>();
-            
-            // todo: should be in a movement class
-            Vector3 movement = transform.right * moveInput.x + transform.forward * moveInput.y;
-            transform.position += movement * 0.01f;
+            walking.SetMoveDirection(moveInput);
         }
 
         private void OnEnable() => AddListeners();
