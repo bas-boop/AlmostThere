@@ -71,7 +71,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: d614de8655705b647bd0d8b7c724ab0b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.InputParser
   walking: {fileID: 2472088736934334071}
+  mapToggeler: {fileID: 0}
 --- !u!114 &2472088736934334071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,3 +200,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.Movement.Walking
   speed: 5
+  rotationSpeed: 1
+  bike: {fileID: 0}
