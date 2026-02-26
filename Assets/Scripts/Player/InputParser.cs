@@ -1,4 +1,5 @@
 ﻿using Player.Movement;
+using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,7 @@ namespace Player
     public sealed class InputParser : MonoBehaviour
     {
         [SerializeField] private Walking walking;
+        [SerializeField] private MapToggeler mapToggeler;
         
         private PlayerInput _playerInput;
         private InputActionAsset _inputActionAsset;
@@ -47,7 +49,11 @@ namespace Player
         
         #region Context
 
-        private void InteractAction(InputAction.CallbackContext context) => Debug.Log("Interact");
+        private void InteractAction(InputAction.CallbackContext context)
+        {
+            if (mapToggeler)
+                mapToggeler.Toggle();
+        }
 
         #endregion
     }
