@@ -7,6 +7,7 @@ namespace Framework.CameraSystem
     {
         [SerializeField] private Transform followTarget;
         [SerializeField] private Vector3 offset;
+        [SerializeField] private Vector3 overshoot;
         [SerializeField, Range(0, 15)] private float followThreshold = 2f;
         [SerializeField, Range(0, 15)] private float stopThreshold = 0.5f;
         [SerializeField, Range(0, 15)] private float followLerpSpeed = 5f;
@@ -41,6 +42,8 @@ namespace Framework.CameraSystem
 
             if (distance > stopThreshold)
             {
+                targetPosition -= overshoot;
+                
                 _mainCamera.transform.position = Vector3.Lerp(
                     _mainCamera.transform.position,
                     targetPosition,
