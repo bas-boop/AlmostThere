@@ -159,4 +159,4 @@ MonoBehaviour:
   followLerpSpeed: 2
   stopLerpSpeed: 0.5
   lerpSpeedSmoothing: 1
-  cameraReturnToCenterSpeed: 0.5
+  cameraReturnToCenterSpeed: 1

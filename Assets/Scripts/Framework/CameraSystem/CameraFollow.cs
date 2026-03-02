@@ -45,7 +45,7 @@ namespace Framework.CameraSystem
             float distance = (_mainCamera.transform.position - targetPosition).magnitude;
 
             UpdateIsFollowing(distance);
-            MoveCamera(distance, targetPosition);
+            MoveCamera(targetPosition);
         }
 
         private void UpdateAheadOffset()
@@ -67,7 +67,7 @@ namespace Framework.CameraSystem
                 _smoothedMoveDirection = Vector3.Lerp(
                     _smoothedMoveDirection,
                     Vector3.zero,
-                    lookAheadLerpSpeed * cameraReturnToCenterSpeed * Time.deltaTime
+                    followLerpSpeed * cameraReturnToCenterSpeed * Time.deltaTime
                 );
             }
             
@@ -85,19 +85,16 @@ namespace Framework.CameraSystem
                 _isFollowing = false;
         }
 
-        private void MoveCamera(float distance, Vector3 targetPosition)
+        private void MoveCamera(Vector3 targetPosition)
         {
             float targetLerpSpeed = _isFollowing ? followLerpSpeed : stopLerpSpeed;
             _currentLerpSpeed = Mathf.Lerp(_currentLerpSpeed, targetLerpSpeed, lerpSpeedSmoothing * Time.deltaTime);
 
-            if (distance > stopThreshold)
-            {
-                _mainCamera.transform.position = Vector3.Lerp(
-                    _mainCamera.transform.position,
-                    targetPosition,
-                    _currentLerpSpeed * Time.deltaTime
-                );
-            }
+            _mainCamera.transform.position = Vector3.Lerp(
+                _mainCamera.transform.position,
+                targetPosition,
+                _currentLerpSpeed * Time.deltaTime
+            );
         }
     }
 }
