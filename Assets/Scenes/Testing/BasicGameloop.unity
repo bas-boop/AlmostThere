@@ -331,24 +331,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -362046790695249943, guid: 090b15a44d1e9724dbed8dbaceb39433, type: 3}
---- !u!1 &137106977 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7666097952372243561, guid: ba893caa7e96eae48ad422853819af28, type: 3}
-  m_PrefabInstance: {fileID: 1618328919}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &137106979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137106977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 198e0817dd8a42f992d5090d328ebd91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player.Movement.CameraProxy
-  playerRigidbody: {fileID: 474014825}
 --- !u!1 &170937770 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8578709097331664583, guid: 090b15a44d1e9724dbed8dbaceb39433, type: 3}
@@ -1174,11 +1156,6 @@ MonoBehaviour:
   bike: {fileID: 2139509287}
   walking: {fileID: 474014814}
   bikeSpeed: 7.5
---- !u!54 &474014825 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1410141781021939964, guid: ba893caa7e96eae48ad422853819af28, type: 3}
-  m_PrefabInstance: {fileID: 1618328919}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &476141903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1599826595754709761, guid: 090b15a44d1e9724dbed8dbaceb39433, type: 3}
@@ -2964,7 +2941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1612098538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3070,11 +3047,7 @@ PrefabInstance:
     - target: {fileID: 2472088736934334071, guid: ba893caa7e96eae48ad422853819af28, type: 3}
       propertyPath: bike
       value: 
-      objectReference: {fileID: 1618328920}
-    - target: {fileID: 2472088736934334071, guid: ba893caa7e96eae48ad422853819af28, type: 3}
-      propertyPath: rotationSpeed
-      value: 4
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2139509288}
     - target: {fileID: 3651345725935768533, guid: ba893caa7e96eae48ad422853819af28, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39.78
@@ -3122,22 +3095,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1524426243415863942, guid: ba893caa7e96eae48ad422853819af28, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 3651345725935768533, guid: ba893caa7e96eae48ad422853819af28, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2139509288}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4606664740934862468, guid: ba893caa7e96eae48ad422853819af28, type: 3}
       insertIndex: -1
       addedObject: {fileID: 474014822}
-    - targetCorrespondingSourceObject: {fileID: 7666097952372243561, guid: ba893caa7e96eae48ad422853819af28, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 137106979}
   m_SourcePrefab: {fileID: 100100000, guid: ba893caa7e96eae48ad422853819af28, type: 3}
---- !u!4 &1618328920 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1524426243415863942, guid: ba893caa7e96eae48ad422853819af28, type: 3}
-  m_PrefabInstance: {fileID: 1618328919}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1630439995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4811171726696857748, guid: 090b15a44d1e9724dbed8dbaceb39433, type: 3}
@@ -4089,10 +4054,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1731229320672234711, guid: a539e0f8da7c0994281e0367e73a0a33, type: 3}
-      propertyPath: overshoot.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1731229320672234711, guid: a539e0f8da7c0994281e0367e73a0a33, type: 3}
       propertyPath: followTarget
       value: 
       objectReference: {fileID: 474014821}
@@ -4392,7 +4353,7 @@ Transform:
   m_Children:
   - {fileID: 991857282}
   - {fileID: 2120368976}
-  m_Father: {fileID: 1618328920}
+  m_Father: {fileID: 474014821}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2139509289
 BoxCollider:
