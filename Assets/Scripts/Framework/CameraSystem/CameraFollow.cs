@@ -17,7 +17,7 @@ namespace Framework.CameraSystem
         [SerializeField, Range(0, 15)] private float followThreshold = 2f;
         [SerializeField, Range(0, 15)] private float stopThreshold = 0.5f;
         [SerializeField, Range(0, 15)] private float followLerpSpeed = 5f;
-        [SerializeField, Range(0, 15)] private float stopLerpSpeed = 2f;
+        [SerializeField, Range(0, 30)] private float stopLerpSpeed = 2f;
         [SerializeField, Range(0, 15)] private float lerpSpeedSmoothing = 3f;
         [SerializeField, Range(0, 15), Tooltip("When the camera stops moving and it has overshot, this is the speed we go back to the center.")]
         private float cameraReturnToCenterSpeed = 0.5f;
