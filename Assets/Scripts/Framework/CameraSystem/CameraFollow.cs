@@ -12,15 +12,15 @@ namespace Framework.CameraSystem
         
         [Header("Settings")]
         [SerializeField] private Vector3 cameraPositionOffset;
-        [SerializeField, Range(0, 15)] private float lookAheadDistance = 5f;
-        [SerializeField, Range(0, 15)] private float lookAheadLerpSpeed = 2f;
+        [SerializeField, Range(0, 15)] private float lookAheadDistance = 3f;
+        [SerializeField, Range(0, 15)] private float lookAheadLerpSpeed = 1.5f;
         [SerializeField, Range(0, 15)] private float followThreshold = 2f;
-        [SerializeField, Range(0, 15)] private float stopThreshold = 0.5f;
-        [SerializeField, Range(0, 15)] private float followLerpSpeed = 5f;
-        [SerializeField, Range(0, 30)] private float stopLerpSpeed = 2f;
-        [SerializeField, Range(0, 15)] private float lerpSpeedSmoothing = 3f;
+        [SerializeField, Range(0, 15)] private float stopThreshold = 0.75f;
+        [SerializeField, Range(0, 15)] private float followLerpSpeed = 0.04f;
+        [SerializeField, Range(0, 30)] private float stopLerpSpeed = 30f;
+        [SerializeField, Range(0, 15)] private float lerpSpeedSmoothing = 1f;
         [SerializeField, Range(0, 15), Tooltip("When the camera stops moving and it has overshot, this is the speed we go back to the center.")]
-        private float cameraReturnToCenterSpeed = 0.5f;
+        private float cameraReturnToCenterSpeed = 6.7f;
 
         private Camera _mainCamera;
         private bool _isFollowing;
