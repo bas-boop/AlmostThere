@@ -432,6 +432,22 @@ PrefabInstance:
       propertyPath: followTarget
       value: 
       objectReference: {fileID: 1731883828}
+    - target: {fileID: 1731229320672234711, guid: a539e0f8da7c0994281e0367e73a0a33, type: 3}
+      propertyPath: stopLerpSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731229320672234711, guid: a539e0f8da7c0994281e0367e73a0a33, type: 3}
+      propertyPath: followLerpSpeed
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731229320672234711, guid: a539e0f8da7c0994281e0367e73a0a33, type: 3}
+      propertyPath: lookAheadDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731229320672234711, guid: a539e0f8da7c0994281e0367e73a0a33, type: 3}
+      propertyPath: cameraReturnToCenterSpeed
+      value: 6.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6120612807686412599, guid: a539e0f8da7c0994281e0367e73a0a33, type: 3}
       propertyPath: m_Name
       value: FollowCamera

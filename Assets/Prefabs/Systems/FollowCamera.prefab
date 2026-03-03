@@ -151,9 +151,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Framework.CameraSystem.CameraFollow
   followTarget: {fileID: 0}
-  offset: {x: 6, y: 5, z: -6}
+  cameraPositionOffset: {x: 6, y: 5, z: -6}
+  lookAheadDistance: 3
+  lookAheadLerpSpeed: 1.5
   followThreshold: 2
   stopThreshold: 0.75
-  followLerpSpeed: 2
-  stopLerpSpeed: 0.5
+  followLerpSpeed: 0.04
+  stopLerpSpeed: 30
   lerpSpeedSmoothing: 1
+  cameraReturnToCenterSpeed: 6.7

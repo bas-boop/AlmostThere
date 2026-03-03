@@ -200,5 +200,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.Movement.Walking
   speed: 5
-  rotationSpeed: 1
+  rotationSpeed: 4
   bike: {fileID: 0}
