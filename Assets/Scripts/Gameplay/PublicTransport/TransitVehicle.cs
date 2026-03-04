@@ -11,6 +11,7 @@ namespace Gameplay.PublicTransport
 
         private Vector3 _lastStop;
         private Vector3 _currentStop;
+        private float _acctualTime;
 
         private void Update()
         {
@@ -21,14 +22,19 @@ namespace Gameplay.PublicTransport
             
             Vector3 dir = _currentStop - transform.position;
             transform.Translate(dir.normalized * (speed * Time.deltaTime), Space.World);
+            _acctualTime += Time.deltaTime;
         }
 
         private void UpdateCurrentStop()
         {
             _lastStop = _currentStop;
             _currentStop = route.GetNextStopLocation();
-            //todo: calculate the time between stops
-            Debug.Log((_currentStop - _lastStop).magnitude);
+            
+            float distance = (_currentStop - _lastStop).magnitude;
+            //Debug.Log(distance);
+            float time = distance / speed;
+            Debug.Log(time + " " + _acctualTime);
+            _acctualTime = 0;
         }
     }
 }
