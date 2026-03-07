@@ -2,7 +2,7 @@
 
 namespace Gameplay.PublicTransport
 {
-    public class Stop : Waypoint
+    public class Waypoint : MonoBehaviour
     {
         
     }

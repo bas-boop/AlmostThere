@@ -1,40 +1,66 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
+using Framework;
 using Framework.Extensions;
 
 namespace Gameplay.PublicTransport
 {
     public class TransitVehicle : MonoBehaviour
     {
+        private const float STOP_RANGE = 0.1f;
+        
         [SerializeField] private Route route;
+        [SerializeField] private Timer timer;
         [SerializeField] private float speed = 1;
+        [SerializeField] private bool shouldMove;
 
-        private Vector3 _lastStop;
-        private Vector3 _currentStop;
-        private float _acctualTime;
+        private float _currentSpeed;
+        private Waypoint _currentStop;
+
+        private void Awake()
+        {
+            route.Start(speed);
+            _currentSpeed = speed;
+            shouldMove = true;
+        }
+
+        private void Start()
+        {
+            _currentStop = route.GetNextStopLocation();
+        }
 
         private void Update()
         {
-            if (transform.position.IsWithinRange(_currentStop, 0.1f))
-            {
-                UpdateCurrentStop();
-            }
+            if (!shouldMove)
+                return;
+
+            Vector3 currentStopPosition = _currentStop.transform.position;
             
-            Vector3 dir = _currentStop - transform.position;
-            transform.Translate(dir.normalized * (speed * Time.deltaTime), Space.World);
-            _acctualTime += Time.deltaTime;
+            if (transform.position.IsWithinRange(currentStopPosition, STOP_RANGE))
+                UpdateCurrentStop();
+            
+            Vector3 dir = currentStopPosition - transform.position;
+            transform.Translate(dir.normalized * (_currentSpeed * Time.deltaTime), Space.World);
         }
 
+        public void Move()
+        {
+            shouldMove = true;
+        }
+        
         private void UpdateCurrentStop()
         {
-            _lastStop = _currentStop;
-            _currentStop = route.GetNextStopLocation();
+            if (_currentStop is Stop)
+                Stop();
             
-            float distance = (_currentStop - _lastStop).magnitude;
-            //Debug.Log(distance);
-            float time = distance / speed;
-            Debug.Log(time + " " + _acctualTime);
-            _acctualTime = 0;
+            _currentStop = route.GetNextStopLocation();
+        }
+
+        private void Stop()
+        {
+            shouldMove = false;
+            timer.RestartTimer();
         }
     }
 }
