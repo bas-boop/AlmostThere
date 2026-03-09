@@ -18,6 +18,8 @@ namespace Gameplay.PublicTransport
         private float _currentSpeed;
         private Waypoint _currentStop;
 
+        public Route Route => route;
+
         private void Awake()
         {
             route.Start(speed);

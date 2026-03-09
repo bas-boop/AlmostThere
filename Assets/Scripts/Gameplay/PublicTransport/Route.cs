@@ -8,10 +8,11 @@ namespace Gameplay.PublicTransport
     public struct Route
     {
         [SerializeField] private List<Waypoint> stops;
-        [SerializeField] private List<float> timeBetweenStops;
 
         private float _speed;
         private int _currentStop;
+        
+        [field:SerializeField] public List<float> TimeBetweenStops { get; private set; }
 
         public void Start(float speed)
         {
@@ -42,7 +43,7 @@ namespace Gameplay.PublicTransport
                 if (stops[next] is not Stop)
                     continue;
                 
-                timeBetweenStops.Add(segmentDistance / _speed);
+                TimeBetweenStops.Add(segmentDistance / _speed);
                 segmentDistance = 0f;
             }
         }
