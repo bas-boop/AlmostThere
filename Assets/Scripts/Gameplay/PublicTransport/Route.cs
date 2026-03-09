@@ -18,9 +18,10 @@ namespace Gameplay.PublicTransport
         {
             _speed = speed;
             CalculateTimeBetweenStops();
-            foreach (var VARIABLE in timeBetweenStops)
+            
+            foreach (float timeBetweenStop in TimeBetweenStops)
             {
-                Debug.Log(VARIABLE);
+                Debug.Log(timeBetweenStop);
             }
         }
 

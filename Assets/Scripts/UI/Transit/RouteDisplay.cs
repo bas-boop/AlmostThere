@@ -26,6 +26,10 @@ namespace UI.Transit
             _transitRoute = transitVehicle.Route;
             CreatTimeObjects();
             
+            if (_transitRoute.TimeBetweenStops.Count != stopNames.Count)
+                Debug.LogWarning("The amount of stop names and actual stops are not the same."
+                        + $" - {gameObject.name} has {_transitRoute.TimeBetweenStops.Count} and not {stopNames.Count}");
+            
             SetupTimes();
         }
 
