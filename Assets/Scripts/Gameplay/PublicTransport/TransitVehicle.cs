@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 using Framework;
 using Framework.Extensions;
-using UnityEngine.Events;
 
 namespace Gameplay.PublicTransport
 {
@@ -13,10 +13,12 @@ namespace Gameplay.PublicTransport
         [SerializeField] private Route route;
         [SerializeField] private Timer timer;
         [SerializeField] private float speed = 1;
+        [SerializeField] private float test = 1;
         [SerializeField] private bool shouldMove;
         [SerializeField] private bool isCanceled;
 
         [SerializeField] private UnityEvent onCancel = new();
+        [SerializeField] private UnityEvent<float> onDelay = new();
 
         private float _currentSpeed;
         private Waypoint _currentStop;
@@ -33,6 +35,7 @@ namespace Gameplay.PublicTransport
         private void Start()
         {
             route.onCancelRoute = onCancel;
+            route.onDelayRoute = onDelay;
             _currentStop = route.GetNextStopLocation();
         }
 
@@ -62,6 +65,12 @@ namespace Gameplay.PublicTransport
         {
             isCanceled = true;
             onCancel?.Invoke();
+        }
+
+        public void Delay()
+        {
+            onDelay?.Invoke(test);
+            Stop();
         }
         
         private void UpdateCurrentStop()

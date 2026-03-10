@@ -10,7 +10,8 @@ namespace UI.Transit
 {
     public sealed class RouteDisplay : MonoBehaviour
     {
-        private const string TIME_FORMAT = @"hh\:mm";
+        private const string TIME_FORMAT_HOUR = @"hh\:mm";
+        private const string TIME_FORMAT2 = @"mm\m";
 
         [SerializeField] private TransitVehicle transitVehicle;
         [SerializeField, Tooltip("Time in minutes")] private float startTime = 540; // 9 AM
@@ -25,6 +26,7 @@ namespace UI.Transit
         {
             _transitRoute = transitVehicle.Route;
             _transitRoute.onCancelRoute.AddListener(Canel);
+            _transitRoute.onDelayRoute.AddListener(Delay);
             CreatTimeObjects();
             
             if (_transitRoute.TimeBetweenStops.Count != stopNames.Count)
@@ -42,13 +44,12 @@ namespace UI.Transit
             {
                 GameObject go = Instantiate(timePrefab, transform);
                 
-                //if (go.TryGetComponent(out TMP_Text text))
                 if (go.TryGetComponentInChildren(out TMP_Text text))
                     times.Add(text);
             }
         }
 
-        private void SetupTimes()
+        private void SetupTimes(float extraTime = 0)
         {
             float totalTime = 0;
             int l = _transitRoute.TimeBetweenStops.Count;
@@ -57,16 +58,25 @@ namespace UI.Transit
             {
                 TMP_Text timeText = times[i];
                 totalTime += _transitRoute.TimeBetweenStops[i];
-                timeText.text = $"{GetTime(totalTime / timeScale + startTime)} - {stopNames[i]}";
+                
+                if (extraTime == 0)
+                    timeText.text = $"{GetTime(totalTime / timeScale + startTime)} - {stopNames[i]}";
+                else
+                    timeText.text = $"{GetTime(totalTime / timeScale + startTime)} <color=\"red\">+{GetTime(extraTime, true)}</color> - {stopNames[i]}";
             }
         }
 
-        private string GetTime(float time)
+        private string GetTime(float time, bool minutsOnly = false)
         {
             TimeSpan ts = TimeSpan.FromMinutes(Mathf.RoundToInt(time));
-            return ts.ToString(TIME_FORMAT);
+            return ts.ToString(minutsOnly ? TIME_FORMAT2 : TIME_FORMAT_HOUR);
         }
 
+        private void Delay(float time)
+        {
+            SetupTimes(time);
+        }
+        
         private void Canel()
         {
             for (int i = 0; i < times.Count; i++)

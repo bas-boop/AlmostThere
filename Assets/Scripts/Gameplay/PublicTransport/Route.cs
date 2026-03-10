@@ -11,6 +11,7 @@ namespace Gameplay.PublicTransport
         [SerializeField] private List<Waypoint> stops;
 
         public UnityEvent onCancelRoute;
+        public UnityEvent<float> onDelayRoute;
 
         private float _speed;
         private int _currentStop;
