@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Gameplay.PublicTransport
 {
@@ -9,12 +10,14 @@ namespace Gameplay.PublicTransport
     {
         [SerializeField] private List<Waypoint> stops;
 
+        public UnityEvent onCancelRoute;
+
         private float _speed;
         private int _currentStop;
         
         [field:SerializeField] public List<float> TimeBetweenStops { get; private set; }
 
-        public void Start(float speed)
+        public void Init(float speed)
         {
             _speed = speed;
             CalculateTimeBetweenStops();

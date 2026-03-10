@@ -24,6 +24,7 @@ namespace UI.Transit
         private void Start()
         {
             _transitRoute = transitVehicle.Route;
+            _transitRoute.onCancelRoute.AddListener(Canel);
             CreatTimeObjects();
             
             if (_transitRoute.TimeBetweenStops.Count != stopNames.Count)
@@ -64,6 +65,16 @@ namespace UI.Transit
         {
             TimeSpan ts = TimeSpan.FromMinutes(Mathf.RoundToInt(time));
             return ts.ToString(TIME_FORMAT);
+        }
+
+        private void Canel()
+        {
+            for (int i = 0; i < times.Count; i++)
+            {
+                TMP_Text time = times[i];
+                time.text = $"XX:XX - {stopNames[i]}";
+                time.color = Color.red;
+            }
         }
     }
 }
