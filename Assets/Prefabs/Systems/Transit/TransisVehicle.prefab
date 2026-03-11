@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: 6081608496391966064}
   - component: {fileID: 1313157365473212863}
   - component: {fileID: 1043424986374604558}
+  - component: {fileID: 5756919497821905332}
   m_Layer: 0
   m_Name: TransisVehicle
   m_TagString: Untagged
@@ -587,10 +588,28 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    timeBetweenStops: []
-  timer: {fileID: 1043424986374604558}
-  speed: 3
+    - {fileID: 0}
+    - {fileID: 0}
+    onCancelRoute:
+      m_PersistentCalls:
+        m_Calls: []
+    onDelayRoute:
+      m_PersistentCalls:
+        m_Calls: []
+    <TimeBetweenStops>k__BackingField: []
+  timerStop: {fileID: 1043424986374604558}
+  timerDelay: {fileID: 5756919497821905332}
+  moveSpeed: 3
+  rotationSpeed: 5
+  randomDelayTime: {x: 3, y: 10}
   shouldMove: 0
+  isCanceled: 0
+  onCancel:
+    m_PersistentCalls:
+      m_Calls: []
+  onDelay:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1043424986374604558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,6 +623,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Framework.Timer
   time: 1
+  canCountOnStart: 0
+  onTimerStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onTimerStop:
+    m_PersistentCalls:
+      m_Calls: []
+  onTimerDone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1313157365473212863}
+        m_TargetAssemblyTypeName: Gameplay.PublicTransport.TransitVehicle, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5756919497821905332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7751616821480836783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e41a160aac93894a9ab0a8569ba4aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.Timer
+  time: 0
   canCountOnStart: 0
   onTimerStart:
     m_PersistentCalls:
