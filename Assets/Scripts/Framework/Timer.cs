@@ -44,6 +44,13 @@ namespace Framework
             StartTimer();
         }
 
+        public void RestartTimer(float newTime)
+        {
+            time = newTime;
+            _currentTimer = time;
+            StartTimer();
+        }
+
         public void StopTimer()
         {
             _currentTimer = time;

@@ -1,6 +1,7 @@
 ﻿using Player.Movement;
 using UI;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 namespace Player
@@ -10,6 +11,8 @@ namespace Player
     {
         [SerializeField] private Walking walking;
         [SerializeField] private MapToggeler mapToggeler;
+
+        [SerializeField] private UnityEvent onTesting = new();
         
         private PlayerInput _playerInput;
         private InputActionAsset _inputActionAsset;
@@ -40,11 +43,13 @@ namespace Player
         private void AddListeners()
         {
             _inputActionAsset["Interact"].performed += InteractAction;
+            _inputActionAsset["Testing"].performed += TestingAction;
         }
 
         private void RemoveListeners()
         {
             _inputActionAsset["Interact"].performed -= InteractAction;
+            _inputActionAsset["Testing"].performed -= TestingAction;
         }
         
         #region Context
@@ -54,6 +59,8 @@ namespace Player
             if (mapToggeler)
                 mapToggeler.Toggle();
         }
+
+        private void TestingAction(InputAction.CallbackContext context) => onTesting?.Invoke();
 
         #endregion
     }

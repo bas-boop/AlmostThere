@@ -1084,6 +1084,8 @@ namespace Framework.Extensions
             return ref v;
         }
 
+        public static float GetRandomInBetween(ref this Vector2 v) => Random.Range(v.x, v.y);
+
         #endregion
 
         #region Invert
