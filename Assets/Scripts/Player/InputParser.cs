@@ -1,15 +1,18 @@
-﻿using Player.Movement;
-using UI;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+
+using Player.InteractSystem;
+using Player.MovementSystem;
+using UI;
 
 namespace Player
 {
     [RequireComponent(typeof(PlayerInput))]
     public sealed class InputParser : MonoBehaviour
     {
-        [SerializeField] private Walking walking;
+        [SerializeField] private Movement movement;
+        [SerializeField] private Interacter interacter;
         [SerializeField] private MapToggeler mapToggeler;
 
         [SerializeField] private UnityEvent onTesting = new();
@@ -26,7 +29,7 @@ namespace Player
         private void Update()
         {
             Vector2 moveInput = _inputActionAsset["Move"].ReadValue<Vector2>();
-            walking.SetMoveDirection(moveInput);
+            movement.SetMoveDirection(moveInput);
         }
 
         private void OnEnable() => AddListeners();
@@ -43,18 +46,26 @@ namespace Player
         private void AddListeners()
         {
             _inputActionAsset["Interact"].performed += InteractAction;
+            _inputActionAsset["Map"].performed += MapAction;
             _inputActionAsset["Testing"].performed += TestingAction;
         }
 
         private void RemoveListeners()
         {
             _inputActionAsset["Interact"].performed -= InteractAction;
+            _inputActionAsset["Map"].performed -= MapAction;
             _inputActionAsset["Testing"].performed -= TestingAction;
         }
         
         #region Context
 
         private void InteractAction(InputAction.CallbackContext context)
+        {
+            if (interacter)
+                interacter.Interact();
+        }
+        
+        private void MapAction(InputAction.CallbackContext context)
         {
             if (mapToggeler)
                 mapToggeler.Toggle();
