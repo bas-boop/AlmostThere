@@ -1,19 +1,23 @@
 ﻿using UnityEngine;
 
-namespace Player.Movement
+namespace Player.MovementSystem
 {
     [RequireComponent(typeof(Rigidbody))]
-    public sealed class Walking : MonoBehaviour
+    public sealed class Movement : MonoBehaviour
     {
-        [SerializeField] public float speed = 1;
-        [SerializeField] private float rotationSpeed = 1;
-        [SerializeField] private Transform bike;
+        private const float ROTATION_THRESHOLD = 0.001f;
         
-        private Vector2 _moveDirection;
+        [SerializeField] private MovementSettings walkSetting;
+        [SerializeField] private MovementSettings bikeSetting;
+        [SerializeField] private Transform visuals;
+
+        private MovementSettings _currentSettings;
         private Rigidbody _rigidbody;
+        private Vector2 _moveDirection;
 
         private void Awake()
         {
+            _currentSettings = walkSetting;
             _rigidbody = GetComponent<Rigidbody>();
             _rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
         }
@@ -22,6 +26,9 @@ namespace Player.Movement
 
         public void SetMoveDirection(Vector2 targetDirection) => _moveDirection = targetDirection;
 
+        public void SwapMovementSettings() => _currentSettings = _currentSettings == walkSetting
+            ? bikeSetting : walkSetting;
+
         private void Move()
         {
             Quaternion yRotation = Quaternion.Euler(0, transform.eulerAngles.y, 0);
@@ -29,16 +36,16 @@ namespace Player.Movement
             Vector3 worldMove = yRotation * localMove;
 
             Vector3 newVelocity = _rigidbody.linearVelocity;
-            newVelocity.x = worldMove.x * speed;
-            newVelocity.z = worldMove.z * speed;
+            newVelocity.x = worldMove.x * _currentSettings.movementSpeed;
+            newVelocity.z = worldMove.z * _currentSettings.movementSpeed;
 
             _rigidbody.linearVelocity = newVelocity;
 
-            if (worldMove.sqrMagnitude <= 0.001f)
+            if (worldMove.sqrMagnitude <= ROTATION_THRESHOLD)
                 return;
             
             Quaternion targetRotation = Quaternion.LookRotation(worldMove);
-            bike.rotation = Quaternion.Slerp(bike.rotation, targetRotation, Time.fixedDeltaTime * rotationSpeed);
+            visuals.rotation = Quaternion.Slerp(visuals.rotation, targetRotation, Time.fixedDeltaTime * _currentSettings.rotationSpeed);
         }
     }
 }
