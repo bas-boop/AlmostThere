@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
 
-using Player.InteractSystem;
+using Framework.InteractSystem;
 
 namespace Gameplay
 {
     public sealed class Bike : Interactable
     {
         [SerializeField] private Transform player;
-
-        private bool _canBeUsed;
+        
         private bool _isUsed;
 
         private void Start()
@@ -20,11 +19,9 @@ namespace Gameplay
             }
         }
 
-        public void SetCanBeUsed(bool target) => _canBeUsed = target;
-
         public override void Interact()
         {
-            if (!_canBeUsed)
+            if (!p_canInteract)
                 return;
 
             if (_isUsed)
@@ -37,6 +34,7 @@ namespace Gameplay
                 _isUsed = true;
                 transform.SetParent(player.transform);
                 transform.position = transform.parent.position;
+                transform.rotation = transform.parent.rotation;
             }
         }
     }
