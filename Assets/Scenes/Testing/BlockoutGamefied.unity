@@ -7247,7 +7247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5335796912942318534}
   m_Layer: 0
-  m_Name: BlockOut_Gamefied_v2
+  m_Name: SM_BlockoutGamefiedV2_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
