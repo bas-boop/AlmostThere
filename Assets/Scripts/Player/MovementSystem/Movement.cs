@@ -14,6 +14,7 @@ namespace Player.MovementSystem
         private MovementSettings _currentSettings;
         private Rigidbody _rigidbody;
         private Vector2 _moveDirection;
+        private bool _canMove = true;
 
         private void Awake()
         {
@@ -22,12 +23,18 @@ namespace Player.MovementSystem
             _rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
         }
 
-        private void FixedUpdate() => Move();
+        private void FixedUpdate()
+        {
+            if (_canMove)
+                Move();
+        }
 
         public void SetMoveDirection(Vector2 targetDirection) => _moveDirection = targetDirection;
 
         public void SwapMovementSettings() => _currentSettings = _currentSettings == walkSetting
             ? bikeSetting : walkSetting;
+
+        public void ToggleCanMove() => _canMove = !_canMove;
 
         private void Move()
         {
