@@ -1051,11 +1051,10 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4606664740934862468, guid: ba893caa7e96eae48ad422853819af28, type: 3}
   m_PrefabInstance: {fileID: 1618328919}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &480091006
+--- !u!114 &480091006 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2586530747060661406, guid: ba893caa7e96eae48ad422853819af28, type: 3}
+  m_PrefabInstance: {fileID: 1618328919}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480090998}
   m_Enabled: 1
@@ -1063,19 +1062,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6475f992d8f4c09bdb3e31e4147b3a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Framework.TrainMovement.Train
-  segmentPrefab: {fileID: 7754534815241094247, guid: 49b22cf2e89096f46bc980405ee0053c, type: 3}
-  useTrainStats: 1
-  amount: 0
-  stats:
-    followDistance: 1
-    smoothSpeed: 0.5
-  segments: []
-  onAddSegment:
-    m_PersistentCalls:
-      m_Calls: []
-  onRemoveSegment:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &494152501 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3778644264426962316, guid: 090b15a44d1e9724dbed8dbaceb39433, type: 3}
@@ -1660,7 +1646,7 @@ PrefabInstance:
       objectReference: {fileID: 474014814}
     - target: {fileID: 3906340874372898372, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.35
+      value: -52.41
       objectReference: {fileID: 0}
     - target: {fileID: 3906340874372898372, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1668,7 +1654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3906340874372898372, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -36.37
+      value: -51.22
       objectReference: {fileID: 0}
     - target: {fileID: 3906340874372898372, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1701,6 +1687,10 @@ PrefabInstance:
     - target: {fileID: 5316495070943618651, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: m_Name
       value: FeedingPigeonEvent (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316495070943618651, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2481,6 +2471,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
+--- !u!1 &1401947101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1401947102}
+  m_Layer: 0
+  m_Name: PlayerYogaPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1401947102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401947101}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0.04300165}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7840483408627070182}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1407620476 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -208595431880416365, guid: 090b15a44d1e9724dbed8dbaceb39433, type: 3}
@@ -2906,10 +2927,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4606664740934862468, guid: ba893caa7e96eae48ad422853819af28, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 480091006}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba893caa7e96eae48ad422853819af28, type: 3}
 --- !u!1 &1630439995 stripped
 GameObject:
@@ -4089,6 +4107,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1631996743613301034, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2664008809029764700, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1639984
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132540183914872307, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02000165
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341522866129935776, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.2400017
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990144084209529622, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02000165
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538221576617316546, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.032001734
+      objectReference: {fileID: 0}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onExit.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -4099,20 +4141,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onExit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 985474226}
+      objectReference: {fileID: 8417485473663528664}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 985474226}
+      objectReference: {fileID: 8417485473663528664}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onExit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -4123,19 +4165,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onExit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartTimer
+      value: SetCanInteract
       objectReference: {fileID: 0}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PauseTime
+      value: SetCanInteract
       objectReference: {fileID: 0}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onExit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Framework.Timer, Assembly-CSharp
+      value: Gameplay.SocialEvents.YogaEvent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Framework.Timer, Assembly-CSharp
+      value: Gameplay.SocialEvents.YogaEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onExit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4145,9 +4191,25 @@ PrefabInstance:
       propertyPath: onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7290466666357294916, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.2299984
+      objectReference: {fileID: 0}
     - target: {fileID: 7442481994952130997, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: m_Name
       value: YogaEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675734096839346930, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: m_Size.y
+      value: 2.1153052
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675734096839346930, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: m_Center.y
+      value: 0.5576526
+      objectReference: {fileID: 0}
+    - target: {fileID: 7675734096839346930, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      propertyPath: m_Center.z
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 8065918711555188907, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4191,8 +4253,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8065918711555188907, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1401947102}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7442481994952130997, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8417485473663528664}
   m_SourcePrefab: {fileID: 100100000, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
 --- !u!1001 &2983305906490875371
 PrefabInstance:
@@ -4332,6 +4400,31 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
+--- !u!1 &6340779540182167637 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7442481994952130997, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+  m_PrefabInstance: {fileID: 1812232506388800041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7840483408627070182 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8065918711555188907, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
+  m_PrefabInstance: {fileID: 1812232506388800041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8417485473663528664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6340779540182167637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49be9168f6c446d3ae90498b8fa65956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.SocialEvents.YogaEvent
+  player: {fileID: 480090998}
+  playerYogaPlace: {fileID: 1401947102}
+  timer: {fileID: 985474226}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
