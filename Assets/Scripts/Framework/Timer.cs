@@ -58,6 +58,12 @@ namespace Framework
             onTimerStop?.Invoke();
         }
 
+        public void PauseTime()
+        {
+            _canCount = false;
+            onTimerStop?.Invoke();
+        }
+
         public float GetCurrentTime() => _currentTimer;
         
         public float GetMaxTime() => time;
