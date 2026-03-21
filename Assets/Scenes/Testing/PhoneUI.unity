@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 177676030}
   - component: {fileID: 177676029}
   m_Layer: 5
-  m_Name: PhoneIconBg
+  m_Name: IMG_PhoneIcon_Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 253119440}
   - component: {fileID: 253119439}
   m_Layer: 5
-  m_Name: Icon-placeholder
+  m_Name: IMG_Icon_Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 296356766}
   - component: {fileID: 296356765}
   m_Layer: 5
-  m_Name: MapPlaceHolder
+  m_Name: GO_Map_Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,7 +357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 306857111}
   m_Layer: 5
-  m_Name: MapTransformParent
+  m_Name: GO_Map_TransformParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 348189815}
   - component: {fileID: 348189814}
   m_Layer: 5
-  m_Name: OffscreenIndicatorBackgroundSpinner
+  m_Name: IMG_OffscreenIndicator_Spinner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 432909012}
   - component: {fileID: 432909011}
   m_Layer: 5
-  m_Name: Main-canvas
+  m_Name: UI_Canvas_Phone_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 438209337}
   - component: {fileID: 438209336}
   m_Layer: 5
-  m_Name: OffscreenIndicatorBackground
+  m_Name: IMG_OffscreenIndicator_Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 501853079}
   - component: {fileID: 501853078}
   m_Layer: 5
-  m_Name: Route_Planner_background
+  m_Name: GO_RoutePlanner_Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 516151541}
   - component: {fileID: 516151540}
   m_Layer: 5
-  m_Name: PhoneOutline
+  m_Name: IMG_Phone_Outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -800,7 +800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 548543224}
   m_Layer: 5
-  m_Name: OffscreenIndicatorParent
+  m_Name: GO_OffscreenIndicator_Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1136,7 +1136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 585281032}
   m_Layer: 5
-  m_Name: PhoneClosedTransfrom
+  m_Name: GO_Phone_Transform_Closed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1173,7 +1173,7 @@ GameObject:
   - component: {fileID: 637860952}
   - component: {fileID: 637860951}
   m_Layer: 5
-  m_Name: Player_Icon_Image
+  m_Name: IMG_Player_Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1248,7 +1248,7 @@ GameObject:
   - component: {fileID: 709381596}
   - component: {fileID: 709381595}
   m_Layer: 5
-  m_Name: PhoneIcon
+  m_Name: IMG_PhoneIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1323,7 +1323,7 @@ GameObject:
   - component: {fileID: 710112139}
   - component: {fileID: 710112138}
   m_Layer: 0
-  m_Name: InputParser
+  m_Name: GO_Input_Parser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1413,7 +1413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 739955328}
   m_Layer: 5
-  m_Name: PhoneHolder
+  m_Name: GO_Phone_Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1452,7 +1452,7 @@ GameObject:
   - component: {fileID: 748587849}
   - component: {fileID: 748587848}
   m_Layer: 5
-  m_Name: Press Y image
+  m_Name: IMG_PhoneIcon_PressPrompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1525,7 +1525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 952543708}
   m_Layer: 5
-  m_Name: Icon_Placeholder_Transform
+  m_Name: GO_Icon_Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1564,7 +1564,7 @@ GameObject:
   - component: {fileID: 1154769317}
   - component: {fileID: 1154769316}
   m_Layer: 5
-  m_Name: PhoneScreenMask
+  m_Name: MASK_Phone_Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1656,7 +1656,7 @@ GameObject:
   - component: {fileID: 1243706160}
   - component: {fileID: 1243706159}
   m_Layer: 5
-  m_Name: Route_planner_placeholder_text
+  m_Name: TMP_RoutePlanner_PlaceholderText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1793,7 +1793,7 @@ GameObject:
   - component: {fileID: 1420285082}
   - component: {fileID: 1420285081}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TMP_Notification_PlaceholderText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1928,7 +1928,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1725897415}
   m_Layer: 5
-  m_Name: PhoneOpenTransfrom
+  m_Name: GO_Phone_Transform_Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1965,7 +1965,7 @@ GameObject:
   - component: {fileID: 1735275967}
   - component: {fileID: 1735275966}
   m_Layer: 5
-  m_Name: Cursor
+  m_Name: GO_Map_Cursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2040,7 +2040,7 @@ GameObject:
   - component: {fileID: 1764257021}
   - component: {fileID: 1764257020}
   m_Layer: 5
-  m_Name: NotificationBackground
+  m_Name: GO_Notification_Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2116,7 +2116,7 @@ GameObject:
   - component: {fileID: 1803053437}
   - component: {fileID: 1803053436}
   m_Layer: 5
-  m_Name: OffscreenIndicatorBackgroundIcon
+  m_Name: IMG_OffscreenIndicator_Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2190,7 +2190,7 @@ GameObject:
   - component: {fileID: 1839836062}
   - component: {fileID: 1839836063}
   m_Layer: 5
-  m_Name: PhoneIcon-holder
+  m_Name: GO_PhoneIcon_Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2256,9 +2256,11 @@ GameObject:
   - component: {fileID: 2096442341}
   - component: {fileID: 2096442339}
   - component: {fileID: 2096442336}
+  - component: {fileID: 2096442343}
+  - component: {fileID: 2096442342}
   - component: {fileID: 2096442338}
   m_Layer: 0
-  m_Name: UIManager
+  m_Name: GO_UI_Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2276,41 +2278,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93bcdae32043cc346be9264c2a5707e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhoneUI
-  _StateMachine: {fileID: 2096442340}
-  UIAnimations: {fileID: 2096442339}
-  _phone_icon: {fileID: 177676029}
-  _phone_icon_holder: {fileID: 177676028}
-  _phone_input_holder: {fileID: 748587847}
-  _staringNotification: {fileID: 1764257019}
-  _map_placeholder: {fileID: 296356764}
-  _map_snapper: {fileID: 2096442338}
-  _icon_placeholder: {fileID: 952543708}
-  _MapParent: {fileID: 306857111}
-  _PlayerIcon: {fileID: 637860950}
-  _MapMask: {fileID: 1154769315}
-  _OffscreenIndicator: {fileID: 548543224}
-  _OffscreenIndicatorBackground: {fileID: 438209335}
-  _OffscreenIndicatorSpinner: {fileID: 348189813}
-  _Cursor: {fileID: 1735275965}
-  _Canvas: {fileID: 432909013}
-  _RoutePlannerPanel: {fileID: 501853077}
-  _phone_transform: {fileID: 739955328}
-  _phone_open_transform: {fileID: 1725897415}
-  _phone_closed_transform: {fileID: 585281032}
-  _playerInput: {fileID: 710112139}
-  _phone_has_been_openend: 0
-  _phone_icon_animation_speed: 5
-  _phone_icon_rotation_amount: 8
-  _phone_icon_scale_amount: 0.04
-  _phone_icon_interval: 2.5
-  _before_loop_amount: 2
-  _phone_icon_closing_animation_speed: 3
-  _map_move_speed: 175
-  _IndicatorMaxDistance: 500
-  _IndicatorMinScale: 0.6
-  _IndicatorTreshold: 300
-  _IndicatorHideThreshold: 300
-  _phone_position_animation_speed: 5
+  stateMachine: {fileID: 2096442340}
+  animations: {fileID: 2096442342}
+  indicator: {fileID: 2096442343}
+  mapSnapper: {fileID: 2096442338}
+  mapPlaceholder: {fileID: 296356764}
+  playerIcon: {fileID: 637860950}
+  playerInput: {fileID: 710112139}
+  mapMoveSpeed: 160
 --- !u!4 &2096442337
 Transform:
   m_ObjectHideFlags: 0
@@ -2338,12 +2313,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51ebb253399cce439385e1c1c7bc8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapSnapper
-  _cursor: {fileID: 1735275965}
-  _map: {fileID: 296356764}
-  _snap_radius: 35
-  _canvas: {fileID: 432909013}
+  cursor: {fileID: 1735275965}
+  map: {fileID: 296356764}
+  canvas: {fileID: 432909013}
   icons:
   - {fileID: 952543708}
+  snapRadius: 35
 --- !u!114 &2096442339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2356,7 +2331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7e3984688835044893ef553b5580d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIAnimationSetter
-  ease_in_out:
+  easeInOut:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
@@ -2380,73 +2355,73 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ease_overshoot:
+  easeOvershoot:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.0023608343
+      outSlope: -0.0023608343
       tangentMode: 0
-      weightedMode: 0
+      weightedMode: 3
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.87580913
     - serializedVersion: 3
-      time: 0.6533576
-      value: 0.8612641
-      inSlope: 3.099096
-      outSlope: 3.099096
-      tangentMode: 0
-      weightedMode: 3
-      inWeight: 0.34831735
-      outWeight: 0.6915876
-    - serializedVersion: 3
-      time: 1
-      value: 1
+      time: 0.7980924
+      value: 1.2
       inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 3
-      inWeight: 0.3845149
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.00531
+      value: 0.9939499
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.77618086
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ease_anticipate:
+  easeAnticipate:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -0.0073400866
-      outSlope: -0.0073400866
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 3
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.120428115
-      value: 1.3
-      inSlope: 0.0118562365
-      outSlope: 0.0118562365
+      time: 0.14861237
+      value: 1.2
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 3
-      inWeight: 0.75299203
-      outWeight: 0.2464503
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: -0.002929571
-      outSlope: -0.002929571
+      inSlope: -0.0026324021
+      outSlope: -0.0026324021
       tangentMode: 0
       weightedMode: 3
-      inWeight: 1
+      inWeight: 0.79202944
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ease_shake:
+  easeShake:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
@@ -2455,7 +2430,7 @@ MonoBehaviour:
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
+      weightedMode: 3
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
@@ -2464,7 +2439,7 @@ MonoBehaviour:
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
+      weightedMode: 3
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
@@ -2473,7 +2448,7 @@ MonoBehaviour:
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-      weightedMode: 0
+      weightedMode: 3
       inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
@@ -2504,6 +2479,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhoneInputHandler
   _StateMachine: {fileID: 2096442340}
+--- !u!114 &2096442342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096442335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 332a78f07cb32e0458ea799a146decb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneUIAnimations
+  stateMachine: {fileID: 2096442340}
+  uiAnimations: {fileID: 2096442339}
+  phoneIcon: {fileID: 177676029}
+  phoneIconHolder: {fileID: 1839836062}
+  phoneInputHolder: {fileID: 748587847}
+  startingNotification: {fileID: 1764257019}
+  iconPlaceholder: {fileID: 952543708}
+  phoneTransform: {fileID: 739955328}
+  phoneOpenTransform: {fileID: 1725897415}
+  phoneClosedTransform: {fileID: 585281032}
+  mapParent: {fileID: 306857111}
+  routePlannerPanel: {fileID: 501853077}
+  phoneIconAnimationSpeed: 5
+  phoneIconRotationAmount: 10
+  phoneIconScaleAmount: 0.2
+  phoneIconInterval: 2
+  beforeLoopAmount: 2
+  routePlanningBackgroundAnimationSpeed: 0.5
+  phoneIconClosingAnimationSpeed: 0.5
+  phoneHasBeenOpened: 0
+--- !u!114 &2096442343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096442335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1088219cea6ebc24f873914d8ff5e22f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneUIIndicator
+  uiAnimations: {fileID: 2096442339}
+  iconPlaceholder: {fileID: 952543708}
+  mapMask: {fileID: 1154769315}
+  offscreenIndicator: {fileID: 548543224}
+  offscreenIndicatorBackground: {fileID: 438209335}
+  offscreenIndicatorSpinner: {fileID: 348189813}
+  cursor: {fileID: 1735275965}
+  canvas: {fileID: 432909013}
+  indicatorMaxDistance: 500
+  indicatorMinScale: 0.3
+  indicatorThreshold: 50
+  indicatorHideThreshold: 150
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

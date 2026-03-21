@@ -1,63 +1,97 @@
 using System;
 using UnityEngine;
 
-public class MapSnapper : MonoBehaviour
+namespace AlmostThere.Phone
 {
-    [Header("refrences")]
-    [SerializeField] private RectTransform _cursor;
-    [SerializeField] private RectTransform _map;
-    [SerializeField] private float _snap_radius;
-    [SerializeField] private Canvas _canvas;
-    [SerializeField] private RectTransform[] icons;
-
-    public event Action<RectTransform> on_snapped;
-    public event Action on_released;
-    public RectTransform snapped_trasform => _snapped_icon;
-    private RectTransform _snapped_icon;
-
-    private void Update()
+    public class MapSnapper : MonoBehaviour
     {
-        if (_snapped_icon == null)
-        {
-            foreach (var icon in icons)
-            {
-                Vector2 cursorPos = RectTransformUtility.WorldToScreenPoint(_canvas.worldCamera, _cursor.position);
-                Vector2 iconPos = RectTransformUtility.WorldToScreenPoint(_canvas.worldCamera, icon.position);
+        #region Serialized fields
 
+        [Header("References")]
+        [SerializeField] private RectTransform cursor;
+        [SerializeField] private RectTransform map;
+        [SerializeField] private Canvas canvas;
+        [SerializeField] private RectTransform[] icons;
+
+        [Space(10)]
+        [SerializeField, Range(0, 300)] private float snapRadius;
+
+        #endregion
+
+        #region Private fields
+
+        private RectTransform _snappedIcon;
+
+        #endregion
+
+        #region Properties
+
+        public RectTransform SnappedTransform => _snappedIcon;
+
+        #endregion
+
+        #region Events
+
+        public event Action<RectTransform> OnSnapped;
+        public event Action OnReleased;
+
+        #endregion
+
+        #region Lifecycle methods
+
+        private void Update()
+        {
+            if (_snappedIcon == null)
+                CheckForSnap();
+            else
+                CheckForRelease();
+        }
+
+        #endregion
+
+        #region Private methods
+
+        private void CheckForSnap()
+        {
+            int iconCount = icons.Length;
+
+            for (int i = 0; i < iconCount; i++)
+            {
+                Vector2 cursorPos = RectTransformUtility.WorldToScreenPoint(canvas.worldCamera, cursor.position);
+                Vector2 iconPos = RectTransformUtility.WorldToScreenPoint(canvas.worldCamera, icons[i].position);
                 float distance = Vector2.Distance(cursorPos, iconPos);
 
-                if (distance < _snap_radius)
+                if (distance < snapRadius)
                 {
-                    SnapToIcon(icon, cursorPos, iconPos);
+                    SnapToIcon(icons[i], cursorPos, iconPos);
                     break;
                 }
             }
         }
-        else
-        {
-            Vector2 cursorPos = RectTransformUtility.WorldToScreenPoint(_canvas.worldCamera, _cursor.position);
-            Vector2 iconPos = RectTransformUtility.WorldToScreenPoint(_canvas.worldCamera, _snapped_icon.position);
 
+        private void CheckForRelease()
+        {
+            Vector2 cursorPos = RectTransformUtility.WorldToScreenPoint(canvas.worldCamera, cursor.position);
+            Vector2 iconPos = RectTransformUtility.WorldToScreenPoint(canvas.worldCamera, _snappedIcon.position);
             float distance = Vector2.Distance(cursorPos, iconPos);
 
-            if (distance > _snap_radius)
+            if (distance > snapRadius)
             {
-                _snapped_icon = null;
-                on_released?.Invoke();
+                _snappedIcon = null;
+                OnReleased?.Invoke();
             }
         }
-    }
 
-    private void SnapToIcon(RectTransform icon, Vector2 cursorPos, Vector2 iconPos)
-    {
-        Vector2 ScreenOffset = cursorPos - iconPos;
-        Vector2 localOffset = ScreenOffset / _canvas.scaleFactor;
-        
-        _map.anchoredPosition += localOffset;
+        private void SnapToIcon(RectTransform icon, Vector2 cursorPos, Vector2 iconPos)
+        {
+            Vector2 screenOffset = cursorPos - iconPos;
+            Vector2 localOffset = screenOffset / canvas.scaleFactor;
 
-        _snapped_icon = icon;
-        on_snapped?.Invoke(icon);
+            map.anchoredPosition += localOffset;
+            _snappedIcon = icon;
+            OnSnapped?.Invoke(icon);
+        }
 
-        Debug.Log("snapped to " +  icon.name);
+        #endregion
     }
 }

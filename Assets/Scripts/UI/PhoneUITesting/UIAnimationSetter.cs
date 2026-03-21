@@ -1,64 +1,135 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
-public class UIAnimationSetter : MonoBehaviour
+namespace AlmostThere.UI
 {
-    public static UIAnimationSetter Instance;
-
-    [Header("Easing Types")]
-    public AnimationCurve ease_in_out;
-    public AnimationCurve ease_overshoot;
-    public AnimationCurve ease_anticipate;
-    public AnimationCurve ease_shake;
-    public void SimpleUIAnimationPosition(RectTransform objectToAnimate, AnimationCurve easingType, Vector2 fromAmount, Vector2 To_amount, float timer/*, float timerMult)*/)
+    public class UIAnimationSetter : MonoBehaviour
     {
-        float curve = easingType.Evaluate(timer);
+        #region Public fields
 
-        objectToAnimate.anchoredPosition = Vector2.LerpUnclamped(fromAmount, To_amount, curve);
-    }
+        [Tooltip("Smooth ease in and out curve.")]
+        public AnimationCurve easeInOut;
 
-    public void SimpleUIAnimationScale(RectTransform objectToAnimate, AnimationCurve easingType, Vector2 from_amount, Vector2 to_amount, float timer/*, float timerMult)*/)
-    {
-        float curve = easingType.Evaluate(timer);
+        [Tooltip("Curve that overshoots the target value.")]
+        public AnimationCurve easeOvershoot;
 
-        objectToAnimate.localScale = Vector3.LerpUnclamped(from_amount, to_amount, curve);
-    }
+        [Tooltip("Curve that anticipates before moving.")]
+        public AnimationCurve easeAnticipate;
 
-    public void SimpleUIAnimationRotation(RectTransform objectToAnimate, AnimationCurve easingType, Quaternion from_amount, Quaternion to_amount, float timer/*, float timerMult)*/)
-    {
-        float curve = easingType.Evaluate(timer);
+        [Tooltip("Curve that shakes back and forth.")]
+        public AnimationCurve easeShake;
 
-        objectToAnimate.rotation = Quaternion.LerpUnclamped(from_amount, to_amount, curve);
-    }
+        #endregion
 
-    public IEnumerator SimpleUIAnimationRotateAroundZ(RectTransform objectToAnimate, float rotateSpeed)
-    {
-        float angle = objectToAnimate.rotation.z;
+        #region Public methods
 
-        while (true)
+        /// <summary>
+        /// Animates the anchored position of a RectTransform using an AnimationCurve.
+        /// </summary>
+        /// <param name="objectToAnimate">The RectTransform to animate.</param>
+        /// <param name="easingType">The curve to evaluate.</param>
+        /// <param name="fromAmount">Start position.</param>
+        /// <param name="toAmount">End position.</param>
+        /// <param name="timer">Current progress from 0 to 1.</param>
+        public void AnimatePosition(
+            RectTransform objectToAnimate,
+            AnimationCurve easingType,
+            Vector2 fromAmount,
+            Vector2 toAmount,
+            float timer)
         {
-            angle += rotateSpeed * Time.deltaTime;
-            objectToAnimate.rotation = Quaternion.Euler(0,0,angle);
-            yield return null;
-        }
-    }
-    public IEnumerator ScaleUpAndDown(RectTransform objectToAnimate, AnimationCurve easingType, Vector2 to_amount, float time, System.Action onComplete = null)
-    {
-        float timer = 0;
-
-        Vector2 orgScale = objectToAnimate.localScale;
-
-        while (timer < 1)
-        {
-            timer += Time.deltaTime / time;
-
             float curve = easingType.Evaluate(timer);
-
-            objectToAnimate.localScale = Vector3.one * curve;
-            yield return null;
+            objectToAnimate.anchoredPosition = Vector2.LerpUnclamped(fromAmount, toAmount, curve);
         }
 
-        objectToAnimate.localScale = to_amount;
-        onComplete?.Invoke();
+        /// <summary>
+        /// Animates the local scale of a RectTransform using an AnimationCurve.
+        /// </summary>
+        /// <param name="objectToAnimate">The RectTransform to animate.</param>
+        /// <param name="easingType">The curve to evaluate.</param>
+        /// <param name="fromAmount">Start scale.</param>
+        /// <param name="toAmount">End scale.</param>
+        /// <param name="timer">Current progress from 0 to 1.</param>
+        public void AnimateScale(
+            RectTransform objectToAnimate,
+            AnimationCurve easingType,
+            Vector2 fromAmount,
+            Vector2 toAmount,
+            float timer)
+        {
+            float curve = easingType.Evaluate(timer);
+            objectToAnimate.localScale = Vector3.LerpUnclamped(fromAmount, toAmount, curve);
+            //objectToAnimate.localScale = Vector3.one * curve;
+        }
+
+        /// <summary>
+        /// Animates the rotation of a RectTransform using an AnimationCurve.
+        /// </summary>
+        /// <param name="objectToAnimate">The RectTransform to animate.</param>
+        /// <param name="easingType">The curve to evaluate.</param>
+        /// <param name="fromAmount">Start rotation.</param>
+        /// <param name="toAmount">End rotation.</param>
+        /// <param name="timer">Current progress from 0 to 1.</param>
+        public void AnimateRotation(
+            RectTransform objectToAnimate,
+            AnimationCurve easingType,
+            Quaternion fromAmount,
+            Quaternion toAmount,
+            float timer)
+        {
+            float curve = easingType.Evaluate(timer);
+            objectToAnimate.rotation = Quaternion.LerpUnclamped(fromAmount, toAmount, curve);
+        }
+
+        /// <summary>
+        /// Infinitely rotates a RectTransform around the Z axis.
+        /// </summary>
+        /// <param name="objectToAnimate">The RectTransform to rotate.</param>
+        /// <param name="rotateSpeed">Degrees per second.</param>
+        public IEnumerator RotateAroundZ(RectTransform objectToAnimate, float rotateSpeed)
+        {
+            float angle = objectToAnimate.eulerAngles.z;
+
+            while (true)
+            {
+                angle += rotateSpeed * Time.deltaTime;
+                objectToAnimate.rotation = Quaternion.Euler(0, 0, angle);
+                yield return null;
+            }
+        }
+
+        /// <summary>
+        /// Animates the scale of a RectTransform using a curve directly as the scale value.
+        /// </summary>
+        /// <param name="objectToAnimate">The RectTransform to animate.</param>
+        /// <param name="easingType">The curve whose evaluated value is used as the scale.</param>
+        /// <param name="toAmount">The final scale to snap to after the animation.</param>
+        /// <param name="time">Duration of the animation in seconds.</param>
+        /// <param name="onComplete">Optional callback when the animation finishes.</param>
+        public IEnumerator ScaleFromCurve(
+            RectTransform objectToAnimate,
+            AnimationCurve easingType,
+            Vector2 toAmount,
+            float time,
+            Action onComplete = null)
+        {
+            float timer = 0;
+
+            while (timer < 1)
+            {
+                timer += Time.deltaTime / time;
+
+                float curve = easingType.Evaluate(timer);
+
+                objectToAnimate.localScale = Vector3.one * curve;
+                yield return null;
+            }
+
+            objectToAnimate.localScale = toAmount;
+            onComplete?.Invoke();
+        }
+
+        #endregion
     }
 }
