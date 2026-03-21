@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace Player.MovementSystem
 {
@@ -11,6 +12,9 @@ namespace Player.MovementSystem
         [SerializeField] private MovementSettings bikeSetting;
         [SerializeField] private Transform visuals;
 
+        [SerializeField] private UnityEvent onDisableMovement = new();
+        [SerializeField] private UnityEvent onEnableMovement = new();
+        
         private MovementSettings _currentSettings;
         private Rigidbody _rigidbody;
         private Vector2 _moveDirection;
@@ -34,7 +38,18 @@ namespace Player.MovementSystem
         public void SwapMovementSettings() => _currentSettings = _currentSettings == walkSetting
             ? bikeSetting : walkSetting;
 
-        public void ToggleCanMove() => _canMove = !_canMove;
+        public void ToggleCanMove()
+        {
+            _canMove = !_canMove;
+            
+            if (_canMove)
+                onEnableMovement?.Invoke();
+            else
+            {
+                _rigidbody.linearVelocity = Vector3.zero;
+                onDisableMovement?.Invoke();
+            }
+        }
 
         private void Move()
         {

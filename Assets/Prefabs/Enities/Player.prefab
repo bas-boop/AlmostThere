@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 1972125364571213157}
   - component: {fileID: 2472088736934334071}
   - component: {fileID: 5496865619441030653}
+  - component: {fileID: 2586530747060661406}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -271,6 +272,60 @@ MonoBehaviour:
   walkSetting: {fileID: 11400000, guid: bc6a4a7c2e348ed459fa79b2de951942, type: 2}
   bikeSetting: {fileID: 11400000, guid: fdad63cb9b3951d41b86c93b2bec98ab, type: 2}
   visuals: {fileID: 7678285523396216913}
+  onDisableMovement:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1410141781021939964}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_useGravity
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6823166646309097232}
+        m_TargetAssemblyTypeName: UnityEngine.SphereCollider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onEnableMovement:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1410141781021939964}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_useGravity
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6823166646309097232}
+        m_TargetAssemblyTypeName: UnityEngine.SphereCollider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &5496865619441030653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,3 +338,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe7ddc1cfb440e0a0d22f1d873582a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.InteractSystem.Interacter
+--- !u!114 &2586530747060661406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606664740934862468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6475f992d8f4c09bdb3e31e4147b3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.TrainMovement.Train
+  segmentPrefab: {fileID: 7754534815241094247, guid: 49b22cf2e89096f46bc980405ee0053c, type: 3}
+  useTrainStats: 1
+  amount: 0
+  stats:
+    followDistance: 1
+    smoothSpeed: 0.5
+  segments: []
+  onAddSegment:
+    m_PersistentCalls:
+      m_Calls: []
+  onRemoveSegment:
+    m_PersistentCalls:
+      m_Calls: []
