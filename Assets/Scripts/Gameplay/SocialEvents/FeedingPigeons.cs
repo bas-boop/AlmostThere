@@ -12,7 +12,7 @@ namespace Gameplay.SocialEvents
     {
         [SerializeField] private Followed player;
         [SerializeField] private float feedingTime = 1;
-        [SerializeField] private float followTime = 1;
+        [SerializeField, Tooltip("unused because they do not leave")] private float followTime = 1;
         [SerializeField] private List<Follower> pigeons;
         
         // todo: animations for feeding
@@ -37,10 +37,12 @@ namespace Gameplay.SocialEvents
                 player.AddSegment(pigeon);
             }
             
-            Invoke(nameof(UnFollow), followTime);
             onFeedDone?.Invoke();
         }
 
+        /// <summary>
+        /// unused, not removed because it can be used later for a feature
+        /// </summary>
         private void UnFollow()
         {
             for (int i = pigeons.Count - 1; i >= 0; i--)
