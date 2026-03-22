@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-using Player.InteractSystem;
+using Framework.InteractSystem;
 using Player.MovementSystem;
 using UI;
 

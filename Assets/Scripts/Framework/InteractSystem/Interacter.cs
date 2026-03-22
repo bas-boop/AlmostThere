@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Player.InteractSystem
+namespace Framework.InteractSystem
 {
     public sealed class Interacter : MonoBehaviour
     {
