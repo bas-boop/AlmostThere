@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Player.MovementSystem
@@ -24,7 +25,12 @@ namespace Player.MovementSystem
         {
             _currentSettings = walkSetting;
             _rigidbody = GetComponent<Rigidbody>();
+        }
+
+        private void Start()
+        {
             _rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
+            _rigidbody.Sleep();
         }
 
         private void FixedUpdate()
