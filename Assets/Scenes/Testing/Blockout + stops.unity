@@ -754,7 +754,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1313157365473212863, guid: d85cc53926502b04f96e5906b3a5e6ec, type: 3}
       propertyPath: route.stops.Array.size
-      value: 18
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1313157365473212863, guid: d85cc53926502b04f96e5906b3a5e6ec, type: 3}
       propertyPath: 'route.stops.Array.data[0]'
@@ -858,7 +858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751616821480836783, guid: d85cc53926502b04f96e5906b3a5e6ec, type: 3}
       propertyPath: m_Name
-      value: TransisVehicle (3)
+      value: Bus (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3012,7 +3012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751616821480836783, guid: d85cc53926502b04f96e5906b3a5e6ec, type: 3}
       propertyPath: m_Name
-      value: TransisVehicle (2)
+      value: Bus (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4384,7 +4384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751616821480836783, guid: d85cc53926502b04f96e5906b3a5e6ec, type: 3}
       propertyPath: m_Name
-      value: TransisVehicle (1)
+      value: Bus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6266,7 +6266,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3651345725935768533, guid: ba893caa7e96eae48ad422853819af28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.25
+      value: -38.23
       objectReference: {fileID: 0}
     - target: {fileID: 3651345725935768533, guid: ba893caa7e96eae48ad422853819af28, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6274,7 +6274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3651345725935768533, guid: ba893caa7e96eae48ad422853819af28, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.47
+      value: 72.38
       objectReference: {fileID: 0}
     - target: {fileID: 3651345725935768533, guid: ba893caa7e96eae48ad422853819af28, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6399,6 +6399,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2119261326}
+  - {fileID: 817203624}
+  - {fileID: 795242407}
+  - {fileID: 1438002734}
   - {fileID: 1783623920}
   - {fileID: 1506055955}
   - {fileID: 1007871539}
@@ -6424,7 +6428,6 @@ Transform:
   - {fileID: 1067140739}
   - {fileID: 668397438}
   - {fileID: 663441194}
-  - {fileID: 817203624}
   - {fileID: 1475934954}
   - {fileID: 1506551623}
   - {fileID: 277958961}
@@ -6448,7 +6451,6 @@ Transform:
   - {fileID: 1556536460}
   - {fileID: 1991218077}
   - {fileID: 1917177029}
-  - {fileID: 795242407}
   - {fileID: 1011236637}
   - {fileID: 1015306773}
   - {fileID: 161457434}
@@ -6478,7 +6480,6 @@ Transform:
   - {fileID: 854360994}
   - {fileID: 740694256}
   - {fileID: 1483057664}
-  - {fileID: 1438002734}
   - {fileID: 869162048}
   - {fileID: 1048684840}
   - {fileID: 2041630279}
@@ -6487,7 +6488,6 @@ Transform:
   - {fileID: 1707365962}
   - {fileID: 1506839469}
   - {fileID: 373220930}
-  - {fileID: 2119261326}
   - {fileID: 1026970720}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7336,7 +7336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751616821480836783, guid: d85cc53926502b04f96e5906b3a5e6ec, type: 3}
       propertyPath: m_Name
-      value: TransisVehicle
+      value: Tram
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
