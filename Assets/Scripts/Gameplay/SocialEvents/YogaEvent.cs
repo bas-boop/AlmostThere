@@ -20,7 +20,7 @@ namespace Gameplay.SocialEvents
             _playerMovement = player.GetComponent<Movement>();
         }
 
-        public override void Interact()
+        public override void Interact(GameObject sender)
         {
             if (!p_canInteract)
                 return;

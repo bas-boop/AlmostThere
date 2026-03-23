@@ -19,12 +19,19 @@ namespace Player.MovementSystem
         private Rigidbody _rigidbody;
         private Vector2 _moveDirection;
         private bool _canMove = true;
+        private Quaternion _rotation;
 
         private void Awake()
         {
             _currentSettings = walkSetting;
+            _rotation = transform.rotation;
             _rigidbody = GetComponent<Rigidbody>();
+        }
+
+        private void Start()
+        {
             _rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
+            _rigidbody.Sleep();
         }
 
         private void FixedUpdate()
@@ -50,6 +57,8 @@ namespace Player.MovementSystem
                 onDisableMovement?.Invoke();
             }
         }
+
+        public void ResetRotation() => transform.rotation = _rotation;
 
         private void Move()
         {
