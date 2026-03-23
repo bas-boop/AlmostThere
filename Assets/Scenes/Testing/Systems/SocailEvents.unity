@@ -1087,32 +1087,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 479969203}
-  - component: {fileID: 479969202}
   m_Layer: 0
-  m_Name: RandomPlacer (1)
+  m_Name: GoalSpawnPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &479969202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479969201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb86ae7e0b64a6eaa59de84ca4dff9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.RandomSpawn
-  objectToPlace: {fileID: 1127699716}
-  locations:
-  - {fileID: 1568109511}
-  - {fileID: 483402203}
-  - {fileID: 1753836558}
-  - {fileID: 1300032522}
 --- !u!4 &479969203
 Transform:
   m_ObjectHideFlags: 0
@@ -1121,7 +1102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479969201}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1130,7 +1111,7 @@ Transform:
   - {fileID: 483402203}
   - {fileID: 1753836558}
   - {fileID: 1300032522}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 603399104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &480090998 stripped
 GameObject:
@@ -1148,6 +1129,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6475f992d8f4c09bdb3e31e4147b3a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Framework.TrainMovement.Train
+--- !u!114 &480091014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480090998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb86ae7e0b64a6eaa59de84ca4dff9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.RandomSpawn
+  objectToCheckDistance: {fileID: 0}
+  locations:
+  - {fileID: 110328021}
+  - {fileID: 1901915582}
+  - {fileID: 1172973088}
+  - {fileID: 1802352754}
+  - {fileID: 1783634932}
+  shouldCheckDistance: 0
+  minimalDistance: 10
 --- !u!1 &483402202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1310,39 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1550514412580984892, guid: 090b15a44d1e9724dbed8dbaceb39433, type: 3}
+--- !u!1 &603399103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603399104}
+  m_Layer: 0
+  m_Name: SpawnPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603399104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603399103}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1449623176}
+  - {fileID: 479969203}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &609596132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,7 +2489,7 @@ Transform:
   m_GameObject: {fileID: 1172973087}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.2, y: 1, z: -48.6}
+  m_LocalPosition: {x: 51.6, y: 1, z: -28.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2771,32 +2806,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1449623176}
-  - component: {fileID: 1449623175}
   m_Layer: 0
-  m_Name: RandomPlacer
+  m_Name: PlayerSpawnPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1449623175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1449623174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb86ae7e0b64a6eaa59de84ca4dff9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.RandomSpawn
-  objectToPlace: {fileID: 480090998}
-  locations:
-  - {fileID: 110328021}
-  - {fileID: 1901915582}
-  - {fileID: 1172973088}
-  - {fileID: 1802352754}
 --- !u!4 &1449623176
 Transform:
   m_ObjectHideFlags: 0
@@ -2805,7 +2821,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449623174}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2814,7 +2830,8 @@ Transform:
   - {fileID: 1901915582}
   - {fileID: 1172973088}
   - {fileID: 1802352754}
-  m_Father: {fileID: 0}
+  - {fileID: 1783634932}
+  m_Father: {fileID: 603399104}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529283564
 GameObject:
@@ -3213,7 +3230,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4606664740934862468, guid: ba893caa7e96eae48ad422853819af28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 480091014}
   m_SourcePrefab: {fileID: 100100000, guid: ba893caa7e96eae48ad422853819af28, type: 3}
 --- !u!1 &1630439995 stripped
 GameObject:
@@ -3359,6 +3379,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 479969203}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1783634931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1783634932}
+  m_Layer: 0
+  m_Name: SpawnPoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1783634932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783634931}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.3, y: 1, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1449623176}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1802352753
 GameObject:
@@ -4406,13 +4457,36 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7840483409670771804, guid: a52abef19c490804cb00fab7c8d47fb2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1910647594}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6340779541225869551, guid: a52abef19c490804cb00fab7c8d47fb2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2139165833}
   m_SourcePrefab: {fileID: 100100000, guid: a52abef19c490804cb00fab7c8d47fb2, type: 3}
 --- !u!4 &2139165827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7840483409670771804, guid: a52abef19c490804cb00fab7c8d47fb2, type: 3}
   m_PrefabInstance: {fileID: 2139165826}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2139165833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127699716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb86ae7e0b64a6eaa59de84ca4dff9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gameplay.RandomSpawn
+  objectToCheckDistance: {fileID: 474014821}
+  locations:
+  - {fileID: 1568109511}
+  - {fileID: 483402203}
+  - {fileID: 1753836558}
+  - {fileID: 1300032522}
+  shouldCheckDistance: 1
+  minimalDistance: 10
 --- !u!1001 &703716632872014131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4812,9 +4886,9 @@ SceneRoots:
   - {fileID: 609596134}
   - {fileID: 1612098541}
   - {fileID: 1529283567}
-  - {fileID: 2139165826}
   - {fileID: 1699810550}
   - {fileID: 1618328919}
+  - {fileID: 2139165826}
   - {fileID: 703716632872014131}
   - {fileID: 1822641236}
   - {fileID: 1554492363}
@@ -4823,5 +4897,4 @@ SceneRoots:
   - {fileID: 863662518}
   - {fileID: 2983305906490875371}
   - {fileID: 1812232506388800041}
-  - {fileID: 1449623176}
-  - {fileID: 479969203}
+  - {fileID: 603399104}

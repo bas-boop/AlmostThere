@@ -6,9 +6,57 @@ namespace Gameplay
 {
     public sealed class RandomPlacer : MonoBehaviour
     {
-        [SerializeField] private GameObject objectToPlace;
+        private const int MAX_PLACEMENT_ATTEMPTS = 15;
+        
+        [Header("References")]
+        [SerializeField] private Transform objectToCheckDistance;
         [SerializeField] private Transform[] locations;
 
-        private void Start() => objectToPlace.transform.position = CollectionExtensions.GetRandomItem(locations).position;
+        [Header("Settings")]
+        [SerializeField] private bool shouldCheckDistance;
+        [SerializeField] private float minimalDistance = 10;
+        
+        private void Start()
+        {
+            if (shouldCheckDistance)
+                SetPositionWithDistance(objectToCheckDistance);
+            else
+                transform.position = CollectionExtensions.GetRandomItem(locations).position;
+        }
+
+        private void SetPositionWithDistance(Transform targetToCheckDistance)
+        {
+            Vector3 pos = targetToCheckDistance.position;
+            Vector3 newPos;
+            int attempts = 0;
+            
+            while (true)
+            {
+                newPos = CollectionExtensions.GetRandomItem(locations).position;
+                Debug.Log(newPos);
+
+                if (attempts < MAX_PLACEMENT_ATTEMPTS
+                    && newPos.IsWithinRange(pos, minimalDistance))
+                {
+                    attempts++;
+                    continue;
+                }
+                
+                break;
+            }
+
+            transform.position = newPos;
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (!shouldCheckDistance)
+                return;
+
+            foreach (Transform location in locations)
+            {
+                Gizmos.DrawWireSphere(location.position, minimalDistance);
+            }
+        }
     }
 }
