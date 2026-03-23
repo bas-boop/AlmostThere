@@ -6,7 +6,7 @@ namespace Gameplay.SocialEvents
 {
     public sealed class PetAnimal : Interactable
     {
-        public override void Interact()
+        public override void Interact(GameObject sender)
         {
             if (!p_canInteract)
                 return;
