@@ -50,12 +50,23 @@ namespace Gameplay
 
         private void OnDrawGizmos()
         {
-            if (!shouldCheckDistance)
-                return;
-
-            foreach (Transform location in locations)
+            if (shouldCheckDistance)
             {
-                Gizmos.DrawWireSphere(location.position, minimalDistance);
+                Gizmos.color = Color.green;
+                
+                foreach (Transform location in locations)
+                {
+                    Gizmos.DrawWireSphere(location.position, minimalDistance);
+                }
+            }
+            else
+            {
+                Gizmos.color = Color.red;
+                
+                foreach (Transform location in locations)
+                {
+                    Gizmos.DrawWireSphere(location.position, 1);
+                }      
             }
         }
     }
