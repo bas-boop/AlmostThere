@@ -512,21 +512,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 817230060}
     - target: {fileID: 6828169325811689577, guid: 97de9334caee2694492033209a104165, type: 3}
-      propertyPath: time
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6828169325811689577, guid: 97de9334caee2694492033209a104165, type: 3}
-      propertyPath: onTimerDone.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6828169325811689577, guid: 97de9334caee2694492033209a104165, type: 3}
       propertyPath: onTimerDone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 764988321}
-    - target: {fileID: 6828169325811689577, guid: 97de9334caee2694492033209a104165, type: 3}
-      propertyPath: onTimerDone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetAndLoadScene
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
