@@ -1,43 +1,50 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MessageRowUI : MonoBehaviour
+namespace UI.EndingPrototype
 {
-    [SerializeField] private Transform bubble;
-    [SerializeField] private Transform spacer;
-
-    [SerializeField] private bool isRightTest = false;
-
-    private LayoutElement spacerLayout;
-    private LayoutElement bubbleLayout;
-
-    private void Awake()
+    public class MessageRowUI : MonoBehaviour
     {
-        spacerLayout = spacer.gameObject.GetComponent<LayoutElement>();
-        if (spacerLayout != null)
-            spacerLayout = spacer.gameObject.AddComponent<LayoutElement>();
+        [SerializeField] private Transform bubble;
+        [SerializeField] private Transform spacer;
 
-        bubbleLayout = bubble.gameObject.GetComponent<LayoutElement>();
-        if (bubbleLayout != null)
-            bubbleLayout = bubble.gameObject.AddComponent<LayoutElement>();
-    }
+        private LayoutElement spacerLayout;
+        private LayoutElement bubbleLayout;
 
-    public void SetSide(bool isRight)
-    {
-        spacerLayout.flexibleWidth = 1;
-        spacerLayout.preferredWidth = -1;
+        private MessageBubble messageBubble;
 
-        bubbleLayout.flexibleWidth = 0;
-
-        if (isRight)
+        private void Awake()
         {
-            bubble.SetAsLastSibling();
-            spacer.SetAsFirstSibling();
+            spacerLayout = spacer.gameObject.GetComponent<LayoutElement>();
+            if (spacerLayout != null)
+                spacerLayout = spacer.gameObject.AddComponent<LayoutElement>();
+
+            bubbleLayout = bubble.gameObject.GetComponent<LayoutElement>();
+            if (bubbleLayout != null)
+                bubbleLayout = bubble.gameObject.AddComponent<LayoutElement>();
+
+            messageBubble = bubble.gameObject.GetComponent<MessageBubble>();
+            if (messageBubble != null)
+                messageBubble = bubble.gameObject.AddComponent<MessageBubble>();
         }
-        else
+
+        public void SetSide(bool isRight)
         {
-            bubble.SetAsFirstSibling();
-            spacer.SetAsLastSibling();
+            spacerLayout.flexibleWidth = 1;
+            spacerLayout.preferredWidth = -1;
+
+            bubbleLayout.flexibleWidth = 0;
+
+            if (isRight)
+            {
+                bubble.SetAsLastSibling();
+                spacer.SetAsFirstSibling();
+            }
+            else
+            {
+                bubble.SetAsFirstSibling();
+                spacer.SetAsLastSibling();
+            }
         }
-    }
+}
 }

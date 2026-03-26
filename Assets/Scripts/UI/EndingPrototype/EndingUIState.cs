@@ -1,32 +1,35 @@
 using System;
 using UnityEngine;
 
-public class EndingUIState : MonoBehaviour
+namespace UI.EndingPrototype
 {
-    #region Enums
-    public enum WinState { WIN, LOSE }
-    #endregion
-
-    #region Events
-    public event Action<WinState> OnWinOrLose;
-    #endregion 
-
-    #region Properties
-    public WinState currentWinState;
-    #endregion
-
-    #region Public Voids
-
-    public void WinStateTesting()
+    public class EndingUIState : MonoBehaviour
     {
-        SetWinState(currentWinState);
-    }
+        #region Enums
+        public enum WinState { WIN, LOSE }
+        #endregion
 
-    public void SetWinState(WinState state)
-    {
-        currentWinState = state;
-        OnWinOrLose?.Invoke(state);
-    }
+        #region Events
+        public event Action<WinState> OnWinOrLose;
+        #endregion
 
-    #endregion
+        #region Properties
+        public WinState currentWinState;
+        #endregion
+
+        #region Public Voids
+
+        public void WinStateTesting()
+        {
+            SetWinState(currentWinState);
+        }
+
+        public void SetWinState(WinState state)
+        {
+            currentWinState = state;
+            OnWinOrLose?.Invoke(state);
+        }
+
+        #endregion
+    }
 }
