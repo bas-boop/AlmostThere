@@ -1,5 +1,7 @@
 ﻿using Player.Movement;
 using UI;
+using UI.Phonetesting;
+using UI.StateEnum;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -11,6 +13,7 @@ namespace Player
     {
         [SerializeField] private Walking walking;
         [SerializeField] private MapToggeler mapToggeler;
+        [SerializeField] private UIStateMachine uiState;
 
         [SerializeField] private UnityEvent onTesting = new();
         
@@ -25,6 +28,9 @@ namespace Player
 
         private void Update()
         {
+            if (uiState.CurrentPhoneUIState == PhoneUIState.OPEN)
+                return;
+
             Vector2 moveInput = _inputActionAsset["Move"].ReadValue<Vector2>();
             walking.SetMoveDirection(moveInput);
         }

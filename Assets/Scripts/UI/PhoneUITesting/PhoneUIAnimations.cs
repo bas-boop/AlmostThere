@@ -1,10 +1,11 @@
-using AlmostThere.UI;
+using UI.Phonetesting;
 using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UI.StateEnum;
 
-namespace AlmostThere.Phone
+namespace UI.Phonetesting
 {
     public class PhoneUIAnimations : MonoBehaviour
     {
@@ -32,6 +33,8 @@ namespace AlmostThere.Phone
         [SerializeField, Range(0, 10)] private int beforeLoopAmount = 2;
         [SerializeField, Range(0, 2)] private float routePlanningBackgroundAnimationSpeed = 0.5f;
         [SerializeField, Range(0, 20)] private float phoneIconClosingAnimationSpeed;
+        [SerializeField, Range(0, 1)] private float iconClosingDelay = .3f;
+        [SerializeField, Range(100, 350)] private float startingNotificationOffset = 200f;
 
         [Tooltip("The phone has been opened at least once.")]
         [SerializeField] private bool phoneHasBeenOpened = false;
@@ -84,7 +87,7 @@ namespace AlmostThere.Phone
                 iconPlaceholder.localScale = Vector3.zero;
             }
 
-            if (stateMachine.CurrentPhoneUIState != UIStateMachine.PhoneUIState.OPEN)
+            if (stateMachine.CurrentPhoneUIState != PhoneUIState.OPEN)
             {
                 phoneTransform.SetPositionAndRotation(
                     phoneClosedTransform.position,
@@ -106,29 +109,29 @@ namespace AlmostThere.Phone
 
         #region Private methods
 
-        private void HandlePhoneState(UIStateMachine.PhoneUIState state)
+        private void HandlePhoneState(PhoneUIState state)
         {
             if (_isPlayingStartingNotification)
                 return;
 
-            if (state == UIStateMachine.PhoneUIState.OPEN && !phoneHasBeenOpened)
+            if (state == PhoneUIState.OPEN && !phoneHasBeenOpened)
                 _currentNotification = StartCoroutine(PlayStartingNotification());
 
             PlayPhoneIconsAnimation(state);
         }
 
-        private void HandleRoutePlannerState(UIStateMachine.RoutePlannerState state)
+        private void HandleRoutePlannerState(RoutePlannerState state)
         {
             Debug.Log($"HandleRoutePlannerState aangeroepen: {state}");
 
             if (_routePlannerOpenClose != null)
                 StopCoroutine(_routePlannerOpenClose);
 
-            bool open = state == UIStateMachine.RoutePlannerState.OPEN;
+            bool open = state == RoutePlannerState.OPEN;
             _routePlannerOpenClose = StartCoroutine(PlayRoutePlannerPanelAnim(open));
         }
 
-        private void PlayPhoneIconsAnimation(UIStateMachine.PhoneUIState state)
+        private void PlayPhoneIconsAnimation(PhoneUIState state)
         {
             if (_currentStateToggleCoroutine != null)
                 StopCoroutine(_currentStateToggleCoroutine);
@@ -143,13 +146,13 @@ namespace AlmostThere.Phone
             if (_currentIconInputScaleCoroutine != null)
                 StopCoroutine(_currentIconInputScaleCoroutine);
 
-            _currentIconInputScaleCoroutine = StartCoroutine(PlayCloseOpenIconAnim(phoneInputHolder, 0.3f));
+            _currentIconInputScaleCoroutine = StartCoroutine(PlayCloseOpenIconAnim(phoneInputHolder, iconClosingDelay));
         }
 
-        private IEnumerator PlayPhoneStateAnimation(UIStateMachine.PhoneUIState state)
+        private IEnumerator PlayPhoneStateAnimation(PhoneUIState state)
         {
             float timer = 0;
-            RectTransform transformTo = state == UIStateMachine.PhoneUIState.OPEN
+            RectTransform transformTo = state == PhoneUIState.OPEN
                 ? phoneOpenTransform
                 : phoneClosedTransform;
 
@@ -200,7 +203,7 @@ namespace AlmostThere.Phone
             if (delay > 0)
                 yield return new WaitForSeconds(delay);
 
-            bool isOpen = stateMachine.CurrentPhoneUIState == UIStateMachine.PhoneUIState.OPEN;
+            bool isOpen = stateMachine.CurrentPhoneUIState == PhoneUIState.OPEN;
 
             Vector3 originalScale = target.localScale;
             Vector3 endScale = isOpen ? Vector3.zero : Vector3.one;
@@ -223,7 +226,7 @@ namespace AlmostThere.Phone
             yield return new WaitForSeconds(1f);
 
             float timer = 0f;
-            Vector2 anchorPos = startingNotification.anchoredPosition -= new Vector2(0, 200);
+            Vector2 anchorPos = startingNotification.anchoredPosition -= new Vector2(0, startingNotificationOffset);
 
             while (timer < 1f)
             {

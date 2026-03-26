@@ -1,27 +1,11 @@
 using System;
+using UI.StateEnum;
 using UnityEngine;
 
-namespace AlmostThere.UI
+namespace UI.Phonetesting
 {
     public class UIStateMachine : MonoBehaviour
     {
-        #region Enums
-
-        public enum PhoneUIState
-        {
-            FIRST_TIME,
-            OPEN,
-            CLOSE
-        }
-
-        public enum RoutePlannerState
-        {
-            OPEN,
-            CLOSE
-        }
-
-        #endregion
-
         #region Events
 
         public event Action<PhoneUIState> OnPhoneStateChanged;

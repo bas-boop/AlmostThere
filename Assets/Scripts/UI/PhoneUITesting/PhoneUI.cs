@@ -1,9 +1,10 @@
-using AlmostThere.UI;
+using UI.Phonetesting;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UI.StateEnum;
 
-namespace AlmostThere.Phone
+namespace UI.Phonetesting
 {
     public class PhoneUI : MonoBehaviour
     {
@@ -62,7 +63,7 @@ namespace AlmostThere.Phone
 
         private void Update()
         {
-            if (stateMachine.CurrentPhoneUIState != UIStateMachine.PhoneUIState.OPEN)
+            if (stateMachine.CurrentPhoneUIState != PhoneUIState.OPEN)
                 return;
 
             Vector2 direction = _mapMoveInput.ReadValue<Vector2>();
@@ -77,12 +78,12 @@ namespace AlmostThere.Phone
 
         #region Private methods
 
-        private void HandlePhoneState(UIStateMachine.PhoneUIState state)
+        private void HandlePhoneState(PhoneUIState state)
         {
-            if (state == UIStateMachine.PhoneUIState.OPEN
-                && stateMachine.CurrentRoutePlannerState == UIStateMachine.RoutePlannerState.OPEN)
+            if (state == PhoneUIState.OPEN
+                && stateMachine.CurrentRoutePlannerState == RoutePlannerState.OPEN)
             {
-                stateMachine.SetRoutePlannerState(UIStateMachine.RoutePlannerState.OPEN);
+                stateMachine.SetRoutePlannerState(RoutePlannerState.OPEN);
             }
         }
 
@@ -94,10 +95,10 @@ namespace AlmostThere.Phone
                 return;
 
             StartCoroutine(TemporaryDisableMapInput(.6f));
-            stateMachine.SetRoutePlannerState(UIStateMachine.RoutePlannerState.OPEN);
+            stateMachine.SetRoutePlannerState(RoutePlannerState.OPEN);
         }
 
-        private void HandleReleased() => stateMachine.SetRoutePlannerState(UIStateMachine.RoutePlannerState.CLOSE);
+        private void HandleReleased() => stateMachine.SetRoutePlannerState(RoutePlannerState.CLOSE);
 
         private IEnumerator TemporaryDisableMapInput(float time)
         {

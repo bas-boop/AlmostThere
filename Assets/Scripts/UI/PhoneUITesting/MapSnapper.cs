@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace AlmostThere.Phone
+namespace UI.Phonetesting
 {
     public class MapSnapper : MonoBehaviour
     {

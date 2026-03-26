@@ -1,8 +1,8 @@
-using AlmostThere.UI;
+using UI.Phonetesting;
 using System.Collections;
 using UnityEngine;
 
-namespace AlmostThere.Phone
+namespace UI.Phonetesting
 {
     public class PhoneUIIndicator : MonoBehaviour
     {

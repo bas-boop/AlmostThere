@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace AlmostThere.UI
+namespace UI.Phonetesting
 {
     public class UIAnimationSetter : MonoBehaviour
     {
