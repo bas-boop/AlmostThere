@@ -1,4 +1,3 @@
-﻿using Player.Movement;
 using UI;
 using UI.Phonetesting;
 using UI.StateEnum;
@@ -6,12 +5,16 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
+using Framework.InteractSystem;
+using Player.MovementSystem;
+
 namespace Player
 {
     [RequireComponent(typeof(PlayerInput))]
     public sealed class InputParser : MonoBehaviour
     {
-        [SerializeField] private Walking walking;
+        [SerializeField] private Movement movement;
+        [SerializeField] private Interacter interacter;
         [SerializeField] private MapToggeler mapToggeler;
         [SerializeField] private MapMover mapMover;
         [SerializeField] private UIStateMachine uiState;
@@ -37,7 +40,7 @@ namespace Player
             }
             else if (uiState.CurrentPhoneUIState == PhoneUIState.CLOSE)
             {
-                walking.SetMoveDirection(moveInput);
+                movement.SetMoveDirection(moveInput);
             }
         }
 
@@ -55,18 +58,26 @@ namespace Player
         private void AddListeners()
         {
             _inputActionAsset["Interact"].performed += InteractAction;
+            _inputActionAsset["Map"].performed += MapAction;
             _inputActionAsset["Testing"].performed += TestingAction;
         }
 
         private void RemoveListeners()
         {
             _inputActionAsset["Interact"].performed -= InteractAction;
+            _inputActionAsset["Map"].performed -= MapAction;
             _inputActionAsset["Testing"].performed -= TestingAction;
         }
         
         #region Context
 
         private void InteractAction(InputAction.CallbackContext context)
+        {
+            if (interacter)
+                interacter.Interact();
+        }
+        
+        private void MapAction(InputAction.CallbackContext context)
         {
             if (mapToggeler)
                 mapToggeler.Toggle();

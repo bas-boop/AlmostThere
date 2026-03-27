@@ -34,13 +34,13 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Map_Move_Test",
-                    "type": "Value",
-                    "id": "60e551dc-0770-48b8-af93-91a08fecc137",
-                    "expectedControlType": "Vector2",
+                    "name": "Map",
+                    "type": "Button",
+                    "id": "b1bfc571-3f90-496c-984c-ed6afcb1c0d0",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -144,59 +144,26 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "2D Vector",
-                    "id": "8ab3da4c-5d14-49af-bc25-60064690031d",
-                    "path": "2DVector",
+                    "name": "",
+                    "id": "abacf652-a0b8-4bd7-aa83-1c19edef988a",
+                    "path": "<Keyboard>/m",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Map_Move_Test",
-                    "isComposite": true,
+                    "action": "Map",
+                    "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "0be7acba-b385-4324-a657-f576e5a26255",
-                    "path": "<Keyboard>/upArrow",
+                    "name": "",
+                    "id": "7ff5414b-dfab-4bc9-a338-b7e06d46e480",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Map_Move_Test",
+                    "action": "Map",
                     "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "2b770da8-521c-4d6d-90b9-4e23dad21e34",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Map_Move_Test",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "a6dbb453-efe2-4b91-bd0d-5f7c21bdf0bb",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Map_Move_Test",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "8c95fcf3-5424-4f16-b8ea-10e7a465f09b",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Map_Move_Test",
-                    "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 }
             ]
         }

@@ -15,6 +15,7 @@ namespace Gameplay.PublicTransport
         [SerializeField] private Route route;
         [SerializeField] private Timer timerStop;
         [SerializeField] private Timer timerDelay;
+        [SerializeField] private GameObject tempDoor;
         
         [Header("Attributes")]
         [SerializeField] private float moveSpeed = 1;
@@ -26,6 +27,8 @@ namespace Gameplay.PublicTransport
         [Header("Events")]
         [SerializeField] private UnityEvent onCancel = new();
         [SerializeField] private UnityEvent<float> onDelay = new();
+        [SerializeField] private UnityEvent onReachedStop = new();
+        [SerializeField] private UnityEvent onLeaveStop = new();
 
         private float _currentSpeed;
         private Waypoint _currentStop;
@@ -63,6 +66,8 @@ namespace Gameplay.PublicTransport
         public void Move()
         {
             shouldMove = true;
+            Door(false);
+            onLeaveStop?.Invoke();
         }
 
         public void Cancel()
@@ -104,7 +109,14 @@ namespace Gameplay.PublicTransport
         private void Stop(Timer timer)
         {
             shouldMove = false;
+            Door(true);
             timer.RestartTimer();
+            onReachedStop?.Invoke();
+        }
+
+        private void Door(bool shouldOpen)
+        {
+            tempDoor.SetActive(!shouldOpen);
         }
     }
 }
