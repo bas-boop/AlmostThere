@@ -35,6 +35,14 @@ namespace UI.Phonetesting
         [SerializeField, Range(0, 20)] private float phoneIconClosingAnimationSpeed;
         [SerializeField, Range(0, 1)] private float iconClosingDelay = .3f;
         [SerializeField, Range(100, 350)] private float startingNotificationOffset = 200f;
+        [Tooltip("Float values for the times between animations of the starting notification" +
+            "\n first value is for time to slide the notification into the screen" +
+            "\n second value is for the time the notification is standing still" +
+            "\n third value is for time to slide the notification back up")
+            ,SerializeField] private Vector3 startingNotificationAnimationDelays = new Vector3(1, 2, .5f);
+        [SerializeField, Range(0, 2)] private float closeIconAnimationDelay = .5f;
+        [SerializeField, Range(0, 2)] private float timeToAnimate = .75f;
+        [SerializeField, Range(200, 600)] private float paddingMapFrame = 450f;
 
         [Tooltip("The phone has been opened at least once.")]
         [SerializeField] private bool phoneHasBeenOpened = false;
@@ -210,7 +218,7 @@ namespace UI.Phonetesting
             AnimationCurve curve = isOpen ? uiAnimations.easeAnticipate : uiAnimations.easeOvershoot;
 
             if (!isOpen)
-                yield return new WaitForSeconds(.5f);
+                yield return new WaitForSeconds(closeIconAnimationDelay);
 
             StartCoroutine(uiAnimations.ScaleFromCurve(target, curve, endScale, phoneIconClosingAnimationSpeed, ()=> target.localScale = endScale));
 
@@ -223,7 +231,7 @@ namespace UI.Phonetesting
             _isPlayingStartingNotification = true;
             Vector2 originalAnchorPos = startingNotification.anchoredPosition;
 
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(startingNotificationAnimationDelays.x);
 
             float timer = 0f;
             Vector2 anchorPos = startingNotification.anchoredPosition -= new Vector2(0, startingNotificationOffset);
@@ -235,7 +243,7 @@ namespace UI.Phonetesting
                 yield return null;
             }
 
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(startingNotificationAnimationDelays.y);
 
             anchorPos = startingNotification.anchoredPosition;
             float timer2 = 0f;
@@ -247,14 +255,14 @@ namespace UI.Phonetesting
                 yield return null;
             }
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(startingNotificationAnimationDelays.z);
 
             float timer3 = 0f;
             Vector2 startScale = Vector2.zero;
 
             while (timer3 < 1f)
             {
-                timer3 += Time.deltaTime * 1.5f;
+                timer3 += Time.deltaTime / timeToAnimate;
                 uiAnimations.AnimateScale(iconPlaceholder, uiAnimations.easeOvershoot, startScale, Vector2.one, timer3);
                 yield return null;
             }
@@ -293,16 +301,14 @@ namespace UI.Phonetesting
             {
                 timer += Time.deltaTime / routePlanningBackgroundAnimationSpeed;
                 uiAnimations.AnimatePosition(routePlannerPanel, uiAnimations.easeInOut, startPosRoutePlannerPanel, transformToPanel, timer);
-                uiAnimations.AnimatePosition(mapParent, uiAnimations.easeInOut, startPosMapParent, targetPosMapParent, timer * 1.5f);
-                uiAnimations.AnimateScale(mapParent, uiAnimations.easeInOut, startScaleMapParent, targetScaleMapParent, timer * 1.8f);
+                uiAnimations.AnimatePosition(mapParent, uiAnimations.easeInOut, startPosMapParent, targetPosMapParent, timer * timeToAnimate);
+                uiAnimations.AnimateScale(mapParent, uiAnimations.easeInOut, startScaleMapParent, targetScaleMapParent, timer * timeToAnimate);
                 yield return null;
             }
         }
 
         private void CalculateMapFrame(out Vector2 pos, out Vector3 scale)
         {
-            const float BOUNDING_BOX_PADDING = 450f;
-
             float panelWidth = routePlannerPanel.rect.width;
             float usableWidth = mapParent.rect.width - panelWidth;
 
@@ -311,8 +317,8 @@ namespace UI.Phonetesting
 
             Vector2 center = (iconPos + playerPos) / 2;
 
-            float boundingBoxX = Mathf.Abs(iconPos.x - playerPos.x) + BOUNDING_BOX_PADDING;
-            float boundingBoxY = Mathf.Abs(iconPos.y - playerPos.y) + BOUNDING_BOX_PADDING;
+            float boundingBoxX = Mathf.Abs(iconPos.x - playerPos.x) + paddingMapFrame;
+            float boundingBoxY = Mathf.Abs(iconPos.y - playerPos.y) + paddingMapFrame;
 
             float scaleX = usableWidth / boundingBoxX;
             float scaleY = usableWidth / boundingBoxY;

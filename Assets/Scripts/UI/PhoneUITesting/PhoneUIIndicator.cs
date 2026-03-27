@@ -6,17 +6,6 @@ namespace UI.Phonetesting
 {
     public class PhoneUIIndicator : MonoBehaviour
     {
-        #region Enums
-
-        private enum IndicatorState
-        {
-            HIDDEN,
-            VISIBLE,
-            HIDING,
-            NEAR_ICON
-        }
-
-        #endregion
 
         #region Serialized fields
 
@@ -35,6 +24,7 @@ namespace UI.Phonetesting
         [SerializeField, Range(0, 1)] private float indicatorMinScale = 0.3f;
         [SerializeField, Range(0, 300)] private float indicatorThreshold = 50f;
         [SerializeField, Range(0, 500)] private float indicatorHideThreshold = 150f;
+        [SerializeField, Range(0, 100)] private float padding = 55f;
 
         #endregion
 
@@ -85,11 +75,9 @@ namespace UI.Phonetesting
             Vector2 screenPos = RectTransformUtility.WorldToScreenPoint(null, iconPlaceholder.position);
             RectTransformUtility.ScreenPointToLocalPointInRectangle(mapMask, screenPos, null, out Vector2 localPoint);
 
-            const float PADDING = 55f;
-
             Rect rectMask = mapMask.rect;
-            float halfWidth = rectMask.width / 2f - PADDING;
-            float halfHeight = rectMask.height / 2f - PADDING;
+            float halfWidth = rectMask.width / 2f - padding;
+            float halfHeight = rectMask.height / 2f - padding;
 
             bool isOutsideX = localPoint.x < -halfWidth || localPoint.x > halfWidth;
             bool isOutsideY = localPoint.y < -halfHeight || localPoint.y > halfHeight;

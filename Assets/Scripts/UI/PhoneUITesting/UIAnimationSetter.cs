@@ -60,7 +60,6 @@ namespace UI.Phonetesting
         {
             float curve = easingType.Evaluate(timer);
             objectToAnimate.localScale = Vector3.LerpUnclamped(fromAmount, toAmount, curve);
-            //objectToAnimate.localScale = Vector3.one * curve;
         }
 
         /// <summary>

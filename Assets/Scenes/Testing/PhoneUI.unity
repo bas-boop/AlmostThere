@@ -1341,7 +1341,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8827a3b00f324a91a178fad0977c8e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.InputParser
-  walking: {fileID: 0}
+  movement: {fileID: 0}
+  interacter: {fileID: 0}
   mapToggeler: {fileID: 0}
   mapMover: {fileID: 2096442344}
   uiState: {fileID: 2096442340}
@@ -2515,6 +2516,8 @@ MonoBehaviour:
   phoneIconClosingAnimationSpeed: 0.5
   iconClosingDelay: 0.3
   startingNotificationOffset: 200
+  startingNotificationAnimationDelays: {x: 1, y: 2, z: 0.5}
+  closeIconAnimationDelay: 0.5
   phoneHasBeenOpened: 0
 --- !u!114 &2096442343
 MonoBehaviour:
