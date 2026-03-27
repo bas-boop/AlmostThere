@@ -50,8 +50,6 @@ namespace UI.Phonetesting
 
         private void Awake()
         {
-            var actionMap = playerInput.actions.FindActionMap("Action map");
-            _mapMoveInput = actionMap.FindAction("Map_Move_Test");
             animations.SetPlayerIcon(playerIcon);
         }
 
@@ -59,19 +57,6 @@ namespace UI.Phonetesting
         {
             if (animations.PhoneHasBeenOpened)
                 indicator.Initialize();
-        }
-
-        private void Update()
-        {
-            if (stateMachine.CurrentPhoneUIState != PhoneUIState.OPEN)
-                return;
-
-            Vector2 direction = _mapMoveInput.ReadValue<Vector2>();
-
-            if (direction != Vector2.zero)
-                mapPlaceholder.anchoredPosition -= direction * (mapMoveSpeed * Time.deltaTime);
-
-            indicator.CanUpdate();
         }
 
         #endregion
@@ -94,20 +79,10 @@ namespace UI.Phonetesting
             if (icon == null)
                 return;
 
-            StartCoroutine(TemporaryDisableMapInput(.6f));
             stateMachine.SetRoutePlannerState(RoutePlannerState.OPEN);
         }
 
         private void HandleReleased() => stateMachine.SetRoutePlannerState(RoutePlannerState.CLOSE);
-
-        private IEnumerator TemporaryDisableMapInput(float time)
-        {
-            _mapMoveInput.Disable();
-
-            yield return new WaitForSeconds(time);
-
-            _mapMoveInput.Enable();
-        }
 
         #endregion
     }

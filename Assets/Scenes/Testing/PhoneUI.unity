@@ -1343,6 +1343,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player.InputParser
   walking: {fileID: 0}
   mapToggeler: {fileID: 0}
+  mapMover: {fileID: 2096442344}
+  uiState: {fileID: 2096442340}
   onTesting:
     m_PersistentCalls:
       m_Calls:
@@ -2257,6 +2259,7 @@ GameObject:
   - component: {fileID: 2096442339}
   - component: {fileID: 2096442336}
   - component: {fileID: 2096442343}
+  - component: {fileID: 2096442344}
   - component: {fileID: 2096442342}
   - component: {fileID: 2096442338}
   m_Layer: 0
@@ -2510,6 +2513,8 @@ MonoBehaviour:
   beforeLoopAmount: 2
   routePlanningBackgroundAnimationSpeed: 0.5
   phoneIconClosingAnimationSpeed: 0.5
+  iconClosingDelay: 0.3
+  startingNotificationOffset: 200
   phoneHasBeenOpened: 0
 --- !u!114 &2096442343
 MonoBehaviour:
@@ -2535,6 +2540,23 @@ MonoBehaviour:
   indicatorMinScale: 0.3
   indicatorThreshold: 50
   indicatorHideThreshold: 150
+--- !u!114 &2096442344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096442335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6287e1bfea45b2a4583b629a534c1439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.Phonetesting.MapMover
+  indicator: {fileID: 2096442343}
+  mapSnapper: {fileID: 2096442338}
+  mapPlaceholder: {fileID: 296356764}
+  mapMoveSpeed: 175
+  movementDisabledTime: 0.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

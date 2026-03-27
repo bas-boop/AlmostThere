@@ -13,6 +13,7 @@ namespace Player
     {
         [SerializeField] private Walking walking;
         [SerializeField] private MapToggeler mapToggeler;
+        [SerializeField] private MapMover mapMover;
         [SerializeField] private UIStateMachine uiState;
 
         [SerializeField] private UnityEvent onTesting = new();
@@ -28,11 +29,16 @@ namespace Player
 
         private void Update()
         {
-            if (uiState.CurrentPhoneUIState == PhoneUIState.OPEN)
-                return;
-
             Vector2 moveInput = _inputActionAsset["Move"].ReadValue<Vector2>();
-            walking.SetMoveDirection(moveInput);
+
+            if (uiState.CurrentPhoneUIState == PhoneUIState.OPEN)
+            {
+                mapMover.SetMoveDirection(moveInput);
+            }
+            else if (uiState.CurrentPhoneUIState == PhoneUIState.CLOSE)
+            {
+                walking.SetMoveDirection(moveInput);
+            }
         }
 
         private void OnEnable() => AddListeners();

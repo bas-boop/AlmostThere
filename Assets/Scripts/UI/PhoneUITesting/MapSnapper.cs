@@ -33,6 +33,7 @@ namespace UI.Phonetesting
         #region Events
 
         public event Action<RectTransform> OnSnapped;
+        public event Action isSnapped;
         public event Action OnReleased;
 
         #endregion
@@ -90,6 +91,7 @@ namespace UI.Phonetesting
             map.anchoredPosition += localOffset;
             _snappedIcon = icon;
             OnSnapped?.Invoke(icon);
+            isSnapped?.Invoke();
         }
 
         #endregion
