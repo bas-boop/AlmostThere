@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 using Framework.InteractSystem;
@@ -15,8 +14,15 @@ namespace Gameplay.PublicTransport
 
         private bool _isPlayerInTransit;
         private bool _isTransitStoped;
+        private bool _shouldKeepPlayerInVehicle;
         private Vector3 _doorPosition;
         private Movement _movement;
+
+        private void Update()
+        {
+            if (_shouldKeepPlayerInVehicle)
+                _movement.gameObject.transform.position = playerSitPosition.position;
+        }
 
         public override void Interact(GameObject sender)
         {
@@ -29,6 +35,7 @@ namespace Gameplay.PublicTransport
             
             if (_isPlayerInTransit)
             {
+                _shouldKeepPlayerInVehicle = false;
                 _doorPosition = playerSitPosition.position;
                 _doorPosition += transform.right * outsideTransitDistance;
                 sender.transform.SetParent(null);
@@ -49,6 +56,7 @@ namespace Gameplay.PublicTransport
 
         private IEnumerator LerpPlayerToSit(Transform player, Vector3 targetPosition)
         {
+            _shouldKeepPlayerInVehicle = false;
             float elapsed = 0f;
             Vector3 startPosition = player.position;
 
@@ -63,6 +71,9 @@ namespace Gameplay.PublicTransport
             }
 
             player.position = targetPosition;
+            
+            if (targetPosition == playerSitPosition.position)
+                _shouldKeepPlayerInVehicle = true;
         }
     }
 }

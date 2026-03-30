@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 
 using Framework.InteractSystem;
+using Player.MovementSystem;
 
 namespace Gameplay
 {
     public sealed class Bike : Interactable
     {
-        [SerializeField] private Transform player;
+        [SerializeField] private Transform playerVisual;
+        [SerializeField] private Movement player;
         
         private bool _isUsed;
 
@@ -14,7 +16,8 @@ namespace Gameplay
         {
             if (player == null)
             {
-                player = GameObject.Find("PlayerBikeParent").transform;
+                playerVisual = GameObject.Find("PlayerBikeParent").transform;
+                player = FindAnyObjectByType<Movement>();
                 Debug.LogWarning($"Player was not set, is was found... maybe {gameObject.name}");
             }
         }
@@ -23,6 +26,8 @@ namespace Gameplay
         {
             if (!p_canInteract)
                 return;
+            
+            player.SwapMovementSettings();
 
             if (_isUsed)
             {
@@ -32,7 +37,8 @@ namespace Gameplay
             else
             {
                 _isUsed = true;
-                transform.SetParent(player.transform);
+                icon.SetActive(false);
+                transform.SetParent(playerVisual.transform);
                 transform.position = transform.parent.position;
                 transform.rotation = transform.parent.rotation;
             }
