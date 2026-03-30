@@ -317,6 +317,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -390,6 +394,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -423,6 +431,26 @@ PrefabInstance:
       propertyPath: followTarget
       value: 
       objectReference: {fileID: 880289312}
+    - target: {fileID: 936231038905727738, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936231038905727738, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936231038905727738, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936231038905727738, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 936231038905727738, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 2629459574835901670, guid: 97de9334caee2694492033209a104165, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -507,10 +535,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4220082674738682113, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431150019856518957, guid: 97de9334caee2694492033209a104165, type: 3}
       propertyPath: followTarget
       value: 
       objectReference: {fileID: 817230060}
+    - target: {fileID: 6056096826582906815, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056096826582906815, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056096826582906815, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056096826582906815, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6056096826582906815, guid: 97de9334caee2694492033209a104165, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 6828169325811689577, guid: 97de9334caee2694492033209a104165, type: 3}
       propertyPath: onTimerDone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -708,6 +760,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1048,6 +1104,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1449,6 +1509,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2248,6 +2312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stop (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3540470419131445785, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
     - target: {fileID: 6458575018181053782, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.2155228
@@ -2378,6 +2446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stop (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3540470419131445785, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
     - target: {fileID: 6458575018181053782, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.078688
@@ -3863,6 +3935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stop (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3540470419131445785, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
     - target: {fileID: 6458575018181053782, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.496773
@@ -4159,6 +4235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stop (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3540470419131445785, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
     - target: {fileID: 6458575018181053782, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -79.991974
@@ -4321,6 +4401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stop (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3540470419131445785, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
     - target: {fileID: 6458575018181053782, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 93.244
@@ -4451,6 +4535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stop (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3540470419131445785, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
     - target: {fileID: 6458575018181053782, guid: 77a34daa0a17c7943acdf434aaa792db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.044029236
@@ -4676,6 +4764,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4826,6 +4918,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5004,6 +5100,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5744,6 +5844,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6167,6 +6271,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6370,6 +6478,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7040,6 +7152,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5369086224734158826, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7592,6 +7708,10 @@ PrefabInstance:
     - target: {fileID: 4606664740934862468, guid: ba893caa7e96eae48ad422853819af28, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392192025014641848, guid: ba893caa7e96eae48ad422853819af28, type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8834,7 +8954,7 @@ GameObject:
   - component: {fileID: 8375108262957169328}
   m_Layer: 0
   m_Name: SM_SmallBuilding.009
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8876,7 +8996,7 @@ GameObject:
   - component: {fileID: 7786520197222061486}
   m_Layer: 0
   m_Name: SM_SmallBuilding.030
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8967,7 +9087,7 @@ GameObject:
   - component: {fileID: 7585376072686095637}
   m_Layer: 0
   m_Name: SM_SmallBuilding.014
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9002,7 +9122,7 @@ GameObject:
   - component: {fileID: 7585448625005280084}
   m_Layer: 0
   m_Name: SM_SmallBuilding.039
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9032,7 +9152,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9093,7 +9213,7 @@ GameObject:
   - component: {fileID: 8189582519118278371}
   m_Layer: 0
   m_Name: SM_LargeBuilding.026
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9112,7 +9232,7 @@ GameObject:
   - component: {fileID: 9114308971163420038}
   m_Layer: 0
   m_Name: SM_SmallBuilding.047
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9195,7 +9315,7 @@ GameObject:
   - component: {fileID: 6208251660756162423}
   m_Layer: 0
   m_Name: SM_LargeBuilding.022
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9233,7 +9353,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9430,7 +9550,7 @@ GameObject:
   - component: {fileID: 8400674727648655361}
   m_Layer: 0
   m_Name: SM_SmallBuilding.021
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9449,7 +9569,7 @@ GameObject:
   - component: {fileID: 5741798075971865999}
   m_Layer: 0
   m_Name: SM_SmallBuilding.005
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9521,7 +9641,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9582,7 +9702,7 @@ GameObject:
   - component: {fileID: 7944730803570745546}
   m_Layer: 0
   m_Name: SM_LargeBuilding.002
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9677,7 +9797,7 @@ GameObject:
   - component: {fileID: 8000623145822546038}
   m_Layer: 0
   m_Name: SM_LargeBuilding.027
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9745,7 +9865,7 @@ GameObject:
   - component: {fileID: 6413553366651537137}
   m_Layer: 0
   m_Name: SM_SmallBuilding.028
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9772,7 +9892,7 @@ GameObject:
   - component: {fileID: 7866516839011861444}
   m_Layer: 0
   m_Name: SM_LargeBuilding.031
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9791,7 +9911,7 @@ GameObject:
   - component: {fileID: 7456634175477787731}
   m_Layer: 0
   m_Name: SM_BusStop.002
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9810,7 +9930,7 @@ GameObject:
   - component: {fileID: 6392907596636046531}
   m_Layer: 0
   m_Name: SM_SmallBuilding.037
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9840,7 +9960,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9889,7 +10009,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9987,7 +10107,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10143,7 +10263,7 @@ GameObject:
   - component: {fileID: 6563973731335717842}
   m_Layer: 0
   m_Name: SM_BusStop.012
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10181,7 +10301,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10230,7 +10350,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10268,7 +10388,7 @@ GameObject:
   - component: {fileID: 8827531167412676986}
   m_Layer: 0
   m_Name: SM_SmallBuilding.020
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10378,7 +10498,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7727fa5b8fd503f458fc2157c8a99fee, type: 2}
+  - {fileID: 2100000, guid: 3e08c5ec5c762c14c8441a8f854e3110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10416,7 +10536,7 @@ GameObject:
   - component: {fileID: 7413291036140490907}
   m_Layer: 0
   m_Name: SM_SmallBuilding.041
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10477,7 +10597,7 @@ GameObject:
   - component: {fileID: 8423261027828274671}
   m_Layer: 0
   m_Name: SM_SmallBuilding.024
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10496,7 +10616,7 @@ GameObject:
   - component: {fileID: 8462958849190039997}
   m_Layer: 0
   m_Name: SM_LooseTree
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10541,7 +10661,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10579,7 +10699,7 @@ GameObject:
   - component: {fileID: 8035495464888519535}
   m_Layer: 0
   m_Name: SM_SmallBuilding.035
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10728,7 +10848,7 @@ GameObject:
   - component: {fileID: 7494633198677597001}
   m_Layer: 0
   m_Name: SM_BusStop.013
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10773,7 +10893,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10865,7 +10985,7 @@ GameObject:
   - component: {fileID: 8206606241364794995}
   m_Layer: 0
   m_Name: SM_LargeBuilding
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10884,7 +11004,7 @@ GameObject:
   - component: {fileID: 8421520273421482499}
   m_Layer: 0
   m_Name: SM_LargeBuilding.013
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10941,7 +11061,7 @@ GameObject:
   - component: {fileID: 8259778551908281276}
   m_Layer: 0
   m_Name: SM_BusStop.008
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10990,7 +11110,7 @@ GameObject:
   - component: {fileID: 6865824066928554746}
   m_Layer: 0
   m_Name: SM_BusStop.005
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11009,7 +11129,7 @@ GameObject:
   - component: {fileID: 7385943018198980903}
   m_Layer: 0
   m_Name: SM_LargeBuilding.030
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11036,7 +11156,7 @@ GameObject:
   - component: {fileID: 8463894868614063816}
   m_Layer: 0
   m_Name: SM_BusStop.017
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11139,7 +11259,7 @@ GameObject:
   - component: {fileID: 7505445176676932399}
   m_Layer: 0
   m_Name: SM_BusStop.001
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11169,7 +11289,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11226,7 +11346,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11366,7 +11486,7 @@ GameObject:
   - component: {fileID: 3786673034842654465}
   m_Layer: 0
   m_Name: SM_LargeBuilding.017
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11465,7 +11585,7 @@ GameObject:
   - component: {fileID: 8675772072772693437}
   m_Layer: 0
   m_Name: SM_LargeBuilding.012
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11484,7 +11604,7 @@ GameObject:
   - component: {fileID: 6426112838346567560}
   m_Layer: 0
   m_Name: SM_BusStop.019
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11518,7 +11638,7 @@ GameObject:
   - component: {fileID: 7269617000089949301}
   m_Layer: 0
   m_Name: SM_SmallBuilding.003
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11537,7 +11657,7 @@ GameObject:
   - component: {fileID: 3960651468486221418}
   m_Layer: 0
   m_Name: SM_LargeBuilding.024
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11587,7 +11707,7 @@ GameObject:
   - component: {fileID: 4467024804492919137}
   m_Layer: 0
   m_Name: SM_SmallBuilding
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11644,7 +11764,7 @@ GameObject:
   - component: {fileID: 8917235197475191205}
   m_Layer: 0
   m_Name: SM_SmallBuilding.029
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11687,7 +11807,7 @@ GameObject:
   - component: {fileID: 8860283192421991683}
   m_Layer: 0
   m_Name: SM_SmallBuilding.013
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11766,7 +11886,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11812,7 +11932,7 @@ GameObject:
   - component: {fileID: 4525612749727301015}
   m_Layer: 0
   m_Name: SM_Trees
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11831,7 +11951,7 @@ GameObject:
   - component: {fileID: 6233588386434512349}
   m_Layer: 0
   m_Name: SM_LargeBuilding.015
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11914,7 +12034,7 @@ GameObject:
   - component: {fileID: 6211975174329286961}
   m_Layer: 0
   m_Name: SM_LargeBuilding.001
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11933,7 +12053,7 @@ GameObject:
   - component: {fileID: 7901088706060163522}
   m_Layer: 0
   m_Name: SM_SmallBuilding.026
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12028,7 +12148,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12082,7 +12202,7 @@ GameObject:
   - component: {fileID: 4047955227446311513}
   m_Layer: 0
   m_Name: SM_SmallBuilding.027
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12117,7 +12237,7 @@ GameObject:
   - component: {fileID: 8843000630830536226}
   m_Layer: 0
   m_Name: SM_BusStop.011
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12136,7 +12256,7 @@ GameObject:
   - component: {fileID: 7527770460768796127}
   m_Layer: 0
   m_Name: SM_SmallBuilding.008
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12166,7 +12286,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12204,7 +12324,7 @@ GameObject:
   - component: {fileID: 4480760433897578219}
   m_Layer: 0
   m_Name: SM_TramStop.001
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12246,7 +12366,7 @@ GameObject:
   - component: {fileID: 6910590190450120256}
   m_Layer: 0
   m_Name: SM_SmallBuilding.038
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12280,7 +12400,7 @@ GameObject:
   - component: {fileID: 4977886422748544189}
   m_Layer: 0
   m_Name: SM_SmallBuilding.017
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12382,7 +12502,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12610,7 +12730,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12659,7 +12779,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12708,7 +12828,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12769,7 +12889,7 @@ GameObject:
   - component: {fileID: 8468796056804139473}
   m_Layer: 0
   m_Name: SM_LargeBuilding.007
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12822,7 +12942,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12928,7 +13048,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13087,7 +13207,7 @@ GameObject:
   - component: {fileID: 6688094978363059191}
   m_Layer: 0
   m_Name: SM_SmallBuilding.048
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13106,7 +13226,7 @@ GameObject:
   - component: {fileID: 5295270854819194057}
   m_Layer: 0
   m_Name: SM_LargeBuilding.029
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13163,7 +13283,7 @@ GameObject:
   - component: {fileID: 7922170732261096822}
   m_Layer: 0
   m_Name: SM_BusStop.006
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13190,7 +13310,7 @@ GameObject:
   - component: {fileID: 4952866306791644041}
   m_Layer: 0
   m_Name: SM_TramStop.004
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13322,7 +13442,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13402,7 +13522,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13463,7 +13583,7 @@ GameObject:
   - component: {fileID: 8457215547860330867}
   m_Layer: 0
   m_Name: SM_SmallBuilding.032
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13564,7 +13684,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13613,7 +13733,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13662,7 +13782,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13757,7 +13877,7 @@ GameObject:
   - component: {fileID: 8916870091905973188}
   m_Layer: 0
   m_Name: SM_SmallBuilding.036
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13776,7 +13896,7 @@ GameObject:
   - component: {fileID: 5678265410384176213}
   m_Layer: 0
   m_Name: SM_TramStop.005
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13871,7 +13991,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13920,7 +14040,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13958,7 +14078,7 @@ GameObject:
   - component: {fileID: 7567129316132617439}
   m_Layer: 0
   m_Name: SM_SmallBuilding.034
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14011,7 +14131,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14090,7 +14210,7 @@ GameObject:
   - component: {fileID: 7665714878277871365}
   m_Layer: 0
   m_Name: SM_TramStop.002
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14169,7 +14289,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14207,7 +14327,7 @@ GameObject:
   - component: {fileID: 7366213915601563084}
   m_Layer: 0
   m_Name: SM_SmallBuilding.050
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14298,7 +14418,7 @@ GameObject:
   - component: {fileID: 8751383754507158247}
   m_Layer: 0
   m_Name: SM_SmallBuilding.042
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14328,7 +14448,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14399,7 +14519,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14437,7 +14557,7 @@ GameObject:
   - component: {fileID: 8368363825929117083}
   m_Layer: 0
   m_Name: SM_SmallBuilding.016
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14513,7 +14633,7 @@ GameObject:
   - component: {fileID: 3991742971198240696}
   m_Layer: 0
   m_Name: SM_LargeBuilding.028
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14603,7 +14723,7 @@ GameObject:
   - component: {fileID: 8052390006451059205}
   m_Layer: 0
   m_Name: SM_SmallBuilding.049
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14633,7 +14753,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14690,7 +14810,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14739,7 +14859,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14811,7 +14931,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14920,7 +15040,7 @@ GameObject:
   - component: {fileID: 6313714609528080420}
   m_Layer: 0
   m_Name: SM_WindMill.005
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14965,7 +15085,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7727fa5b8fd503f458fc2157c8a99fee, type: 2}
+  - {fileID: 2100000, guid: 3e08c5ec5c762c14c8441a8f854e3110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15018,7 +15138,7 @@ GameObject:
   - component: {fileID: 5704980226540484672}
   m_Layer: 0
   m_Name: SM_LargeBuilding.020
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15048,7 +15168,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15120,7 +15240,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15204,7 +15324,7 @@ GameObject:
   - component: {fileID: 5600380295506195123}
   m_Layer: 0
   m_Name: SM_BusStop.018
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15264,7 +15384,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15321,7 +15441,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15543,7 +15663,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15634,7 +15754,7 @@ GameObject:
   - component: {fileID: 7465025426494057498}
   m_Layer: 0
   m_Name: SM_SmallBuilding.019
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15653,7 +15773,7 @@ GameObject:
   - component: {fileID: 7103816499130081833}
   m_Layer: 0
   m_Name: SM_SmallBuilding.002
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15752,7 +15872,7 @@ GameObject:
   - component: {fileID: 8146157788868218547}
   m_Layer: 0
   m_Name: SM_BusStop.014
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15782,7 +15902,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15820,7 +15940,7 @@ GameObject:
   - component: {fileID: 7822947172513554183}
   m_Layer: 0
   m_Name: SM_LargeBuilding.008
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15850,7 +15970,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15896,7 +16016,7 @@ GameObject:
   - component: {fileID: 7653123782546435413}
   m_Layer: 0
   m_Name: SM_SmallBuilding.015
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15979,7 +16099,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16028,7 +16148,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16088,7 +16208,7 @@ GameObject:
   - component: {fileID: 5711055088235231766}
   m_Layer: 0
   m_Name: SM_BusStop
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16137,7 +16257,7 @@ GameObject:
   - component: {fileID: 7675805517031840315}
   m_Layer: 0
   m_Name: SM_LargeBuilding.011
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16205,7 +16325,7 @@ GameObject:
   - component: {fileID: 5139056293958100739}
   m_Layer: 0
   m_Name: SM_Water
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16246,7 +16366,7 @@ GameObject:
   - component: {fileID: 8424690190866041438}
   m_Layer: 0
   m_Name: SM_WindMill
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16276,7 +16396,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16325,7 +16445,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16363,7 +16483,7 @@ GameObject:
   - component: {fileID: 7085891183459036422}
   m_Layer: 0
   m_Name: SM_LargeBuilding.004
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16393,7 +16513,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16431,7 +16551,7 @@ GameObject:
   - component: {fileID: 5980022795522327832}
   m_Layer: 0
   m_Name: SM_WindMill.004
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16761,7 +16881,7 @@ GameObject:
   - component: {fileID: 7686614282664549469}
   m_Layer: 0
   m_Name: SM_WindMill.001
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16856,7 +16976,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16921,7 +17041,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16974,7 +17094,7 @@ GameObject:
   - component: {fileID: 7384729056633994617}
   m_Layer: 0
   m_Name: SM_BusStop.009
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17098,7 +17218,7 @@ GameObject:
   - component: {fileID: 8962738278663285778}
   m_Layer: 0
   m_Name: SM_LargeBuilding.023
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17155,7 +17275,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17238,7 +17358,7 @@ GameObject:
   - component: {fileID: 5704333888188716072}
   m_Layer: 0
   m_Name: SM_SmallBuilding.043
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17290,7 +17410,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17398,7 +17518,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17436,7 +17556,7 @@ GameObject:
   - component: {fileID: 8520798885904620703}
   m_Layer: 0
   m_Name: SM_LargeBuilding.019
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17496,7 +17616,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17534,7 +17654,7 @@ GameObject:
   - component: {fileID: 8544272227829222249}
   m_Layer: 0
   m_Name: SM_SmallBuilding.022
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17553,7 +17673,7 @@ GameObject:
   - component: {fileID: 5890198743199039998}
   m_Layer: 0
   m_Name: SM_SmallBuilding.007
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17594,7 +17714,7 @@ GameObject:
   - component: {fileID: 9198466593958615331}
   m_Layer: 0
   m_Name: SM_Fountain
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17624,7 +17744,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17726,7 +17846,7 @@ GameObject:
   - component: {fileID: 5968271377988152091}
   m_Layer: 0
   m_Name: SM_BusStop.016
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17797,7 +17917,7 @@ GameObject:
   - component: {fileID: 8052098150679108558}
   m_Layer: 0
   m_Name: SM_SmallBuilding.011
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17816,7 +17936,7 @@ GameObject:
   - component: {fileID: 8187929669063485764}
   m_Layer: 0
   m_Name: SM_SmallBuilding.051
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17843,7 +17963,7 @@ GameObject:
   - component: {fileID: 8118830550777728120}
   m_Layer: 0
   m_Name: SM_WindMill.003
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17873,7 +17993,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17922,7 +18042,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18009,7 +18129,7 @@ GameObject:
   - component: {fileID: 6159883257813806280}
   m_Layer: 0
   m_Name: SM_SmallBuilding.012
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18065,7 +18185,7 @@ GameObject:
   - component: {fileID: 6462592324673984645}
   m_Layer: 0
   m_Name: SM_SmallBuilding.010
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18095,7 +18215,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18230,7 +18350,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18298,7 +18418,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18432,7 +18552,7 @@ GameObject:
   - component: {fileID: 6277947620888641402}
   m_Layer: 0
   m_Name: SM_LargeBuilding.016
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18563,7 +18683,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18612,7 +18732,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18658,7 +18778,7 @@ GameObject:
   - component: {fileID: 6355019553309577772}
   m_Layer: 0
   m_Name: SM_LargeBuilding.025
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18699,7 +18819,7 @@ GameObject:
   - component: {fileID: 6375402310609583354}
   m_Layer: 0
   m_Name: SM_SmallBuilding.006
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18751,7 +18871,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18927,7 +19047,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19090,7 +19210,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19293,7 +19413,7 @@ GameObject:
   - component: {fileID: 9045558432712237988}
   m_Layer: 0
   m_Name: SM_BusStop.004
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19404,7 +19524,7 @@ GameObject:
   - component: {fileID: 6814937925868434116}
   m_Layer: 0
   m_Name: SM_SmallBuilding.023
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19497,7 +19617,7 @@ GameObject:
   - component: {fileID: 6881937979443567608}
   m_Layer: 0
   m_Name: SM_LargeBuilding.009
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19606,7 +19726,7 @@ GameObject:
   - component: {fileID: 6918475252550770007}
   m_Layer: 0
   m_Name: SM_LargeBuilding.010
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19658,7 +19778,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19696,7 +19816,7 @@ GameObject:
   - component: {fileID: 6928494513130557464}
   m_Layer: 0
   m_Name: SM_SmallBuilding.001
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19831,7 +19951,7 @@ GameObject:
   - component: {fileID: 7910238871907214087}
   m_Layer: 0
   m_Name: SM_SmallBuilding.044
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19861,7 +19981,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7727fa5b8fd503f458fc2157c8a99fee, type: 2}
+  - {fileID: 2100000, guid: 3e08c5ec5c762c14c8441a8f854e3110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19959,7 +20079,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20008,7 +20128,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20057,7 +20177,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20147,7 +20267,7 @@ GameObject:
   - component: {fileID: 7105306826322075324}
   m_Layer: 0
   m_Name: SM_LargeBuilding.014
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20188,7 +20308,7 @@ GameObject:
   - component: {fileID: 7110439100214493467}
   m_Layer: 0
   m_Name: SM_BusStop.010
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20237,7 +20357,7 @@ GameObject:
   - component: {fileID: 8428377792995097783}
   m_Layer: 0
   m_Name: SM_BusStop.015
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20256,7 +20376,7 @@ GameObject:
   - component: {fileID: 7252944399333203196}
   m_Layer: 0
   m_Name: SM_LargeBuilding.021
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20626,7 +20746,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20675,7 +20795,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20735,7 +20855,7 @@ GameObject:
   - component: {fileID: 7440732631339734909}
   m_Layer: 0
   m_Name: SM_SmallBuilding.045
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21123,7 +21243,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21231,7 +21351,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21280,7 +21400,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21318,7 +21438,7 @@ GameObject:
   - component: {fileID: 7647420759888803167}
   m_Layer: 0
   m_Name: SM_TramStop.003
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21560,7 +21680,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7727fa5b8fd503f458fc2157c8a99fee, type: 2}
+  - {fileID: 2100000, guid: 3e08c5ec5c762c14c8441a8f854e3110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21620,7 +21740,7 @@ GameObject:
   - component: {fileID: 7733153660157931997}
   m_Layer: 0
   m_Name: SM_SmallBuilding.046
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21717,7 +21837,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7727fa5b8fd503f458fc2157c8a99fee, type: 2}
+  - {fileID: 2100000, guid: 3e08c5ec5c762c14c8441a8f854e3110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21785,7 +21905,7 @@ GameObject:
   - component: {fileID: 7816889409200230302}
   m_Layer: 0
   m_Name: SM_SmallBuilding.018
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21837,7 +21957,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21923,7 +22043,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22006,7 +22126,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22066,7 +22186,7 @@ GameObject:
   - component: {fileID: 7886337958316620012}
   m_Layer: 0
   m_Name: SM_BusStop.003
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22297,7 +22417,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22428,7 +22548,7 @@ GameObject:
   - component: {fileID: 8045328491410520490}
   m_Layer: 0
   m_Name: SM_LargeBuilding.003
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22484,7 +22604,7 @@ GameObject:
   - component: {fileID: 8009214305432673484}
   m_Layer: 0
   m_Name: SM_SmallBuilding.040
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22585,7 +22705,7 @@ GameObject:
   - component: {fileID: 8978817413429555149}
   m_Layer: 0
   m_Name: SM_LargeBuilding.005
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22678,7 +22798,7 @@ GameObject:
   - component: {fileID: 8092826890429957419}
   m_Layer: 0
   m_Name: SM_SmallBuilding.025
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22786,7 +22906,7 @@ GameObject:
   - component: {fileID: 9032777948890146713}
   m_Layer: 0
   m_Name: SM_TramStop
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22884,7 +23004,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 881c648a628d3ff4c88f1e653c0ace29, type: 2}
+  - {fileID: 2100000, guid: 75ec2b09b56eacc4799efa5a5e63a12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23079,7 +23199,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23154,7 +23274,7 @@ GameObject:
   - component: {fileID: 8400584436483951856}
   m_Layer: 0
   m_Name: SM_LargeBuilding.006
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23225,7 +23345,7 @@ GameObject:
   - component: {fileID: 8416022739066989394}
   m_Layer: 0
   m_Name: SM_SmallBuilding.033
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23659,7 +23779,7 @@ GameObject:
   - component: {fileID: 8563288145514513785}
   m_Layer: 0
   m_Name: SM_WindMill.002
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23756,7 +23876,7 @@ GameObject:
   - component: {fileID: 8730306046673233589}
   m_Layer: 0
   m_Name: SM_LargeBuilding.018
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23834,7 +23954,7 @@ GameObject:
   - component: {fileID: 9163512119160827392}
   m_Layer: 0
   m_Name: SM_BusStop.007
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23864,7 +23984,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ec124d3f17878e4d9fb683ae05482ff, type: 2}
+  - {fileID: 2100000, guid: 77b4f6696a12d1146ae3fa02fd9a4c4e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24032,7 +24152,7 @@ GameObject:
   - component: {fileID: 8857296384672182537}
   m_Layer: 0
   m_Name: SM_WaterBorder
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24158,7 +24278,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73dc6621aada27046a72f46097096ce9, type: 2}
+  - {fileID: 2100000, guid: a7ddb57b5f48a074cb42b311ab6dcaa4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24359,7 +24479,7 @@ GameObject:
   - component: {fileID: 8989360477651520555}
   m_Layer: 0
   m_Name: SM_SmallBuilding.004
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24545,7 +24665,7 @@ GameObject:
   - component: {fileID: 9101143584311680515}
   m_Layer: 0
   m_Name: SM_SmallBuilding.031
-  m_TagString: Untagged
+  m_TagString: SeeThrough
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
