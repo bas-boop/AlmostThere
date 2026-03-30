@@ -22,6 +22,8 @@ namespace UI.Phonetesting
 
         #endregion
 
+        private float timeToComplete = 1f;
+
         #region Public methods
 
         /// <summary>
@@ -115,7 +117,7 @@ namespace UI.Phonetesting
         {
             float timer = 0;
 
-            while (timer < 1)
+            while (timer < timeToComplete)
             {
                 timer += Time.deltaTime / time;
 

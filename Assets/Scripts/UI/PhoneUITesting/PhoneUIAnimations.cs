@@ -58,6 +58,9 @@ namespace UI.Phonetesting
         private Coroutine _routePlannerOpenClose;
         private RectTransform _playerIcon;
         private bool _isPlayingStartingNotification = false;
+        private float timeToComplete = 1f;
+        private float halfAmount = 2f;
+        private float orgScaleAmount = 1f;
 
         #endregion
 
@@ -167,7 +170,7 @@ namespace UI.Phonetesting
             Vector3 originalPosition = phoneTransform.anchoredPosition;
             Quaternion originalRotation = phoneTransform.rotation;
 
-            while (timer < 1f)
+            while (timer < timeToComplete)
             {
                 timer += Time.deltaTime;
                 uiAnimations.AnimatePosition(phoneTransform, uiAnimations.easeInOut, originalPosition, transformTo.anchoredPosition, timer);
@@ -186,12 +189,12 @@ namespace UI.Phonetesting
                 timer += Time.deltaTime * phoneIconAnimationSpeed;
 
                 float rotationMult = uiAnimations.easeShake.Evaluate(timer);
-                float scaleMult = uiAnimations.easeShake.Evaluate(timer / (beforeLoopAmount / 2));
+                float scaleMult = uiAnimations.easeShake.Evaluate(timer / (beforeLoopAmount / halfAmount));
 
                 phoneIcon.rectTransform.rotation = Quaternion.Euler(0, 0, phoneIconRotationAmount * rotationMult);
-                phoneIcon.rectTransform.localScale = Vector3.one * (1 + phoneIconScaleAmount * scaleMult);
+                phoneIcon.rectTransform.localScale = Vector3.one * (orgScaleAmount + phoneIconScaleAmount * scaleMult);
 
-                if (timer > 1)
+                if (timer > timeToComplete)
                 {
                     if (loopCount++ == beforeLoopAmount)
                     {
@@ -236,7 +239,7 @@ namespace UI.Phonetesting
             float timer = 0f;
             Vector2 anchorPos = startingNotification.anchoredPosition -= new Vector2(0, startingNotificationOffset);
 
-            while (timer < 1f)
+            while (timer < timeToComplete)
             {
                 timer += Time.deltaTime;
                 uiAnimations.AnimatePosition(startingNotification, uiAnimations.easeOvershoot, originalAnchorPos, anchorPos, timer);
@@ -248,7 +251,7 @@ namespace UI.Phonetesting
             anchorPos = startingNotification.anchoredPosition;
             float timer2 = 0f;
 
-            while (timer2 < 1f)
+            while (timer2 < timeToComplete)
             {
                 timer2 += Time.deltaTime;
                 uiAnimations.AnimatePosition(startingNotification, uiAnimations.easeOvershoot, anchorPos, originalAnchorPos, timer2);
@@ -260,7 +263,7 @@ namespace UI.Phonetesting
             float timer3 = 0f;
             Vector2 startScale = Vector2.zero;
 
-            while (timer3 < 1f)
+            while (timer3 < timeToComplete)
             {
                 timer3 += Time.deltaTime / timeToAnimate;
                 uiAnimations.AnimateScale(iconPlaceholder, uiAnimations.easeOvershoot, startScale, Vector2.one, timer3);
@@ -297,7 +300,7 @@ namespace UI.Phonetesting
 
             float timer = 0f;
 
-            while (timer < 1f)
+            while (timer < timeToComplete)
             {
                 timer += Time.deltaTime / routePlanningBackgroundAnimationSpeed;
                 uiAnimations.AnimatePosition(routePlannerPanel, uiAnimations.easeInOut, startPosRoutePlannerPanel, transformToPanel, timer);

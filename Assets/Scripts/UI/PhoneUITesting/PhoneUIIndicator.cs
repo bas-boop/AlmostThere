@@ -34,6 +34,7 @@ namespace UI.Phonetesting
         private Coroutine _indicatorSpinner;
         private Coroutine _indicatorAppear;
         private bool _initialized = false;
+        private float timeToComplete = 1f;
 
         #endregion
 
@@ -148,10 +149,13 @@ namespace UI.Phonetesting
 
         private void PlayShowAnimation(float distanceToEdge)
         {
+            float duration = 0.3f;
+            float rotateSpeed = 150f;
+
             _indicatorState = IndicatorState.VISIBLE;
 
             if (_indicatorSpinner == null)
-                _indicatorSpinner = StartCoroutine(uiAnimations.RotateAroundZ(offscreenIndicatorSpinner, 150));
+                _indicatorSpinner = StartCoroutine(uiAnimations.RotateAroundZ(offscreenIndicatorSpinner, rotateSpeed));
 
             float scaleFactor = Mathf.Lerp(1f, indicatorMinScale, Mathf.Clamp01(distanceToEdge / indicatorMaxDistance));
 
@@ -159,7 +163,7 @@ namespace UI.Phonetesting
                 StopCoroutine(_indicatorAppear);
 
             _indicatorAppear = StartCoroutine(uiAnimations.ScaleFromCurve(
-                offscreenIndicator, uiAnimations.easeOvershoot, Vector2.one * scaleFactor, 0.3f,
+                offscreenIndicator, uiAnimations.easeOvershoot, Vector2.one * scaleFactor, duration,
                 () => _indicatorAppear = null));
         }
 
