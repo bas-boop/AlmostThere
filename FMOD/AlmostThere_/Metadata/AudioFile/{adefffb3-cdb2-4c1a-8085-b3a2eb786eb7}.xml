@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{adefffb3-cdb2-4c1a-8085-b3a2eb786eb7}">
+		<property name="assetPath">
+			<value>Duck_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.3397916666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c4e29dfd-e11a-4e80-ae78-ef61c695b7ac}</destination>
+		</relationship>
+	</object>
+</objects>
