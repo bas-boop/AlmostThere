@@ -33,7 +33,9 @@ namespace Player
         private void Update()
         {
             Vector2 moveInput = _inputActionAsset["Move"].ReadValue<Vector2>();
-
+            movement.SetMoveDirection(moveInput);
+            return;    
+            
             if (uiState.CurrentPhoneUIState == PhoneUIState.OPEN)
             {
                 mapMover.SetMoveDirection(moveInput);

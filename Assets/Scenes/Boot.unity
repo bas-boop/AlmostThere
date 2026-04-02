@@ -352,7 +352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2612885085606868565, guid: 1360de4d91b5bf6438f182d5bc85d58a, type: 3}
       propertyPath: sceneToLoad
-      value: Alpha
+      value: AlphaTestB
       objectReference: {fileID: 0}
     - target: {fileID: 2612885085606868565, guid: 1360de4d91b5bf6438f182d5bc85d58a, type: 3}
       propertyPath: loadSceneInAwake
