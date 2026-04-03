@@ -1,6 +1,5 @@
 using UI;
 using UI.Phonetesting;
-using UI.StateEnum;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -34,16 +33,6 @@ namespace Player
         {
             Vector2 moveInput = _inputActionAsset["Move"].ReadValue<Vector2>();
             movement.SetMoveDirection(moveInput);
-            return;    
-            
-            if (uiState.CurrentPhoneUIState == PhoneUIState.OPEN)
-            {
-                mapMover.SetMoveDirection(moveInput);
-            }
-            else if (uiState.CurrentPhoneUIState == PhoneUIState.CLOSE)
-            {
-                movement.SetMoveDirection(moveInput);
-            }
         }
 
         private void OnEnable() => AddListeners();
@@ -82,7 +71,10 @@ namespace Player
         private void MapAction(InputAction.CallbackContext context)
         {
             if (mapToggeler)
+            {
                 mapToggeler.Toggle();
+                movement.ToggleCanMove();
+            }
         }
 
         private void TestingAction(InputAction.CallbackContext context) => onTesting?.Invoke();

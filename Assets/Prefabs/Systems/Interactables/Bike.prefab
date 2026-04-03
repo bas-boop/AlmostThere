@@ -170,7 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146ee76fc9da477592882b8e16182e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gameplay.Bike
-  icon: {fileID: 2017928281683403845}
+  buttonPrompt: {fileID: 7928546210404310973}
+  arrow: {fileID: 292639485698734268}
   playerVisual: {fileID: 0}
   player: {fileID: 0}
 --- !u!1001 &2162640618671405124
@@ -187,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 144714677854231553, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2347255603349004725, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -278,14 +279,19 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
---- !u!1 &2017928281683403845 stripped
+--- !u!1 &292639485698734268 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 144714677854231553, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1877038013841539320, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
   m_PrefabInstance: {fileID: 2162640618671405124}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &6695337309995996566 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4821565060172639698, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+  m_PrefabInstance: {fileID: 2162640618671405124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7928546210404310973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8071828127251589113, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
   m_PrefabInstance: {fileID: 2162640618671405124}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6931710037571981826

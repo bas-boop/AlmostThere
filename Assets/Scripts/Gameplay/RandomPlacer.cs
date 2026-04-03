@@ -33,7 +33,6 @@ namespace Gameplay
             while (true)
             {
                 newPos = CollectionExtensions.GetRandomItem(locations).position;
-                Debug.Log(newPos);
 
                 if (attempts < MAX_PLACEMENT_ATTEMPTS
                     && newPos.IsWithinRange(pos, minimalDistance))

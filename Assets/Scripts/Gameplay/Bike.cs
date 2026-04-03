@@ -37,7 +37,7 @@ namespace Gameplay
             else
             {
                 _isUsed = true;
-                icon.SetActive(false);
+                buttonPrompt.SetActive(false);
                 transform.SetParent(playerVisual.transform);
                 transform.position = transform.parent.position;
                 transform.rotation = transform.parent.rotation;

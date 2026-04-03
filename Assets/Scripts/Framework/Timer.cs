@@ -83,6 +83,5 @@ namespace Framework
             IsCounting = false;
             onTimerDone?.Invoke();
         }
-
     }
 }

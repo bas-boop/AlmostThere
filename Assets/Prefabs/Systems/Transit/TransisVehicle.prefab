@@ -688,7 +688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1027c81077224de5b3e341954298c7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gameplay.PublicTransport.TransitDoor
-  icon: {fileID: 5501008314910535774}
+  buttonPrompt: {fileID: 4490445325658049446}
+  arrow: {fileID: 6077947385278966951}
   playerSitPosition: {fileID: 5741010289396898355}
   sitDuration: 0.4
   outsideTransitDistance: 4
@@ -918,7 +919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 144714677854231553, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2347255603349004725, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -1022,8 +1023,13 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4821565060172639698, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
   m_PrefabInstance: {fileID: 5644594528091319391}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5501008314910535774 stripped
+--- !u!1 &4490445325658049446 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 144714677854231553, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8071828127251589113, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+  m_PrefabInstance: {fileID: 5644594528091319391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6077947385278966951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1877038013841539320, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
   m_PrefabInstance: {fileID: 5644594528091319391}
   m_PrefabAsset: {fileID: 0}

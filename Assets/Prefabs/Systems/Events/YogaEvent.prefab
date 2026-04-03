@@ -630,7 +630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49be9168f6c446d3ae90498b8fa65956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gameplay.SocialEvents.YogaEvent
-  icon: {fileID: 3398673051118605683}
+  buttonPrompt: {fileID: 6713819157416193675}
+  arrow: {fileID: 3973360391638567306}
   player: {fileID: 0}
   playerYogaPlace: {fileID: 8179261583132063251}
   timer: {fileID: 0}
@@ -1020,7 +1021,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 144714677854231553, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347255603349004725, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4821565060172639698, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
       propertyPath: m_Pivot.x
@@ -1107,9 +1112,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
---- !u!1 &3398673051118605683 stripped
+--- !u!1 &3973360391638567306 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 144714677854231553, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1877038013841539320, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+  m_PrefabInstance: {fileID: 3254028961597311346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6713819157416193675 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8071828127251589113, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
   m_PrefabInstance: {fileID: 3254028961597311346}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &8052719781864875168 stripped
