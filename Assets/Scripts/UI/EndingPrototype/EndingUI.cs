@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using Framework.Extensions;
 
 namespace UI.EndingPrototype
 { 
     public class EndingUI : MonoBehaviour
     {
-        [SerializeField] private EndingUIState winState;
         [SerializeField] private ChatManager chatManager;
+        [SerializeField] private Vector2 rangeRandomTimeBetweenChat = new (0.5f, 1.5f);
 
         [SerializeField] private MessageList winningMessages;
         [SerializeField] private MessageList losingMessages;
@@ -37,13 +38,11 @@ namespace UI.EndingPrototype
 
         private IEnumerator SendMessages(List<MessageData> messageList)
         {
-            for (int i = 0; i < messageList.Count; i++)
+            foreach (MessageData messageData in messageList)
             {
-                float randomWaitTime = Random.Range(0.5f, 1.5f);
-
-                chatManager.SendMessage(messageList[i]);
-
-                yield return new WaitForSeconds(randomWaitTime);    
+                float randomWaitTime = rangeRandomTimeBetweenChat.GetRandomInBetween();
+                chatManager.SendMessage(messageData);
+                yield return new WaitForSeconds(randomWaitTime);
             }
         }
     }

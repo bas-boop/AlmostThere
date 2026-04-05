@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 2148166509847199208}
   - component: {fileID: 4543752584756395787}
   m_Layer: 5
-  m_Name: EndingMessage
+  m_Name: MessageRow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
