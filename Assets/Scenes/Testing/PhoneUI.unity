@@ -1344,6 +1344,8 @@ MonoBehaviour:
   movement: {fileID: 0}
   interacter: {fileID: 0}
   mapToggeler: {fileID: 0}
+  mapMover: {fileID: 2096442344}
+  uiState: {fileID: 2096442340}
   onTesting:
     m_PersistentCalls:
       m_Calls:
@@ -2258,6 +2260,7 @@ GameObject:
   - component: {fileID: 2096442339}
   - component: {fileID: 2096442336}
   - component: {fileID: 2096442343}
+  - component: {fileID: 2096442344}
   - component: {fileID: 2096442342}
   - component: {fileID: 2096442338}
   m_Layer: 0
@@ -2287,15 +2290,6 @@ MonoBehaviour:
   playerIcon: {fileID: 637860950}
   playerInput: {fileID: 710112139}
   mapMoveSpeed: 160
-  _mapMoveInput:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 708b2755-5cb1-45fe-95f5-43bfa5c03fd5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
 --- !u!4 &2096442337
 Transform:
   m_ObjectHideFlags: 0
@@ -2329,7 +2323,6 @@ MonoBehaviour:
   icons:
   - {fileID: 952543708}
   snapRadius: 35
-  _snappedIcon: {fileID: 0}
 --- !u!114 &2096442339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2343,8 +2336,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIAnimationSetter
   easeInOut:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 3
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
@@ -2352,7 +2347,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0
-    - time: 1
+    - serializedVersion: 3
+      time: 1
       value: 1
       inSlope: 0
       outSlope: 0
@@ -2364,8 +2360,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   easeOvershoot:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 3
+      time: 0
       value: 0
       inSlope: -0.0023608343
       outSlope: -0.0023608343
@@ -2373,7 +2371,8 @@ MonoBehaviour:
       weightedMode: 3
       inWeight: 0
       outWeight: 0.87580913
-    - time: 0.7980924
+    - serializedVersion: 3
+      time: 0.7980924
       value: 1.2
       inSlope: 0
       outSlope: 0
@@ -2381,7 +2380,8 @@ MonoBehaviour:
       weightedMode: 3
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - time: 1.00531
+    - serializedVersion: 3
+      time: 1.00531
       value: 0.9939499
       inSlope: 0
       outSlope: 0
@@ -2393,8 +2393,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   easeAnticipate:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 3
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
@@ -2402,7 +2404,8 @@ MonoBehaviour:
       weightedMode: 3
       inWeight: 0
       outWeight: 0.33333334
-    - time: 0.14861237
+    - serializedVersion: 3
+      time: 0.14861237
       value: 1.2
       inSlope: 0
       outSlope: 0
@@ -2410,7 +2413,8 @@ MonoBehaviour:
       weightedMode: 3
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - time: 1
+    - serializedVersion: 3
+      time: 1
       value: 0
       inSlope: -0.0026324021
       outSlope: -0.0026324021
@@ -2422,8 +2426,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   easeShake:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 3
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
@@ -2431,7 +2437,8 @@ MonoBehaviour:
       weightedMode: 3
       inWeight: 0
       outWeight: 0.33333334
-    - time: 0.5
+    - serializedVersion: 3
+      time: 0.5
       value: 1
       inSlope: 0
       outSlope: 0
@@ -2439,7 +2446,8 @@ MonoBehaviour:
       weightedMode: 3
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - time: 1
+    - serializedVersion: 3
+      time: 1
       value: 0
       inSlope: 0
       outSlope: 0
@@ -2462,8 +2470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a4deb66d81f2c4d813c4696bed69ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIStateMachine
-  <CurrentPhoneUIState>k__BackingField: 0
-  <CurrentRoutePlannerState>k__BackingField: 1
 --- !u!114 &2096442341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2510,9 +2516,9 @@ MonoBehaviour:
   phoneIconClosingAnimationSpeed: 0.5
   iconClosingDelay: 0.3
   startingNotificationOffset: 200
+  startingNotificationAnimationDelays: {x: 1, y: 2, z: 0.5}
+  closeIconAnimationDelay: 0.5
   phoneHasBeenOpened: 0
-  _playerIcon: {fileID: 0}
-  _isPlayingStartingNotification: 0
 --- !u!114 &2096442343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2537,8 +2543,23 @@ MonoBehaviour:
   indicatorMinScale: 0.3
   indicatorThreshold: 50
   indicatorHideThreshold: 150
-  _indicatorState: 0
-  _initialized: 0
+--- !u!114 &2096442344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096442335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6287e1bfea45b2a4583b629a534c1439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.Phonetesting.MapMover
+  indicator: {fileID: 2096442343}
+  mapSnapper: {fileID: 2096442338}
+  mapPlaceholder: {fileID: 296356764}
+  mapMoveSpeed: 175
+  movementDisabledTime: 0.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

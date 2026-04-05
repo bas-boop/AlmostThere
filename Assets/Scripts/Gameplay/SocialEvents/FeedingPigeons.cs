@@ -19,7 +19,7 @@ namespace Gameplay.SocialEvents
         [SerializeField] private UnityEvent onFeed = new();
         [SerializeField] private UnityEvent onFeedDone = new();
         
-        public override void Interact()
+        public override void Interact(GameObject sender)
         {
             if (!p_canInteract)
                 return;

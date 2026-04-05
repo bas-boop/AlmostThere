@@ -46,7 +46,7 @@ namespace Framework.InteractSystem
             if (index == -1)
                 return;
             
-            _interactables[index].Interact();
+            _interactables[index].Interact(gameObject);
         }
     }
 }

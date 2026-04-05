@@ -22,11 +22,6 @@ namespace Gameplay.PublicTransport
         {
             _speed = speed;
             CalculateTimeBetweenStops();
-            
-            foreach (float timeBetweenStop in TimeBetweenStops)
-            {
-                Debug.Log(timeBetweenStop);
-            }
         }
 
         public Waypoint GetNextStopLocation()

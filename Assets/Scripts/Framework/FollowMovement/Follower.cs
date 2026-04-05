@@ -59,6 +59,9 @@ namespace Framework.FollowMovement
             _targetPosition = targetPosition + direction * StatsInUse.followDistance;
             currentPosition = Vector3.Lerp(currentPosition, _targetPosition, StatsInUse.smoothSpeed);
             transform.position = currentPosition;
+            
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.fixedDeltaTime * stats.rotationSpeed);
         }
 
         public void SetDefaultStats() => StatsInUse = stats;
