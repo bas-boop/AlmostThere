@@ -5,19 +5,9 @@ namespace UI.EndingPrototype
 {
     public class EndingUIState : MonoBehaviour
     {
-        #region Enums
-        public enum WinState { WIN, LOSE }
-        #endregion
-
-        #region Events
         public event Action<WinState> OnWinOrLose;
-        #endregion
 
-        #region Properties
         public WinState currentWinState;
-        #endregion
-
-        #region Public Voids
 
         public void WinStateTesting()
         {
@@ -29,7 +19,5 @@ namespace UI.EndingPrototype
             currentWinState = state;
             OnWinOrLose?.Invoke(state);
         }
-
-        #endregion
     }
 }

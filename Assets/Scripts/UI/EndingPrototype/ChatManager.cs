@@ -14,16 +14,16 @@ namespace UI.EndingPrototype
 
         public void SendMessage(MessageData messageInfo)
         {
-            bool isSend = messageInfo.sent;
+            bool isSend = messageInfo.isPlayerSendingMessage;
             Color backgroundColor = isSend ? sendColor : recieveColor;
 
             GameObject row = Instantiate(messageRowPrefab, chatContent);
 
             MessageRowUI rowUI = row.GetComponent<MessageRowUI>();
-            rowUI.SetSide(messageInfo.sent);
+            rowUI.SetSide(messageInfo.isPlayerSendingMessage);
 
             MessageBubble bubble = row.GetComponentInChildren<MessageBubble>();
-            bubble.SetMessage(messageInfo.message, backgroundColor, messageInfo.imageSprite, messageInfo.doesNotHaveText);
+            bubble.SetMessage(messageInfo.message, backgroundColor, messageInfo.imageSprite, messageInfo.hasText);
 
             StartCoroutine(ScrollToBottom());
         }

@@ -183,63 +183,11 @@ MonoBehaviour:
   winState: {fileID: 47620413}
   chatManager: {fileID: 47620412}
   winMessages:
-  - doesNotHaveText: 0
-    message: I got here just in time.
-    imageSprite: {fileID: 0}
-    sent: 1
-  - doesNotHaveText: 0
-    message: Great to hear! Did you had a nice journey?
-    imageSprite: {fileID: 0}
-    sent: 0
-  - doesNotHaveText: 0
-    message: Yeah! It was really nice
-    imageSprite: {fileID: 0}
-    sent: 1
-  - doesNotHaveText: 0
-    message: I came across ... (event 1)
-    imageSprite: {fileID: 21300000, guid: 6f55f9e571c6e604fbbfd7acd52765d8, type: 3}
-    sent: 1
-  - doesNotHaveText: 1
-    message: 
-    imageSprite: {fileID: 21300000, guid: 6f55f9e571c6e604fbbfd7acd52765d8, type: 3}
-    sent: 1
-  - doesNotHaveText: 0
-    message: Next I ran past ... (event 2)
-    imageSprite: {fileID: 0}
-    sent: 1
-  - doesNotHaveText: 0
-    message: Next I ran past ... (if player came across 3 events/event 3)
-    imageSprite: {fileID: 0}
-    sent: 1
-  - doesNotHaveText: 0
-    message: 'That''s really nice to hear! '
-    imageSprite: {fileID: 0}
-    sent: 0
+  - {fileID: 11400000, guid: c62d68f62de16b246a9b7a0337d2dfdd, type: 2}
+  - {fileID: 11400000, guid: d9dfc87d58b758841a453d28b5f99f02, type: 2}
   loseMessages:
-  - doesNotHaveText: 0
-    message: Sorry but I dind't make it in time :(
-    imageSprite: {fileID: 0}
-    sent: 1
-  - doesNotHaveText: 0
-    message: O no that's a shame! Did you have a nice journey anyway?
-    imageSprite: {fileID: 0}
-    sent: 0
-  - doesNotHaveText: 0
-    message: Yes! It was great
-    imageSprite: {fileID: 0}
-    sent: 1
-  - doesNotHaveText: 0
-    message: I came across ... (event 1)
-    imageSprite: {fileID: 0}
-    sent: 1
-  - doesNotHaveText: 0
-    message: Next I ran past ... (event 2)
-    imageSprite: {fileID: 0}
-    sent: 1
-  - doesNotHaveText: 0
-    message: That's great! Next time try to get here in time, okay!
-    imageSprite: {fileID: 0}
-    sent: 0
+  - {fileID: 11400000, guid: d9dfc87d58b758841a453d28b5f99f02, type: 2}
+  - {fileID: 11400000, guid: c62d68f62de16b246a9b7a0337d2dfdd, type: 2}
 --- !u!4 &47620415
 Transform:
   m_ObjectHideFlags: 0
@@ -429,14 +377,14 @@ MonoBehaviour:
   onTesting:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 47620413}
-        m_TargetAssemblyTypeName: EndingUIState, Assembly-CSharp
-        m_MethodName: WinStateTesting
-        m_Mode: 1
+      - m_Target: {fileID: 47620414}
+        m_TargetAssemblyTypeName: UI.EndingPrototype.EndingUI, Assembly-CSharp
+        m_MethodName: HandleEndingState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

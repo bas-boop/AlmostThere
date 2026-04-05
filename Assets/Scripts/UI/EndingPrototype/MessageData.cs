@@ -2,12 +2,12 @@ using UnityEngine;
 
 namespace UI.EndingPrototype
 {
-    [System.Serializable]
-    public struct MessageData
+    [CreateAssetMenu(fileName = "NewMessage", menuName = "AlmostThere/EndingMessage")]
+    public class MessageData : ScriptableObject
     {
-        public bool doesNotHaveText;
+        public bool isPlayerSendingMessage;
+        public bool hasText = true;
         public string message;
         public Sprite imageSprite;
-        public bool sent;
     }
 }

@@ -13,20 +13,19 @@ namespace UI.EndingPrototype
         [SerializeField] private List<MessageData> winMessages;
         [SerializeField] private List<MessageData> loseMessages;
 
-        private void OnEnable()
+        public void HandleEndingState(int state) => HandleEndingState((WinState) state);
+        
+        public void HandleEndingState(WinState state)
         {
-            winState.OnWinOrLose += HandleEndingState;
-        }
-
-        private void HandleEndingState(EndingUIState.WinState state)
-        {
-            if (state == EndingUIState.WinState.WIN)
+            switch (state)
             {
-                StartCoroutine(SendMessages(winMessages));
-            }
-            else
-            {
-                StartCoroutine(SendMessages(loseMessages));
+                case WinState.WIN:
+                    StartCoroutine(SendMessages(winMessages));
+                    break;
+                case WinState.LOSE:
+                default:
+                    StartCoroutine(SendMessages(loseMessages));
+                    break;
             }
         }
 

@@ -16,7 +16,6 @@ namespace UI.EndingPrototype
         [SerializeField] private TextMeshProUGUI messageText;
         [SerializeField] private Image messageImage;
 
-        #region Public Functions
         public void SetMessage(string text, Color messageBackgroundColor, Sprite sprite = null, bool doesNotHaveText = false)
         {
 
@@ -43,9 +42,7 @@ namespace UI.EndingPrototype
 
             ApplyWidth(hasImage);
         }
-        #endregion
-
-        #region Private Functions
+        
         private void ApplyWidth(bool hasImage)
         {
             float paddingHorizontal = GetComponent<LayoutGroup>().padding.horizontal;
@@ -77,6 +74,5 @@ namespace UI.EndingPrototype
                 background.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, messageText.preferredHeight + paddingVertical);
             }
         }
-        #endregion
     }
 }
