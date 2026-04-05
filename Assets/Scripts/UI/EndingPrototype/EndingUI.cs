@@ -10,8 +10,8 @@ namespace UI.EndingPrototype
         [SerializeField] private EndingUIState winState;
         [SerializeField] private ChatManager chatManager;
 
-        [SerializeField] private List<MessageData> winMessages;
-        [SerializeField] private List<MessageData> loseMessages;
+        [SerializeField] private MessageList winningMessages;
+        [SerializeField] private MessageList losingMessages;
 
         public void HandleEndingState(int state) => HandleEndingState((WinState) state);
         
@@ -20,13 +20,19 @@ namespace UI.EndingPrototype
             switch (state)
             {
                 case WinState.WIN:
-                    StartCoroutine(SendMessages(winMessages));
+                    StartCoroutine(SendMessages(winningMessages.All()));
                     break;
                 case WinState.LOSE:
                 default:
-                    StartCoroutine(SendMessages(loseMessages));
+                    StartCoroutine(SendMessages(losingMessages.All()));
                     break;
             }
+        }
+
+        public void AddEventMessage(MessageData messageToAdd)
+        {
+            winningMessages.eventMessages.Add(messageToAdd);
+            losingMessages.eventMessages.Add(messageToAdd);
         }
 
         private IEnumerator SendMessages(List<MessageData> messageList)

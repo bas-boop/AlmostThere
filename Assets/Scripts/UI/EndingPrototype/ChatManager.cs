@@ -23,7 +23,7 @@ namespace UI.EndingPrototype
             rowUI.SetSide(messageInfo.isPlayerSendingMessage);
 
             MessageBubble bubble = row.GetComponentInChildren<MessageBubble>();
-            bubble.SetMessage(messageInfo.message, backgroundColor, messageInfo.imageSprite, messageInfo.hasText);
+            bubble.SetMessage(messageInfo.message, backgroundColor, messageInfo.imageSprite, !messageInfo.hasText);
 
             StartCoroutine(ScrollToBottom());
         }
