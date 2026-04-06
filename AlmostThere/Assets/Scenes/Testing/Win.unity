@@ -654,7 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Framework.SceneSwitcher
   isSingleton: 0
   loadSceneInAwake: 0
-  sceneToLoad: BasicGameloop
+  sceneToLoad: Alpha
 --- !u!114 &2025637227
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,10 +1,12 @@
+using UI;
+using UI.Phonetesting;
+using UI.StateEnum;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 using Framework.InteractSystem;
 using Player.MovementSystem;
-using UI;
 
 namespace Player
 {
@@ -14,6 +16,8 @@ namespace Player
         [SerializeField] private Movement movement;
         [SerializeField] private Interacter interacter;
         [SerializeField] private MapToggeler mapToggeler;
+        [SerializeField] private MapMover mapMover;
+        [SerializeField] private UIStateMachine uiState;
 
         [SerializeField] private UnityEvent onTesting = new();
         
@@ -30,6 +34,16 @@ namespace Player
         {
             Vector2 moveInput = _inputActionAsset["Move"].ReadValue<Vector2>();
             movement.SetMoveDirection(moveInput);
+            return;    
+            
+            if (uiState.CurrentPhoneUIState == PhoneUIState.OPEN)
+            {
+                mapMover.SetMoveDirection(moveInput);
+            }
+            else if (uiState.CurrentPhoneUIState == PhoneUIState.CLOSE)
+            {
+                movement.SetMoveDirection(moveInput);
+            }
         }
 
         private void OnEnable() => AddListeners();
