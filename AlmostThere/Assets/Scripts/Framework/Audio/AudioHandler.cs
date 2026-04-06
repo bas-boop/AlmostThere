@@ -1,3 +1,4 @@
+using FMOD;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
@@ -9,27 +10,67 @@ namespace Framework.Audio
     {
         [SerializeField] private EventReference eventRef;
         [SerializeField] private string parameterName;
+        [SerializeField] private bool playOnStart;
+        [SerializeField] private bool shouldLoop;
 
-        private EventInstance instance;
-        
+        private EventInstance _instance;
+        private bool _isPlaying;
+
+        private void Start()
+        {
+            if (playOnStart)
+                Play();
+        }
+
+        private void Update()
+        {
+            if (!_instance.isValid()) return;
+            
+            UpdateAudioPosition();
+
+            if (shouldLoop
+                && _isPlaying)
+                CheckAndLoop();
+        }
+
+        private void OnDisable() => Stop();
+
         public void Play()
         {
             Stop();
 
-            instance = RuntimeManager.CreateInstance(eventRef);
-            instance.start();
+            _instance = RuntimeManager.CreateInstance(eventRef);
+            UpdateAudioPosition();
+            _instance.start();
+            _isPlaying = true;
         }
 
         public void Stop()
         {
-            if (instance.isValid())
-                instance.stop(STOP_MODE.IMMEDIATE);
+            if (!_instance.isValid()) return;
+
+            _instance.stop(STOP_MODE.IMMEDIATE);
+            _instance.release();
+            _isPlaying = false;
         }
 
         public void SetParamValue(float value)
         {
-            if (instance.isValid())
-                instance.setParameterByName(parameterName, value);
+            if (_instance.isValid())
+                _instance.setParameterByName(parameterName, value);
+        }
+
+        private void CheckAndLoop()
+        {
+            _instance.getPlaybackState(out PLAYBACK_STATE state);
+
+            if (state == PLAYBACK_STATE.STOPPED)
+                Play();
+        }
+
+        private void UpdateAudioPosition()
+        {
+            _instance.set3DAttributes(transform.To3DAttributes());
         }
     }
 }

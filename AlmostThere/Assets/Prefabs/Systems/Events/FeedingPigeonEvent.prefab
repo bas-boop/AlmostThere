@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8309545833449501367}
   - component: {fileID: 4799421254526276254}
   - component: {fileID: 2533706034394666734}
+  - component: {fileID: 2584106899801977697}
   m_Layer: 0
   m_Name: FeedingPigeonEvent
   m_TagString: Untagged
@@ -211,6 +212,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2584106899801977697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5316495070943618651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1155008942feb7e4f9a402e74860c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.Audio.AudioHandler
+  eventRef:
+    Guid:
+      Data1: 1203624219
+      Data2: 1145045276
+      Data3: 1586481025
+      Data4: -2037754098
+    Path: event:/Animals/Pigoen
+  parameterName: 
+  playOnStart: 1
+  shouldLoop: 1
 --- !u!1001 &29730653881026387
 PrefabInstance:
   m_ObjectHideFlags: 0
