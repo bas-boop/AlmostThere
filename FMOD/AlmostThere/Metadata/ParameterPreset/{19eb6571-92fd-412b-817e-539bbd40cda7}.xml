@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{19eb6571-92fd-412b-817e-539bbd40cda7}">
+		<property name="name">
+			<value>Bus_Acceleration</value>
+		</property>
+		<relationship name="folder">
+			<destination>{53ee5d63-5720-4c28-9b1f-07b039ca22ea}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{b6682ce3-a5cd-46f1-b800-54bc27d826d8}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{b6682ce3-a5cd-46f1-b800-54bc27d826d8}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{2e7e659c-01d8-4c54-aa03-396599e133e2}</destination>
+		</relationship>
+	</object>
+	<object class="SeekModulator" id="{2e7e659c-01d8-4c54-aa03-396599e133e2}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+		<property name="speedAscending">
+			<value>0.97999995946884155</value>
+		</property>
+	</object>
+</objects>
