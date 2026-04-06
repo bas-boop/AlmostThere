@@ -52,10 +52,13 @@ namespace Player.MovementSystem
             if (_canMove)
                 onEnableMovement?.Invoke();
             else
-            {
-                _rigidbody.linearVelocity = Vector3.zero;
-                onDisableMovement?.Invoke();
-            }
+                DisableMovement();
+        }
+
+        public void DisableMovement()
+        {
+            _rigidbody.linearVelocity = Vector3.zero;
+            onDisableMovement?.Invoke();
         }
 
         public void ResetRotation() => transform.rotation = _rotation;

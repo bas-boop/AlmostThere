@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 using Framework.Extensions;
@@ -32,6 +33,9 @@ namespace UI.EndingPrototype
 
         public void AddEventMessage(MessageData messageToAdd)
         {
+            if (winningMessages.eventMessages.Any(messageData => messageData == messageToAdd))
+                return;
+            
             winningMessages.eventMessages.Add(messageToAdd);
             losingMessages.eventMessages.Add(messageToAdd);
         }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 using Framework;
 using Framework.InteractSystem;
@@ -11,6 +12,8 @@ namespace Gameplay.SocialEvents
         [SerializeField] private GameObject player;
         [SerializeField] private Transform playerYogaPlace;
         [SerializeField] private Timer timer;
+
+        [SerializeField] private UnityEvent onYoga = new();
 
         private bool _isYoga;
         private Movement _playerMovement;
@@ -39,6 +42,7 @@ namespace Gameplay.SocialEvents
             player.transform.position = playerYogaPlace.position;
             //player.transform.rotation = playerYogaPlace.rotation;
             timer.PauseTime();
+            onYoga?.Invoke();
         }
 
         private void ResumeNormal()

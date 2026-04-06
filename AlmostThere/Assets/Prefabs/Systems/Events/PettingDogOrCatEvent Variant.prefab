@@ -37,6 +37,10 @@ PrefabInstance:
       value: Framework.Audio.AudioHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2533706034394666734, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
+      propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: beb4ccf9103801c4e9d099fa4ea6833a, type: 2}
+    - target: {fileID: 2533706034394666734, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: onFeed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -74,15 +78,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3906340874372898372, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -101.500824
       objectReference: {fileID: 0}
     - target: {fileID: 3906340874372898372, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -4.0957894
       objectReference: {fileID: 0}
     - target: {fileID: 3906340874372898372, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -50.097183
       objectReference: {fileID: 0}
     - target: {fileID: 3906340874372898372, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: m_LocalRotation.w

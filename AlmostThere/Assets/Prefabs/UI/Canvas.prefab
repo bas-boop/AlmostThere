@@ -525,6 +525,7 @@ RectTransform:
   - {fileID: 6471068163074657093}
   - {fileID: 4100528386200215157}
   - {fileID: 3362185416949433671}
+  - {fileID: 2721602731877779781}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1243,7 +1244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UI.TimeUi
   displayStartTime: 8.5
   displayEndTime: 9
-  gameplayTime: 15
+  gameplayTime: 90
   text: {fileID: 4823107816812024761}
   timer: {fileID: 4725272661842274723}
 --- !u!114 &4725272661842274723
@@ -1269,10 +1270,22 @@ MonoBehaviour:
   onTimerDone:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Framework.SceneSwitcher, Assembly-CSharp
-        m_MethodName: SetAndLoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 3181782888006355488}
+        m_TargetAssemblyTypeName: UI.PhoneMover, Assembly-CSharp
+        m_MethodName: SlideIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Lose
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5294152102255601278}
+        m_TargetAssemblyTypeName: UI.EndingPrototype.EndingUI, Assembly-CSharp
+        m_MethodName: HandleEndingState
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1431,3 +1444,162 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &2892908568871857274
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2629459574835901670}
+    m_Modifications:
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349850542538085677, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      propertyPath: m_Name
+      value: EndingPhoneChat
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6349850542538085677, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3181782888006355488}
+  m_SourcePrefab: {fileID: 100100000, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+--- !u!224 &2721602731877779781 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1000008332817507647, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+  m_PrefabInstance: {fileID: 2892908568871857274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5294152102255601278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7015823501246286340, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+  m_PrefabInstance: {fileID: 2892908568871857274}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8086950254496692567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c72df600d7e604d88c255d558ecc3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndingUI
+--- !u!1 &8086950254496692567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6349850542538085677, guid: 551d4ad4a33f04f439df9db2680027b9, type: 3}
+  m_PrefabInstance: {fileID: 2892908568871857274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3181782888006355488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8086950254496692567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95937dad2e524bfbbcb8a381403c230e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.PhoneMover
+  duration: 0.4
+  offscreenDistance: 900
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

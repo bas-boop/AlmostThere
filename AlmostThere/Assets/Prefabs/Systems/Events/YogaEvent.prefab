@@ -635,6 +635,9 @@ MonoBehaviour:
   player: {fileID: 0}
   playerYogaPlace: {fileID: 8179261583132063251}
   timer: {fileID: 0}
+  onYoga:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7745060172411199387
 GameObject:
   m_ObjectHideFlags: 0

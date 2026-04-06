@@ -646,7 +646,7 @@ RectTransform:
   m_GameObject: {fileID: 6349850542538085677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3606756415726057206}
@@ -687,24 +687,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c72df600d7e604d88c255d558ecc3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndingUI
-  winState: {fileID: 0}
   chatManager: {fileID: 7719569162834001844}
+  rangeRandomTimeBetweenChat: {x: 0.5, y: 1.5}
   winningMessages:
     beginningMessages:
     - {fileID: 11400000, guid: c62d68f62de16b246a9b7a0337d2dfdd, type: 2}
-    eventMessages:
-    - {fileID: 11400000, guid: 39d2a430746f37a40b832f9cd577a027, type: 2}
-    - {fileID: 11400000, guid: beb4ccf9103801c4e9d099fa4ea6833a, type: 2}
-    - {fileID: 11400000, guid: a6985fa718545c34dbef1010d4835f5f, type: 2}
+    eventMessages: []
     endingMessages:
     - {fileID: 11400000, guid: d9dfc87d58b758841a453d28b5f99f02, type: 2}
   losingMessages:
     beginningMessages:
     - {fileID: 11400000, guid: c62d68f62de16b246a9b7a0337d2dfdd, type: 2}
-    eventMessages:
-    - {fileID: 11400000, guid: beb4ccf9103801c4e9d099fa4ea6833a, type: 2}
-    - {fileID: 11400000, guid: a0b063169ffdd58458190ae1c13cf81c, type: 2}
-    - {fileID: 11400000, guid: a6985fa718545c34dbef1010d4835f5f, type: 2}
+    eventMessages: []
     endingMessages:
     - {fileID: 11400000, guid: d9dfc87d58b758841a453d28b5f99f02, type: 2}
 --- !u!1 &7963573587781776263
