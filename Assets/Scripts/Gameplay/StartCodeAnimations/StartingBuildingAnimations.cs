@@ -14,10 +14,10 @@ namespace Gameplay.StartCodeAnimation
         [SerializeField, Range(0, 2)] private float xZScaleToMult = 0.8f;
 
         //Deze action moet in een ander script uiteindelijk
-        public event Action onStart;
+        public UnityEvent onStart = new UnityEvent();
 
 
-        public event Action onAnimationComplete;
+        public UnityEvent onAnimationComplete = new UnityEvent();
 
         private Vector3 _orgscale;
 
@@ -28,7 +28,7 @@ namespace Gameplay.StartCodeAnimation
             //voor nu een test start functie, dit moet uiteindelijk in een ander script
 
             //zet dit event in een ander script om het aan te roepen
-            onStart += SquishAndStretch;
+            onStart.AddListener(SquishAndStretch);
 
             _orgscale = transform.localScale;
             loopedAmount = 0;

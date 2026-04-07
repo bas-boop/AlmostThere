@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Gameplay.StartCodeAnimation
@@ -7,25 +8,27 @@ namespace Gameplay.StartCodeAnimation
     public class StartingFadeAnimation : MonoBehaviour
     {
         [SerializeField] private CanvasGroup fadePanel;
-        [SerializeField, Range(0,1)] private float fadeTo;
         [SerializeField, Range (0, 1.5f)] private float duration;
         [SerializeField] private LeanTweenType fadeType;
         [SerializeField] private StartingBuildingAnimations StartingBuildingAnimations;
 
-        public event Action onFadeComplete;
+        private float fadeInAmount = 1f;
+        private float fadeOutAmount = 0f;
 
-        private void OnEnable()
+        //removed the addlistener as you implied (bas), the fade logic works but at the moment its not linked to the animation because of this removal
+        private void FadeIn()
         {
-            if (StartingBuildingAnimations != null)
-                StartingBuildingAnimations.onAnimationComplete += FadeInOut;
+            LeanTween.alphaCanvas(fadePanel, fadeInAmount, duration).setEase(fadeType).setOnComplete(() =>
+            {
+                fadePanel.alpha = fadeInAmount;
+            });
         }
 
-        private void FadeInOut()
+        private void FadeOut()
         {
-            LeanTween.alphaCanvas(fadePanel, fadeTo, duration).setEase(fadeType).setOnComplete(() =>
+            LeanTween.alphaCanvas(fadePanel, fadeOutAmount, duration).setEase(fadeType).setOnComplete(() =>
             {
-                fadePanel.alpha = fadeTo;
-                onFadeComplete?.Invoke();
+                fadePanel.alpha = fadeOutAmount;
             });
         }
     }
