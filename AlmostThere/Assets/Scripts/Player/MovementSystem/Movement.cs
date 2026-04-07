@@ -1,5 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using Framework.Audio;
+using UnityEngine;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 namespace Player.MovementSystem
 {
@@ -11,6 +14,9 @@ namespace Player.MovementSystem
         [SerializeField] private MovementSettings walkSetting;
         [SerializeField] private MovementSettings bikeSetting;
         [SerializeField] private Transform visuals;
+        [SerializeField] private AudioHandler stepsAudio;
+        [SerializeField] private AudioHandler bikeAudio;
+        [SerializeField] private AudioHandler bikeRingAudio;
 
         [SerializeField] private UnityEvent onDisableMovement = new();
         [SerializeField] private UnityEvent onEnableMovement = new();
@@ -32,6 +38,11 @@ namespace Player.MovementSystem
         {
             _rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
             _rigidbody.Sleep();
+        }
+
+        private void Update()
+        {
+            UpdateAudio();
         }
 
         private void FixedUpdate()
@@ -80,6 +91,40 @@ namespace Player.MovementSystem
             
             Quaternion targetRotation = Quaternion.LookRotation(worldMove);
             visuals.rotation = Quaternion.Slerp(visuals.rotation, targetRotation, Time.fixedDeltaTime * _currentSettings.rotationSpeed);
+        }
+
+        private void UpdateAudio()
+        {
+            bool isMoving = _moveDirection != Vector2.zero;
+            bool isOnBike = _currentSettings == bikeSetting;
+
+            if (isMoving)
+            {
+                if (!isOnBike)
+                {
+                    bikeAudio.Stop();
+                    bikeRingAudio.Stop();
+                    stepsAudio.Play();
+                }
+                else
+                {
+                    stepsAudio.Stop();
+                    bikeAudio.Play();
+                    TryPlayBikeRing();
+                }
+            }
+            else
+            {
+                stepsAudio.Stop();
+                bikeAudio.Stop();
+                bikeRingAudio.Stop();
+            }
+        }
+
+        private void TryPlayBikeRing()
+        {
+            if (Random.value < 0.001f)
+                bikeRingAudio.Play();
         }
     }
 }

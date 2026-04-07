@@ -112,6 +112,129 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1835199353511676050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4023475644949846401}
+  - component: {fileID: 4145214209746938044}
+  - component: {fileID: 2012775141886709500}
+  - component: {fileID: 5776406158641195137}
+  - component: {fileID: 5477710041713021309}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4023475644949846401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835199353511676050}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3137042765093641393}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4145214209746938044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835199353511676050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1155008942feb7e4f9a402e74860c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.Audio.AudioHandler
+  eventRef:
+    Guid:
+      Data1: -171724686
+      Data2: 1286136620
+      Data3: 9065392
+      Data4: 529984866
+    Path: event:/Transport/Bus/Bus_Start
+  parameterName: 
+  playOnStart: 0
+  shouldLoop: 0
+--- !u!114 &2012775141886709500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835199353511676050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1155008942feb7e4f9a402e74860c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.Audio.AudioHandler
+  eventRef:
+    Guid:
+      Data1: -894519752
+      Data2: 1242535808
+      Data3: 564951738
+      Data4: 1959257026
+    Path: event:/Transport/Bus/Bus_Stop
+  parameterName: 
+  playOnStart: 0
+  shouldLoop: 0
+--- !u!114 &5776406158641195137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835199353511676050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1155008942feb7e4f9a402e74860c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.Audio.AudioHandler
+  eventRef:
+    Guid:
+      Data1: 910364771
+      Data2: 1171910867
+      Data3: 1980610973
+      Data4: -2056136695
+    Path: event:/Transport/Bus/Bus_Engine
+  parameterName: Bus_Acceleration
+  playOnStart: 0
+  shouldLoop: 1
+--- !u!114 &5477710041713021309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835199353511676050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1155008942feb7e4f9a402e74860c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.Audio.AudioHandler
+  eventRef:
+    Guid:
+      Data1: -44593647
+      Data2: 1227629086
+      Data3: -1495319368
+      Data4: -1050330005
+    Path: event:/Transport/Bus/Bus_Horn
+  parameterName: 
+  playOnStart: 0
+  shouldLoop: 0
 --- !u!1 &2882209909843279039
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +638,7 @@ Transform:
   m_LocalScale: {x: 3, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4023475644949846401}
   - {fileID: 7026397447672046601}
   - {fileID: 3774799869699962557}
   - {fileID: 4561996246210943443}
@@ -635,6 +759,13 @@ MonoBehaviour:
   timerStop: {fileID: 1043424986374604558}
   timerDelay: {fileID: 5756919497821905332}
   tempDoor: {fileID: 5575312911861430062}
+  startAudio: {fileID: 4145214209746938044}
+  stopAudio: {fileID: 2012775141886709500}
+  engineAudio: {fileID: 5776406158641195137}
+  hornAudio: {fileID: 5477710041713021309}
+  accelSharpness: 2
+  decelSharpness: 3
+  maxAudioDistance: 20
   moveSpeed: 3
   rotationSpeed: 5
   randomDelayTime: {x: 3, y: 10}

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6179676617576310376}
   - component: {fileID: 7200216903137706168}
   - component: {fileID: 4626256790852384066}
+  - component: {fileID: 8544678439416888128}
   m_Layer: 0
   m_Name: Bike
   m_TagString: Untagged
@@ -173,7 +174,32 @@ MonoBehaviour:
   buttonPrompt: {fileID: 7928546210404310973}
   arrow: {fileID: 292639485698734268}
   playerVisual: {fileID: 0}
+  indicator: {fileID: 2017928281683403845}
   player: {fileID: 0}
+  audioHandler: {fileID: 8544678439416888128}
+  chanceToBrake: 0.0005
+--- !u!114 &8544678439416888128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296619379588550782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1155008942feb7e4f9a402e74860c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.Audio.AudioHandler
+  eventRef:
+    Guid:
+      Data1: 1788821794
+      Data2: 1213934212
+      Data3: -794174582
+      Data4: 1405765233
+    Path: event:/Transport/Bike/Bike_Brake
+  parameterName: 
+  playOnStart: 0
+  shouldLoop: 0
 --- !u!1001 &2162640618671405124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,6 +308,11 @@ PrefabInstance:
 --- !u!1 &292639485698734268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1877038013841539320, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+  m_PrefabInstance: {fileID: 2162640618671405124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2017928281683403845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 144714677854231553, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
   m_PrefabInstance: {fileID: 2162640618671405124}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &6695337309995996566 stripped

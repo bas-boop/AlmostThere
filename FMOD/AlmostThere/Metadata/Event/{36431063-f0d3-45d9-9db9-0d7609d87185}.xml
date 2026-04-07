@@ -177,6 +177,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{5629d88f-9359-47a9-92a2-58bde50573db}">
+		<property name="volume">
+			<value>-15.5</value>
+		</property>
 		<property name="name">
 			<value>BusMid</value>
 		</property>
@@ -374,7 +377,7 @@
 			<value>0.15517241379310345</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-16</value>
 		</property>
 		<property name="curveShape">
 			<value>1</value>
