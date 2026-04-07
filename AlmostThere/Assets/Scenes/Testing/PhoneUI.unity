@@ -772,7 +772,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd0190201698b4c41b80d6e5db27034e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 634826258b8757b41a880d40f79314bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1593,8 +1593,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: 0}
-  m_SizeDelta: {x: 887.1736, y: 553}
+  m_AnchoredPosition: {x: -54.508667, y: 0}
+  m_SizeDelta: {x: 916.1909, y: 553}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1154769316
 MonoBehaviour:
@@ -2518,6 +2518,8 @@ MonoBehaviour:
   startingNotificationOffset: 200
   startingNotificationAnimationDelays: {x: 1, y: 2, z: 0.5}
   closeIconAnimationDelay: 0.5
+  timeToAnimate: 0.75
+  paddingMapFrame: 450
   phoneHasBeenOpened: 0
 --- !u!114 &2096442343
 MonoBehaviour:
@@ -2543,6 +2545,7 @@ MonoBehaviour:
   indicatorMinScale: 0.3
   indicatorThreshold: 50
   indicatorHideThreshold: 150
+  padding: 55
 --- !u!114 &2096442344
 MonoBehaviour:
   m_ObjectHideFlags: 0
