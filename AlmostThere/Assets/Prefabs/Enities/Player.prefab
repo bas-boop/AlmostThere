@@ -94,6 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7678285523396216913}
+  - component: {fileID: 1732670515657846289}
   m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
@@ -118,6 +119,18 @@ Transform:
   - {fileID: 6548830077634165132}
   m_Father: {fileID: 3651345725935768533}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1732670515657846289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4107503597332029361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68efb11283446369e746a95b002a4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerVisuals
 --- !u!1 &4606664740934862468
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +607,10 @@ PrefabInstance:
     - target: {fileID: 2323564698706737652, guid: 7a813436c0a97e2418185c220278840f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599965151521148985, guid: 7a813436c0a97e2418185c220278840f, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Music/MusicEvent
       objectReference: {fileID: 0}
     - target: {fileID: 4323086870585895737, guid: 7a813436c0a97e2418185c220278840f, type: 3}
       propertyPath: m_Volume

@@ -7795,10 +7795,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 124293421}
     - target: {fileID: 2107330767929573368, guid: ba893caa7e96eae48ad422853819af28, type: 3}
-      propertyPath: locations.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2107330767929573368, guid: ba893caa7e96eae48ad422853819af28, type: 3}
       propertyPath: 'locations.Array.data[0]'
       value: 
       objectReference: {fileID: 1768790181}
@@ -7866,9 +7862,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6142544918046597048, guid: ba893caa7e96eae48ad422853819af28, type: 3}
-      propertyPath: EventReference.Path
-      value: event:/Music/MusicEvent
+    - target: {fileID: 7678285523396216913, guid: ba893caa7e96eae48ad422853819af28, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21258,6 +21254,71 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7068075726870372641, guid: a4665d262c9b21246b4a2de7b61633b5, type: 3}
+--- !u!1001 &7500021623727808193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5061976387037948917, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061976387037948917, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061976387037948917, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061976387037948917, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061976387037948917, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061976387037948917, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061976387037948917, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061976387037948917, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061976387037948917, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061976387037948917, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663600957611524843, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: m_Name
+      value: Lemonade
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162089430917541360, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1800353236}
+    - target: {fileID: 9162089430917541360, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
+      propertyPath: onYoga.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1316085075}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
 --- !u!33 &7505445176676932398
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25126,6 +25187,7 @@ SceneRoots:
   - {fileID: 1662342869}
   - {fileID: 1987033483}
   - {fileID: 711183816}
+  - {fileID: 7500021623727808193}
   - {fileID: 702641425}
   - {fileID: 1793062413}
   - {fileID: 307872062}

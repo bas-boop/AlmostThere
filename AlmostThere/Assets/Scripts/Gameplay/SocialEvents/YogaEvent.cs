@@ -3,6 +3,7 @@ using UnityEngine.Events;
 
 using Framework;
 using Framework.InteractSystem;
+using Player;
 using Player.MovementSystem;
 
 namespace Gameplay.SocialEvents
@@ -40,8 +41,8 @@ namespace Gameplay.SocialEvents
             
             _playerMovement.ToggleCanMove();
             player.transform.position = playerYogaPlace.position;
-            //player.transform.rotation = playerYogaPlace.rotation;
-            timer.PauseTime();
+            PlayerVisuals.Instance.transform.rotation = playerYogaPlace.rotation;
+            timer?.PauseTime();
             onYoga?.Invoke();
         }
 
@@ -50,7 +51,7 @@ namespace Gameplay.SocialEvents
             _isYoga = !_isYoga;
             
             _playerMovement.ToggleCanMove();
-            timer.StartTimer();
+            timer?.StartTimer();
         }
     }
 }
