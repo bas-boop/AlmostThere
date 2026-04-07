@@ -16,7 +16,7 @@ namespace Gameplay.StartCodeAnimation
         private float fadeOutAmount = 0f;
 
         //removed the addlistener as you implied (bas), the fade logic works but at the moment its not linked to the animation because of this removal
-        private void FadeIn()
+        public void FadeIn()
         {
             LeanTween.alphaCanvas(fadePanel, fadeInAmount, duration).setEase(fadeType).setOnComplete(() =>
             {
@@ -24,7 +24,7 @@ namespace Gameplay.StartCodeAnimation
             });
         }
 
-        private void FadeOut()
+        public void FadeOut()
         {
             LeanTween.alphaCanvas(fadePanel, fadeOutAmount, duration).setEase(fadeType).setOnComplete(() =>
             {
