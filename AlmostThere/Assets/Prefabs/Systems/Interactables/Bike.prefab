@@ -126,7 +126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Framework.TriggerArea.TriggerArea
   shapeToUse: 0
-  tagToTriggerWith: Player
+  tagsToTriggerWith:
+  - Player
   behaviour: 0
   isOneTimeUse: 0
   onEnter:

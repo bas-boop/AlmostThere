@@ -338,11 +338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3a7f5820e647b7badc49e3e2a28788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gameplay.PublicTransport.Waypoint
---- !u!1 &57957930 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8086950254496692567, guid: 97de9334caee2694492033209a104165, type: 3}
-  m_PrefabInstance: {fileID: 124293420}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &82492632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -999,7 +994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751616821480836783, guid: d85cc53926502b04f96e5906b3a5e6ec, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1331,7 +1326,7 @@ PrefabInstance:
     - target: {fileID: 2533706034394666734, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1316085075}
+      objectReference: {fileID: 0}
     - target: {fileID: 2533706034394666734, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToggleCanMove
@@ -1724,7 +1719,7 @@ PrefabInstance:
     - target: {fileID: 2533706034394666734, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1316085075}
+      objectReference: {fileID: 0}
     - target: {fileID: 2533706034394666734, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToggleCanMove
@@ -2512,7 +2507,7 @@ PrefabInstance:
     - target: {fileID: 2533706034394666734, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1316085075}
+      objectReference: {fileID: 0}
     - target: {fileID: 3906340874372898372, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.582655
@@ -2581,7 +2576,7 @@ PrefabInstance:
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onExit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 57957930}
+      objectReference: {fileID: 0}
     - target: {fileID: 5740082976544996374, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onExit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -2601,7 +2596,7 @@ PrefabInstance:
     - target: {fileID: 6266302766521577134, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: timer
       value: 
-      objectReference: {fileID: 2039577994}
+      objectReference: {fileID: 0}
     - target: {fileID: 6266302766521577134, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: player
       value: 
@@ -2617,7 +2612,7 @@ PrefabInstance:
     - target: {fileID: 6266302766521577134, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onYoga.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1316085075}
+      objectReference: {fileID: 0}
     - target: {fileID: 6266302766521577134, guid: daeab56ea4b0bb34283e127dea812c61, type: 3}
       propertyPath: onYoga.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -3191,15 +3186,15 @@ PrefabInstance:
     - target: {fileID: 6305424753677059542, guid: a52abef19c490804cb00fab7c8d47fb2, type: 3}
       propertyPath: onEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2039577994}
+      objectReference: {fileID: 0}
     - target: {fileID: 6305424753677059542, guid: a52abef19c490804cb00fab7c8d47fb2, type: 3}
       propertyPath: onEnter.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1316085077}
+      objectReference: {fileID: 0}
     - target: {fileID: 6305424753677059542, guid: a52abef19c490804cb00fab7c8d47fb2, type: 3}
       propertyPath: onEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 1316085075}
+      objectReference: {fileID: 0}
     - target: {fileID: 6305424753677059542, guid: a52abef19c490804cb00fab7c8d47fb2, type: 3}
       propertyPath: onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -3764,7 +3759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751616821480836783, guid: d85cc53926502b04f96e5906b3a5e6ec, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5205,7 +5200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751616821480836783, guid: d85cc53926502b04f96e5906b3a5e6ec, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5488,28 +5483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3a7f5820e647b7badc49e3e2a28788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gameplay.PublicTransport.Waypoint
---- !u!114 &1316085075 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5294152102255601278, guid: 97de9334caee2694492033209a104165, type: 3}
-  m_PrefabInstance: {fileID: 124293420}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57957930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3c72df600d7e604d88c255d558ecc3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EndingUI
---- !u!114 &1316085077 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3181782888006355488, guid: 97de9334caee2694492033209a104165, type: 3}
-  m_PrefabInstance: {fileID: 124293420}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57957930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95937dad2e524bfbbcb8a381403c230e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UI.PhoneMover
 --- !u!4 &1334886533 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4312056502901351455, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
@@ -6941,7 +6914,7 @@ PrefabInstance:
     - target: {fileID: 746886533964612649, guid: 8e495b0197b11ac409a9271f86ff05d9, type: 3}
       propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1316085075}
+      objectReference: {fileID: 0}
     - target: {fileID: 2252623600185347203, guid: 8e495b0197b11ac409a9271f86ff05d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -101.500824
@@ -7371,7 +7344,7 @@ PrefabInstance:
     - target: {fileID: 746886533964612649, guid: 8e495b0197b11ac409a9271f86ff05d9, type: 3}
       propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1316085075}
+      objectReference: {fileID: 0}
     - target: {fileID: 746886533964612649, guid: 8e495b0197b11ac409a9271f86ff05d9, type: 3}
       propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToggleCanMove
@@ -7780,7 +7753,7 @@ PrefabInstance:
     - target: {fileID: 2533706034394666734, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1316085075}
+      objectReference: {fileID: 0}
     - target: {fileID: 2533706034394666734, guid: 9fecac671ac582e4a92f636c3a997a46, type: 3}
       propertyPath: onFeedDone.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToggleCanMove
@@ -8919,17 +8892,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4312056502901351455, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
   m_PrefabInstance: {fileID: 1360908017}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2039577994 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4725272661842274723, guid: 97de9334caee2694492033209a104165, type: 3}
-  m_PrefabInstance: {fileID: 124293420}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e41a160aac93894a9ab0a8569ba4aac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Framework.Timer
 --- !u!4 &2041630279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4312056502901351455, guid: b639606f2f55d19488b0510edc9f3676, type: 3}
@@ -21392,7 +21354,7 @@ PrefabInstance:
     - target: {fileID: 9162089430917541360, guid: 695d71da15e6ec14a8b66cec4e55e761, type: 3}
       propertyPath: onYoga.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1316085075}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

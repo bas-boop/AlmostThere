@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -16,7 +17,7 @@ namespace Framework.TriggerArea
         private const string FBX_SUFFIX = ".fbx";
         
         [SerializeField] private StandardMeshes shapeToUse;
-        [SerializeField, Tag] private string tagToTriggerWith = "Player";
+        [SerializeField, Tag] private string[] tagsToTriggerWith = {"Player"};
         [SerializeField] private TriggerBehaviour behaviour;
         [SerializeField] private bool isOneTimeUse;
         
@@ -67,7 +68,7 @@ namespace Framework.TriggerArea
         {
             if (behaviour == TriggerBehaviour.EXIT_ONLY
                 || CheckOneTimeUse()
-                || !other.CompareTag(tagToTriggerWith))
+                || !Handel(other, tagsToTriggerWith))
                 return;
 
             _isTriggered = true;
@@ -78,7 +79,7 @@ namespace Framework.TriggerArea
         {
             if (behaviour == TriggerBehaviour.ENTER_ONLY
                 || CheckOneTimeUse()
-                || !other.CompareTag(tagToTriggerWith))
+                || !Handel(other, tagsToTriggerWith))
                 return;
             
             _isTriggered = true;
@@ -145,6 +146,8 @@ namespace Framework.TriggerArea
                     throw new ArgumentOutOfRangeException();
             }
         }
+
+        private bool Handel(Collider other, string[] tags) => tags.Any(tag => other.CompareTag(tag));
 
         private bool CheckOneTimeUse() => isOneTimeUse && _isTriggered;
     }
