@@ -131,7 +131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Framework.TriggerArea.TriggerArea
   shapeToUse: 1
-  tagToTriggerWith: Player
+  tagsToTriggerWith:
+  - Player
   behaviour: 0
   isOneTimeUse: 0
   onEnter:
@@ -176,7 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff15953017247a3bb1944def2d591d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gameplay.SocialEvents.FeedingPigeons
-  icon: {fileID: 4909865728930397695}
+  buttonPrompt: {fileID: 3901697327728788999}
+  arrow: {fileID: 6642226462523252998}
   player: {fileID: 0}
   feedingTime: 1
   followTime: 1
@@ -204,6 +206,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Player.MovementSystem.Movement, Assembly-CSharp
         m_MethodName: ToggleCanMove
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UI.EndingPrototype.EndingUI, Assembly-CSharp
+        m_MethodName: AddEventMessage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 39d2a430746f37a40b832f9cd577a027, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UI.EndingPrototype.MessageData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2533706034394666734}
+        m_TargetAssemblyTypeName: Gameplay.SocialEvents.FeedingPigeons, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -927,7 +953,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 144714677854231553, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347255603349004725, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4821565060172639698, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
       propertyPath: m_Pivot.x
@@ -1019,9 +1049,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4821565060172639698, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
   m_PrefabInstance: {fileID: 5053454287725388286}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4909865728930397695 stripped
+--- !u!1 &3901697327728788999 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 144714677854231553, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8071828127251589113, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
+  m_PrefabInstance: {fileID: 5053454287725388286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6642226462523252998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1877038013841539320, guid: cd1fbc446d4cd714bac788d1b1b89040, type: 3}
   m_PrefabInstance: {fileID: 5053454287725388286}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5708978083294225484

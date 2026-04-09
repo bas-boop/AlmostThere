@@ -19,12 +19,13 @@ namespace Framework.Audio
         private void Start()
         {
             if (playOnStart)
-                Play();
+                ForcePlay();
         }
 
         private void Update()
         {
-            if (!_instance.isValid()) return;
+            if (!_instance.isValid())
+                return;
             
             UpdateAudioPosition();
 
@@ -37,17 +38,33 @@ namespace Framework.Audio
 
         public void Play()
         {
-            Stop();
+            if (_isPlaying)
+                return;
 
             _instance = RuntimeManager.CreateInstance(eventRef);
+            
             UpdateAudioPosition();
             _instance.start();
+            
+            _isPlaying = true;
+        }
+        
+        public void ForcePlay()
+        {
+            Stop();
+            
+            _instance = RuntimeManager.CreateInstance(eventRef);
+            
+            UpdateAudioPosition();
+            _instance.start();
+            
             _isPlaying = true;
         }
 
         public void Stop()
         {
-            if (!_instance.isValid()) return;
+            if (!_instance.isValid())
+                return;
 
             _instance.stop(STOP_MODE.IMMEDIATE);
             _instance.release();
@@ -65,7 +82,7 @@ namespace Framework.Audio
             _instance.getPlaybackState(out PLAYBACK_STATE state);
 
             if (state == PLAYBACK_STATE.STOPPED)
-                Play();
+                ForcePlay();
         }
 
         private void UpdateAudioPosition()

@@ -12,14 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Boot.unity
     guid: 214e85b17aa5a9949946a97c2e74140e
   - enabled: 1
-    path: Assets/Scenes/Alpha.unity
-    guid: 37344cedd8282f147ba3a5f0ef9185b2
-  - enabled: 1
-    path: Assets/Scenes/AlphaTestA.unity
-    guid: ec1240b2925d3914495f20809e6e566f
-  - enabled: 1
-    path: Assets/Scenes/AlphaTestB.unity
-    guid: b4b9e2ede1e517e4582100a22e1d36f4
+    path: Assets/Scenes/Beta.unity
+    guid: 74dfd09449d704a41a20e7673fd7057e
   - enabled: 1
     path: Assets/Scenes/Testing/Win.unity
     guid: ef9e6c86d0dbfa045be968445c668b1b

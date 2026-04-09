@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Pigeon
   m_EditorClassIdentifier: Assembly-CSharp::UI.EndingPrototype.MessageData
   isPlayerSendingMessage: 1
-  hasText: 0
-  message: 
-  imageSprite: {fileID: 21300000, guid: 1f6bc1b75e58c62478a28189cba4a74b, type: 3}
+  hasText: 1
+  message: There were pigeons. A whole flock of them. Near the bench by the park.
+  imageSprite: {fileID: 21300000, guid: 4ecc68a724c8e4e4cbb7111c09c1ce77, type: 3}
