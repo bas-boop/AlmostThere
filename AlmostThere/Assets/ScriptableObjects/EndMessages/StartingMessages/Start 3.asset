@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18a58cb707f9d904ea1536e55cf75a64, type: 3}
-  m_Name: Yoga
+  m_Name: Start 3
   m_EditorClassIdentifier: Assembly-CSharp::UI.EndingPrototype.MessageData
-  isPlayerSendingMessage: 1
+  isPlayerSendingMessage: 0
   hasText: 1
-  message: Joined a random yoga group in the park. Like 20 strangers. Then found
-    a dog just... sitting alone on the street?? Super friendly.
-  imageSprite: {fileID: 21300000, guid: f7c6f6fc6e7e5b440b806e9caf220c9b, type: 3}
+  message: You close? It's almost 9.
+  imageSprite: {fileID: 0}

@@ -18,7 +18,7 @@ namespace Player
                 type: InputActionType.Button);
 
             _reloadAction.AddBinding("<Keyboard>/r");
-            _reloadAction.AddBinding("<Gamepad>/buttonSouth");
+            _reloadAction.AddBinding("<Gamepad>/start");
 
             _reloadAction.performed += OnReloadPerformed;
         }

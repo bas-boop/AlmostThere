@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UI.EndingPrototype.MessageData
   isPlayerSendingMessage: 0
   hasText: 1
-  message: Kiekeboe
-  imageSprite: {fileID: 21300000, guid: 6f55f9e571c6e604fbbfd7acd52765d8, type: 3}
+  message: You were supposed to be here at 9. It's past nine. Where are you?
+  imageSprite: {fileID: 0}

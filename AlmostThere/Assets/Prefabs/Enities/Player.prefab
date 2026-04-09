@@ -1,5 +1,105 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1775399021977353250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8757678830032334842}
+  - component: {fileID: 7694687683841314041}
+  - component: {fileID: 1288175093644926805}
+  - component: {fileID: 1436798537561441963}
+  m_Layer: 0
+  m_Name: AudioEffects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8757678830032334842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775399021977353250}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3651345725935768533}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7694687683841314041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775399021977353250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1155008942feb7e4f9a402e74860c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.Audio.AudioHandler
+  eventRef:
+    Guid:
+      Data1: 223657677
+      Data2: 1100145166
+      Data3: 36734601
+      Data4: 296383301
+    Path: event:/Player/Footsteps
+  parameterName: 
+  playOnStart: 0
+  shouldLoop: 1
+--- !u!114 &1288175093644926805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775399021977353250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1155008942feb7e4f9a402e74860c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.Audio.AudioHandler
+  eventRef:
+    Guid:
+      Data1: -284632740
+      Data2: 1185402489
+      Data3: 1539561361
+      Data4: 633048670
+    Path: event:/Transport/Bike/Bike_Cycle
+  parameterName: 
+  playOnStart: 0
+  shouldLoop: 1
+--- !u!114 &1436798537561441963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775399021977353250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1155008942feb7e4f9a402e74860c86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Framework.Audio.AudioHandler
+  eventRef:
+    Guid:
+      Data1: -1063768956
+      Data2: 1155071808
+      Data3: 1455467181
+      Data4: 752459944
+    Path: event:/Transport/Bike/Bike_Bell
+  parameterName: 
+  playOnStart: 0
+  shouldLoop: 0
 --- !u!1 &3037798949130311202
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,7 +211,7 @@ Transform:
   m_GameObject: {fileID: 4107503597332029361}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -151,6 +251,7 @@ GameObject:
   - component: {fileID: 2586530747060661406}
   - component: {fileID: 2107330767929573368}
   - component: {fileID: 2306291011624563523}
+  - component: {fileID: 3934189945247547027}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -174,6 +275,7 @@ Transform:
   - {fileID: 7678285523396216913}
   - {fileID: 5842487310764029557}
   - {fileID: 3558134936461566299}
+  - {fileID: 8757678830032334842}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!33 &6657217319958928271
@@ -346,6 +448,9 @@ MonoBehaviour:
   walkSetting: {fileID: 11400000, guid: bc6a4a7c2e348ed459fa79b2de951942, type: 2}
   bikeSetting: {fileID: 11400000, guid: fdad63cb9b3951d41b86c93b2bec98ab, type: 2}
   visuals: {fileID: 7678285523396216913}
+  stepsAudio: {fileID: 7694687683841314041}
+  bikeAudio: {fileID: 1288175093644926805}
+  bikeRingAudio: {fileID: 1436798537561441963}
   onDisableMovement:
     m_PersistentCalls:
       m_Calls:
@@ -474,6 +579,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
+--- !u!114 &3934189945247547027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606664740934862468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7bcb61ba324b7046b0df955eb150e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SeeThrough
+  focus_object: {fileID: 3651345725935768533}
+  target_material: {fileID: 2100000, guid: e09a2fbfdd269824bb2545697ddb4a5f, type: 2}
+  offset: -4
+  distance_variable: _DistanceCutoff
+  focus_object_screenspace_position: _FocusObjectPosition
 --- !u!1001 &6730813533631176295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -566,7 +688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 881866989496873630, guid: 7a813436c0a97e2418185c220278840f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2323564698706737652, guid: 7a813436c0a97e2418185c220278840f, type: 3}
       propertyPath: m_LocalPosition.x
